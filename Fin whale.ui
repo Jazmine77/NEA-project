@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>770</width>
+    <height>599</height>
+   </rect>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::NoContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>Information</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(77, 98, 175);
+color: rgb(0, 0, 0);
+font: 18pt &quot;Palatino Linotype&quot;;</string>
+  </property>
+  <widget class="QLabel" name="title">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>20</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+font: 24pt &quot;Palatino Linotype&quot;;
+text-decoration: underline;
+color: rgb(255, 170, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>Fin whales</string>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="textBrowser">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>751</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Palatino Linotype'; font-size:18pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#ffaaff;&quot;&gt;Population&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;: between 100,000 to 119,000 &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#ffaaff;&quot;&gt;Fun fact&lt;/span&gt;&lt;span style=&quot; font-style:italic; color:#ffaaff;&quot;&gt;:&lt;/span&gt;&lt;span style=&quot; color:#ffaaff;&quot;&gt;Fin whales are the second largest whale species&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#ffaaff;&quot;&gt;Dangers&lt;/span&gt;&lt;span style=&quot; color:#ffaaff;&quot;&gt;: &lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Like other large whales, fin whales are threatened by environmental changes including habitat loss, toxins and climate change.However commercial whaling remains a threat to fin whales&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#ffaaff;&quot;&gt;Diet&lt;/span&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#000000;&quot;&gt;: &lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;During the summer they feed on krill, small schooling fish and squid.In winter they fast. Fin whales eat up to 2 tons of food daily&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#ffaaff;&quot;&gt;General location&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;:They live in deep, offshore waters in most major oceans but primiraly in temperate to polar latitudes and are less common in tropics.Most migrate from the Arctic and antarctic feeding areas in the summer to tropical breeding areas in winter&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#ffaaff;&quot;&gt;Fun fact&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;:&lt;/span&gt;&lt;span style=&quot; color:#ffaaff;&quot;&gt; The location of winter breeding areas are not know as fin whales travel in deep open sea and are difficult to track&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#ffaaff;&quot;&gt;Role in ecosystem&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;: They are at the top of the ecosystem and play an important role have an important role in overall health of the marine environment.Each whale sequesters 33 tons of CO2 on aveage taking that carbon out of the atmosphere for centuries.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#ffaaff;&quot;&gt;Life span&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;: 80-90 years&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#ffaaff;&quot;&gt;Description&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;: Sleek, streamlined bodies with V-shaped bodies.They have a tall, hooked dorsal fin that rises at a shallow angle from the back. They have distinctive colours of black or dark brownish-gray on the back and sides.Many have several light-grey, V-shaped chevron behind their heads on the underside of the tail flukes is white with a grey border.This markings are unique and can be used to identify indiviuals&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="prediction">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>420</y>
+     <width>241</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Predicted movement</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="photo">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>420</y>
+     <width>361</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../fw.jpg</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>770</width>
+    <height>599</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Information</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(77, 98, 175);
+color: rgb(0, 0, 0);
+font: 18pt &quot;Palatino Linotype&quot;;
+</string>
+  </property>
+  <widget class="QLabel" name="title">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>20</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+font: 24pt &quot;Palatino Linotype&quot;;
+text-decoration: underline;
+color: rgb(255, 170, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>Blue whales</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="photo">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>410</y>
+     <width>361</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../bw.jpg</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="prediction">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>420</y>
+     <width>241</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Predicted movement</string>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="info_box">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>751</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Palatino Linotype'; font-size:18pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#ffaaff;&quot;&gt;Population&lt;/span&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;: &lt;/span&gt;is between 10,000 and 25,000 and they are listed as endangered under the Endangered Species Act and protected under the Marine Mammal Protection Act&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#ffaaff;&quot;&gt;Fun fact&lt;/span&gt;&lt;span style=&quot; font-size:20pt; color:#ffaaff;&quot;&gt;: Their tongues weighs as much as an elephant&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#ffaaff;&quot;&gt;Dangers&lt;/span&gt;: Due to early 1900s commercial fishing the blue whale populations have been significantly reducing. However&lt;span style=&quot; font-size:16pt;&quot;&gt; &lt;/span&gt;today their biggest threats are vessel strikes and getting stuck in fishing gear &lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#ffaaff;&quot;&gt;Diet:&lt;/span&gt; Primarily krill but can eat  but fish and copepods&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#ffaaff;&quot;&gt;Fun fact&lt;/span&gt;&lt;span style=&quot; color:#ffaaff;&quot;&gt;: They are the largest animal ever recorded to live on earth&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#ffaaff;&quot;&gt;General location&lt;/span&gt;&lt;span style=&quot; font-size:20pt; color:#ffaaff;&quot;&gt;:&lt;/span&gt; All oceans except the Arctic. They generally migrate seasonally between winter breeding grounds which are closer to the equator and summer feeding grounds&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#ffaaff;&quot;&gt;Role in ecosystem&lt;/span&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#ffffff;&quot;&gt;: &lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt; Whales fertilize marine ecosystems as they migrate as their fecal matter increases phytoplankton production which geneate over half of the atmospheres oxgen and 40% of all the carbon dioxide absorbed.They also capture the same amount of carbon from the atmosphere as thousands of trees in their lifetime. Which is important as it reduces the amount of greenhouse gases in the atmosphere&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#ffaaff;&quot;&gt;Life span: &lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Blue whales live on average around 80-90 years &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#ffaaff;&quot;&gt;Description&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;: Long body(24m) and generally slender shape with mottled blue-gray colouring that appears light blue under water.A wide head and 80-90 long groves lengthwise down the throat and chest its mouth contains up to 800 plates of baleen and thick corse bristles for catching food&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;https://gifts.worldwildlife.org/gift-center/gifts/Species-Adoptions/Blue-Whale.aspx?sc=AWY1800OQ18317A01909RX&amp;amp;_ga=2.222029272.1925783259.1679854196-319976745.1675645274&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Adopt a blue whale&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

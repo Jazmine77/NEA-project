@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>770</width>
+    <height>599</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Information</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(77, 98, 175);
+color: rgb(0, 0, 0);
+font: 18pt &quot;Palatino Linotype&quot;;</string>
+  </property>
+  <widget class="QLabel" name="title">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>20</y>
+     <width>271</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+font: 24pt &quot;Palatino Linotype&quot;;
+text-decoration: underline;
+color: rgb(255, 170, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>Great White Shark</string>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="info_box">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>751</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Palatino Linotype'; font-size:18pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#ffaaff;&quot;&gt;Population&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;: less then 3,500 &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#ffaaff;&quot;&gt;Fun fact: &lt;/span&gt;&lt;span style=&quot; font-size:20pt; color:#ffaaff;&quot;&gt;great white sharks existed before dinosaurs&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#ffaaff;&quot;&gt;Dangers: &lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;They are often hunted for their fins,teeth or as a trophy for sport fishing.They are also caught as bycatch and get entangled in meshes that protect beaches&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#ffaaff;&quot;&gt;Diet&lt;/span&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#000000;&quot;&gt;: &lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Once an adult they eat a range of marine animals for example sea lions,seals, dolphines,turtles,other sharks,seabirds and rays&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#ffaaff;&quot;&gt;General location: &lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;They live in almost all coastal and offshore waters which are between 12 and 24 degreeswith greater concentrations in the U.S, South Africa,Japan, Chile and Australia.One of their densest know populations is found around Dyer Island, South Africa&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#ffaaff;&quot;&gt;Role in ecosystem&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;:Help to maintain a balanced food web as they are apex predators and limit the abundance of their prey which preserve numbers within the food chain &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#ffaaff;&quot;&gt;Life span&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;: 70 years or more&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#ffaaff;&quot;&gt;Description&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;: Can weigh up to 4,500 pounds and are about 21 feet long. This means they are large, bulky fishes and are often described as shaped like a blunt torpedo. Their sharply pointed  conical snout,large pectoral and dorsal fins and strong cresvent shaped tail are some of the key identifiable features along with their white bellies and grey, dark blue or brown patterns on their back&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#ffaaff;&quot;&gt;Fun fact:&lt;/span&gt;&lt;span style=&quot; font-size:20pt; color:#ffaaff;&quot;&gt;They can sense blood from up to 3 miles away&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="photo">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>410</y>
+     <width>361</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../great white.jpg</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

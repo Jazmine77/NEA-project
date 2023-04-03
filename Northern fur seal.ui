@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>information</class>
+ <widget class="QDialog" name="information">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>770</width>
+    <height>599</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Information</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(77, 98, 175);
+color: rgb(0, 0, 0);
+font: 18pt &quot;Palatino Linotype&quot;;</string>
+  </property>
+  <widget class="QLabel" name="title">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>20</y>
+     <width>261</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+font: 24pt &quot;Palatino Linotype&quot;;
+text-decoration: underline;
+color: rgb(255, 170, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>Northern Fur Seal</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="photo">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>400</y>
+     <width>361</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../northern-fur-seal.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="info_box">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>751</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Palatino Linotype'; font-size:18pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#ffaaff;&quot;&gt;Population&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;: About 1.1 million (they listed as vulnerbale under the U.S Endangered Species Act due to a decrease in pup production)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#ffaaff;&quot;&gt;Fun fact: &lt;/span&gt;&lt;span style=&quot; color:#ffaaff;&quot;&gt;They have external ears&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#ffaaff;&quot;&gt;Dangers: &lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Predation by killer whales, competition with fishereis and climate change&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#ffaaff;&quot;&gt;Diet&lt;/span&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#000000;&quot;&gt;: &lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;They eat a wide range of midwater fish and squid species.Walleye pollock is thier predominant preyand and examples of their primary prey include Pacific sand lance, Pacific herring and Atka mackerel.Their diet vary on whats available to them in the geographic area and time of year&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#ffaaff;&quot;&gt;Fun fact: N&lt;/span&gt;&lt;span style=&quot; color:#ffaaff;&quot;&gt;orthern fur seals spend more then 300 days at sea&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#ffaaff;&quot;&gt;General location&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;:In the open ocean and rocky or sandy beaches like in the Pribilof islands for resting and breeding. In winter and spring they occupy the North Pacific ocean as well as Bering and Okhotsk seas&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#ffaaff;&quot;&gt;Role in ecosystem&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;:Help to maintain a balanced food web where they are a food source for larger predators like orcas and consume fish, squid and crustaceans&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#ffaaff;&quot;&gt;Life span&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;: 18 years for males and 27 for females&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#ffaaff;&quot;&gt;Description&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;: Have a stocky body,small head and very short snout.Their fur is extremely dense(46,500 fibres/cm2) to help maintain their body temperature in the cold water. Their flippers are the longest in the Otariidae family .Adult males are dark brown to black and adult females are dark gray to brown on their backs and light grey on their front.Adult males are&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#ffaaff;&quot;&gt;fun fact:&lt;/span&gt;&lt;span style=&quot; font-size:20pt; color:#ffaaff;&quot;&gt;Due to their dtrong fore flippers they can outrun a human on slippery rocks and nearly climb vertical cliffs&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

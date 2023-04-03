@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>770</width>
+    <height>599</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Information</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(77, 98, 175);
+color: rgb(0, 0, 0);
+font: 18pt &quot;Palatino Linotype&quot;;</string>
+  </property>
+  <widget class="QLabel" name="title">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>20</y>
+     <width>381</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+font: 24pt &quot;Palatino Linotype&quot;;
+text-decoration: underline;
+color: rgb(255, 170, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>Great Hammerhead shark</string>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="info_box">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>751</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Palatino Linotype'; font-size:18pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#ffaaff;&quot;&gt;Population&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;: Under 200 and are critically endangered&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#ffaaff;&quot;&gt;Fun fact: &lt;/span&gt;&lt;span style=&quot; font-size:20pt; color:#ffaaff;&quot;&gt;Hammerhead sharks can tan from light grey to dark grey&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#ffaaff;&quot;&gt;Dangers: &lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Hammerhead sharks are particularly vulnerable to being caught in gillnets because of thier unique shape of thier head.They are also targeted mainly for the shark fin trade&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#ffaaff;&quot;&gt;Diet&lt;/span&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#000000;&quot;&gt;: &lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Their diet primarily consists of stringrays, other rays and saktes.But they may also consume other sharks,sea catfish,squid and crustaceans&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#ffaaff;&quot;&gt;Fun fact: &lt;/span&gt;&lt;span style=&quot; font-size:20pt; color:#ffaaff;&quot;&gt;they are unaffected by stingray barbs&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#ffaaff;&quot;&gt;General location: &lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Found Throughout the Atlantic, Indian and pacific oceans and also in the mediterranean sea.They are most commonly found around the islands of Darwin and Wilf in the Galapagos&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#ffaaff;&quot;&gt;Role in ecosystem&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;:Help to maintain a balanced food web and ensure the species diversity by controlling the species populations &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#ffaaff;&quot;&gt;Life span&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;: 20-30 years&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:20pt; font-style:italic; color:#ffaaff;&quot;&gt;Description&lt;/span&gt;&lt;span style=&quot; color:#000000;&quot;&gt;: Have a stout, dusky brown  and light grey body with a cream coloured underside. They reach a maximum length of 18-20 meters. Their teeth are heavily serrated and triangular. Their exta tall,pointed dorsal fins are easily identifiable along with their hammer shaped heads&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="photo">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>410</y>
+     <width>361</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../Hammerhead-Shark.jpg</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
