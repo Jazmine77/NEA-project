@@ -10,6 +10,13 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 from MonkSeal import Information
+from BlueWhale import Info_BW
+from Fin import Info_fw
+from FurSeal import Info_fur
+from Greatwhite import Info_GWS
+from HammerH import Info_HH
+from Humpback import Info_hump
+from SpermWhale import Info_sw
 class Ui_mainMenu(object):
     def setupUi(self, mainMenu):
         mainMenu.setObjectName("mainMenu")
@@ -598,6 +605,23 @@ class Ui_mainMenu(object):
         self.australia.clicked.connect(self.show_aus)  # connect australia button to subroutine to display image
         self.africa.clicked.connect(self.show_africa)  # connect africa button to subroutine to display image
         self.Main_monkSeal.clicked.connect(self.Show_monkInfo)
+        self.Main_blueW.clicked.connect(self.show_blueInfo)
+        self.World_blueW_2.clicked.connect(self.show_blueInfo)
+        self.World_blueW_3.clicked.connect(self.show_blueInfo)
+        self.Main_finw.clicked.connect(self.show_finInfo)
+        self.Main_furSeal.clicked.connect(self.show_furInfo)
+        self.Main_greatW.clicked.connect(self.show_greatInfo)
+        self.World_greatW_2.clicked.connect(self.show_greatInfo)
+        self.World_greatW_3.clicked.connect(self.show_greatInfo)
+        self.Main_Hhead.clicked.connect(self.show_hammerInfo)
+        self.World_Hhead_2.clicked.connect(self.show_hammerInfo)
+        self.World_Hhead_3.clicked.connect(self.show_hammerInfo)
+        self.Main_hump.clicked.connect(self.show_humpInfo)
+        self.World_hump_2.clicked.connect(self.show_humpInfo)
+        self.Main_SpermW.clicked.connect(self.show_spermWInfo)
+        self.World_SpermW_2.clicked.connect(self.show_spermWInfo)
+
+
 
         self.zoomMenu.hide()  # hide widget
         self.zoomMenu.hidden = True  # set zoom menu to be hidden
@@ -958,9 +982,47 @@ class Ui_mainMenu(object):
         self.ui.setupUi(self.window)
         self.window.show()
 
+    def show_blueInfo(self):
+        self.window = QtWidgets.QDialog()
+        self.ui = Info_BW()
+        self.ui.setupUi(self.window)
+        self.window.show()
 
+    def show_finInfo(self):
+        self.window = QtWidgets.QDialog()
+        self.ui = Info_fw()
+        self.ui.setupUi(self.window)
+        self.window.show()
 
+    def show_furInfo(self):
+        self.window = QtWidgets.QDialog()
+        self.ui = Info_fur()
+        self.ui.setupUi(self.window)
+        self.window.show()
 
+    def show_greatInfo(self):
+        self.window = QtWidgets.QDialog()
+        self.ui = Info_GWS()
+        self.ui.setupUi(self.window)
+        self.window.show()
+
+    def show_hammerInfo(self):
+        self.window = QtWidgets.QDialog()
+        self.ui = Info_HH()
+        self.ui.setupUi(self.window)
+        self.window.show()
+
+    def show_humpInfo(self):
+        self.window = QtWidgets.QDialog()
+        self.ui = Info_hump()
+        self.ui.setupUi(self.window)
+        self.window.show()
+
+    def show_spermWInfo(self):
+        self.window = QtWidgets.QDialog()
+        self.ui = Info_sw()
+        self.ui.setupUi(self.window)
+        self.window.show()
     def retranslateUi(self, mainMenu):
         _translate = QtCore.QCoreApplication.translate
         mainMenu.setWindowTitle(_translate("mainMenu", "MainWindow"))

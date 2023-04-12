@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Dialog</class>
- <widget class="QDialog" name="Dialog">
+ <class>Info_hump</class>
+ <widget class="QDialog" name="Info_hump">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -79,7 +79,7 @@ p, li { white-space: pre-wrap; }
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>../hbw.png</pixmap>
+    <pixmap>hbw.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -102,5 +102,3 @@ p, li { white-space: pre-wrap; }
  <resources/>
  <connections/>
 </ui>
-
-

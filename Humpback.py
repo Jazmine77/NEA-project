@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'C:\Users\neals\Documents\computer science\NEA-project\Humpback.ui'
+# Form implementation generated from reading ui file 'C:\Users\neals\Documents\computer science\NEA-project\Humpback whale.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.9
 #
@@ -11,14 +11,14 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_Dialog(object):
-    def setupUi(self, Dialog):
-        Dialog.setObjectName("Dialog")
-        Dialog.resize(770, 599)
-        Dialog.setStyleSheet("font: 18pt \"Palatino Linotype\";\n"
+class Info_hump(object):
+    def setupUi(self, Info_hump):
+        Info_hump.setObjectName("Info_hump")
+        Info_hump.resize(770, 599)
+        Info_hump.setStyleSheet("font: 18pt \"Palatino Linotype\";\n"
 "color: rgb(0, 0, 0);\n"
 "background-color: rgb(77, 98, 175);")
-        self.title = QtWidgets.QLabel(Dialog)
+        self.title = QtWidgets.QLabel(Info_hump)
         self.title.setGeometry(QtCore.QRect(230, 20, 271, 31))
         self.title.setStyleSheet("\n"
 "font: 24pt \"Palatino Linotype\";\n"
@@ -26,28 +26,28 @@ class Ui_Dialog(object):
 "color: rgb(255, 170, 255);\n"
 "")
         self.title.setObjectName("title")
-        self.info_box = QtWidgets.QTextBrowser(Dialog)
+        self.info_box = QtWidgets.QTextBrowser(Info_hump)
         self.info_box.setGeometry(QtCore.QRect(10, 70, 751, 341))
         self.info_box.setStyleSheet("")
         self.info_box.setObjectName("info_box")
-        self.photo = QtWidgets.QLabel(Dialog)
+        self.photo = QtWidgets.QLabel(Info_hump)
         self.photo.setGeometry(QtCore.QRect(10, 420, 351, 181))
         self.photo.setText("")
-        self.photo.setPixmap(QtGui.QPixmap("C:\\Users\\neals\\Documents\\computer science\\NEA-project\\../hbw.png"))
+        self.photo.setPixmap(QtGui.QPixmap("C:\\Users\\neals\\Documents\\computer science\\NEA-project\\hbw.png"))
         self.photo.setScaledContents(True)
         self.photo.setObjectName("photo")
-        self.prediction = QtWidgets.QPushButton(Dialog)
+        self.prediction = QtWidgets.QPushButton(Info_hump)
         self.prediction.setGeometry(QtCore.QRect(450, 430, 241, 61))
         self.prediction.setObjectName("prediction")
 
-        self.retranslateUi(Dialog)
-        QtCore.QMetaObject.connectSlotsByName(Dialog)
+        self.retranslateUi(Info_hump)
+        QtCore.QMetaObject.connectSlotsByName(Info_hump)
 
-    def retranslateUi(self, Dialog):
+    def retranslateUi(self, Info_hump):
         _translate = QtCore.QCoreApplication.translate
-        Dialog.setWindowTitle(_translate("Dialog", "Information"))
-        self.title.setText(_translate("Dialog", "Humpback Whales"))
-        self.info_box.setHtml(_translate("Dialog", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+        Info_hump.setWindowTitle(_translate("Info_hump", "Information"))
+        self.title.setText(_translate("Info_hump", "Humpback Whales"))
+        self.info_box.setHtml(_translate("Info_hump", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'Palatino Linotype\'; font-size:18pt; font-weight:400; font-style:normal;\">\n"
@@ -60,14 +60,14 @@ class Ui_Dialog(object):
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:20pt; font-style:italic; color:#ffaaff;\">Life span: </span><span style=\" color:#000000;\"> 80-90 years </span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:20pt; font-style:italic; color:#ffaaff;\">Description</span><span style=\" color:#000000;\">: Bodies are primarily black but individuals have varying amount of white markings on their pectoral fins,bellies and tails They can grow up to 16 metres in length and have 30 broad ventral grooves on throat and chest.</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"https://uk.whales.org/support/adopt/humpback/\"><span style=\" text-decoration: underline; color:#0000ff;\">Adopt a humpback whale</span></a></p></body></html>"))
-        self.prediction.setText(_translate("Dialog", "Predicted movement"))
+        self.prediction.setText(_translate("Info_hump", "Predicted movement"))
 
 
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
-    Dialog = QtWidgets.QDialog()
-    ui = Ui_Dialog()
-    ui.setupUi(Dialog)
-    Dialog.show()
+    Info_hump = QtWidgets.QDialog()
+    ui = Info_hump()
+    ui.setupUi(Info_hump)
+    Info_hump.show()
     sys.exit(app.exec_())

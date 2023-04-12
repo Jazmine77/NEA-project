@@ -11,7 +11,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_Information_BW(object):
+class Info_BW(object):
     def setupUi(self, Information_BW):
         Information_BW.setObjectName("Information_BW")
         Information_BW.resize(770, 599)
@@ -70,7 +70,7 @@ if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
     Information_BW = QtWidgets.QDialog()
-    ui = Ui_Information_BW()
+    ui = Info_BW()
     ui.setupUi(Information_BW)
     Information_BW.show()
     sys.exit(app.exec_())

@@ -11,15 +11,15 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_Dialog(object):
-    def setupUi(self, Dialog):
-        Dialog.setObjectName("Dialog")
-        Dialog.resize(770, 599)
-        Dialog.setContextMenuPolicy(QtCore.Qt.NoContextMenu)
-        Dialog.setStyleSheet("background-color: rgb(77, 98, 175);\n"
+class Info_fw(object):
+    def setupUi(self, Info_fw):
+        Info_fw.setObjectName("Info_fw")
+        Info_fw.resize(770, 599)
+        Info_fw.setContextMenuPolicy(QtCore.Qt.NoContextMenu)
+        Info_fw.setStyleSheet("background-color: rgb(77, 98, 175);\n"
 "color: rgb(0, 0, 0);\n"
 "font: 18pt \"Palatino Linotype\";")
-        self.title = QtWidgets.QLabel(Dialog)
+        self.title = QtWidgets.QLabel(Info_fw)
         self.title.setGeometry(QtCore.QRect(320, 20, 181, 31))
         self.title.setStyleSheet("\n"
 "font: 24pt \"Palatino Linotype\";\n"
@@ -27,27 +27,27 @@ class Ui_Dialog(object):
 "color: rgb(255, 170, 255);\n"
 "")
         self.title.setObjectName("title")
-        self.textBrowser = QtWidgets.QTextBrowser(Dialog)
+        self.textBrowser = QtWidgets.QTextBrowser(Info_fw)
         self.textBrowser.setGeometry(QtCore.QRect(10, 70, 751, 341))
         self.textBrowser.setObjectName("textBrowser")
-        self.prediction = QtWidgets.QPushButton(Dialog)
+        self.prediction = QtWidgets.QPushButton(Info_fw)
         self.prediction.setGeometry(QtCore.QRect(420, 420, 241, 61))
         self.prediction.setObjectName("prediction")
-        self.photo = QtWidgets.QLabel(Dialog)
+        self.photo = QtWidgets.QLabel(Info_fw)
         self.photo.setGeometry(QtCore.QRect(40, 420, 361, 191))
         self.photo.setText("")
-        self.photo.setPixmap(QtGui.QPixmap("C:\\Users\\neals\\Documents\\computer science\\NEA-project\\../fw.jpg"))
+        self.photo.setPixmap(QtGui.QPixmap("C:\\Users\\neals\\Documents\\computer science\\NEA-project\\fw.jpg"))
         self.photo.setScaledContents(True)
         self.photo.setObjectName("photo")
 
-        self.retranslateUi(Dialog)
-        QtCore.QMetaObject.connectSlotsByName(Dialog)
+        self.retranslateUi(Info_fw)
+        QtCore.QMetaObject.connectSlotsByName(Info_fw)
 
-    def retranslateUi(self, Dialog):
+    def retranslateUi(self, Info_fw):
         _translate = QtCore.QCoreApplication.translate
-        Dialog.setWindowTitle(_translate("Dialog", "Information"))
-        self.title.setText(_translate("Dialog", "Fin whales"))
-        self.textBrowser.setHtml(_translate("Dialog", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+        Info_fw.setWindowTitle(_translate("Info_fw", "Information"))
+        self.title.setText(_translate("Info_fw", "Fin whales"))
+        self.textBrowser.setHtml(_translate("Info_fw", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'Palatino Linotype\'; font-size:18pt; font-weight:400; font-style:normal;\">\n"
@@ -60,14 +60,14 @@ class Ui_Dialog(object):
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:20pt; font-style:italic; color:#ffaaff;\">Role in ecosystem</span><span style=\" color:#000000;\">: They are at the top of the ecosystem and play an important role have an important role in overall health of the marine environment.Each whale sequesters 33 tons of CO2 on aveage taking that carbon out of the atmosphere for centuries.</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:20pt; font-style:italic; color:#ffaaff;\">Life span</span><span style=\" color:#000000;\">: 80-90 years</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:20pt; font-style:italic; color:#ffaaff;\">Description</span><span style=\" color:#000000;\">: Sleek, streamlined bodies with V-shaped bodies.They have a tall, hooked dorsal fin that rises at a shallow angle from the back. They have distinctive colours of black or dark brownish-gray on the back and sides.Many have several light-grey, V-shaped chevron behind their heads on the underside of the tail flukes is white with a grey border.This markings are unique and can be used to identify indiviuals</span></p></body></html>"))
-        self.prediction.setText(_translate("Dialog", "Predicted movement"))
+        self.prediction.setText(_translate("Info_fw", "Predicted movement"))
 
 
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
-    Dialog = QtWidgets.QDialog()
-    ui = Ui_Dialog()
-    ui.setupUi(Dialog)
-    Dialog.show()
+    Info_fw = QtWidgets.QDialog()
+    ui = Info_fw()
+    ui.setupUi(Info_fw)
+    Info_fw.show()
     sys.exit(app.exec_())

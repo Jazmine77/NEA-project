@@ -11,7 +11,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_Information_GWS(object):
+class Info_GWS(object):
     def setupUi(self, Information_GWS):
         Information_GWS.setObjectName("Information_GWS")
         Information_GWS.resize(770, 599)
@@ -62,7 +62,7 @@ if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
     Information_GWS = QtWidgets.QDialog()
-    ui = Ui_Information_GWS()
+    ui = Info_GWS()
     ui.setupUi(Information_GWS)
     Information_GWS.show()
     sys.exit(app.exec_())

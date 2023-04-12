@@ -11,7 +11,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_information_Fur(object):
+class Info_fur(object):
     def setupUi(self, information_Fur):
         information_Fur.setObjectName("information_Fur")
         information_Fur.resize(770, 599)
@@ -63,7 +63,7 @@ if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
     information_Fur = QtWidgets.QDialog()
-    ui = Ui_information_Fur()
+    ui = Info_fur()
     ui.setupUi(information_Fur)
     information_Fur.show()
     sys.exit(app.exec_())
