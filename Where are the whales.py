@@ -9,6 +9,7 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+from MonkSeal import Information
 class Ui_mainMenu(object):
     def setupUi(self, mainMenu):
         mainMenu.setObjectName("mainMenu")
@@ -523,7 +524,7 @@ class Ui_mainMenu(object):
         self.AF_blueW.setScaledContents(True)
         self.AF_blueW.setObjectName("AF_blueW")
         self.AS_SpermW_2 = QtWidgets.QLabel(self.centralwidget)
-        self.AS_SpermW_2.setGeometry(QtCore.QRect(1220, 590, 61, 51))
+        self.AS_SpermW_2.setGeometry(QtCore.QRect(1250, 570, 61, 51))
         self.AS_SpermW_2.setStyleSheet("background-color: rgb(218, 240, 253);")
         self.AS_SpermW_2.setText("")
         self.AS_SpermW_2.setPixmap(QtGui.QPixmap("spermWhale.png"))
@@ -596,6 +597,8 @@ class Ui_mainMenu(object):
         self.asia.clicked.connect(self.show_asia)  # connect asia button to subroutine to display image
         self.australia.clicked.connect(self.show_aus)  # connect australia button to subroutine to display image
         self.africa.clicked.connect(self.show_africa)  # connect africa button to subroutine to display image
+        self.Main_monkSeal.clicked.connect(self.Show_monkInfo)
+
         self.zoomMenu.hide()  # hide widget
         self.zoomMenu.hidden = True  # set zoom menu to be hidden
     # subroutine for when world button is selected (resets map back to original overview of map)
@@ -639,18 +642,23 @@ class Ui_mainMenu(object):
         self.World_greatW_3.show()
         self.World_greatW_2.show()
 
-        self.NA_blueW.hide()
-        self.NA_blueW_3.hide()
-        self.NA_blueW_4.hide()
-        self.NA_SpermW.hide()
-        self.NA_finW.hide()
-        self.NA_humpW.hide()
         self.AUS_humpW_2.hide()
+        self.AUS_headS.hide()
+        self.AUS_SpermW.hide()
+        self.AUS_SpermW_2.hide()
+        self.AUS_humpW.hide()
+        self.AUS_greatwS.hide()
+        self.AUS_greatwS_2.hide()
         self.AF_headS.hide()
         self.AF_headS_3.hide()
         self.AF_headS_2.hide()
         self.AF_greatwS_3.hide()
         self.AF_blueW.hide()
+        self.AS_SpermW.hide()
+        self.AS_headS.hide()
+        self.AS_headS_2.hide()
+        self.AS_greatwS_2.hide()
+        self.AS_greatwS.hide()
         self.AS_SpermW_2.hide()
         self.NA_blueW.hide()
         self.NA_blueW_3.hide()
@@ -658,14 +666,24 @@ class Ui_mainMenu(object):
         self.NA_SpermW.hide()
         self.NA_finW.hide()
         self.NA_humpW.hide()
+        self.NA_greatwS.hide()
+        self.SA_greatwS.hide()
+        self.SA_spermW.hide()
+        self.Main_hump.show()
+        self.Main_furSeal.show()
+        self.Main_monkSeal.show()
+        self.Main_finw.show()
+        self.Main_blueW.show()
 
         self.Main_finw.setGeometry(QtCore.QRect(500, 160, 61, 41))
         self.Main_hump.setGeometry(QtCore.QRect(860, 280, 61, 41))
-        self.Main_Hhead.setGeometry(QtCore.QRect(470, 410, 61, 41))
-        self.Main_blueW.setGeometry(QtCore.QRect(680, 150, 61, 41))
+        self.Main_Hhead.setGeometry(QtCore.QRect(410, 260, 61, 41))
+        self.Main_blueW.setGeometry(QtCore.QRect(360, 410, 61, 41))
         self.Main_SpermW.setGeometry(QtCore.QRect(540, 460, 61, 41))
         self.Main_furSeal.setGeometry(QtCore.QRect(1161, 140, 61, 41))
         self.Main_greatW.setGeometry(QtCore.QRect(1180, 400, 61, 41))
+        self.Main_monkSeal.setGeometry(QtCore.QRect(200, 260, 51, 61))
+
 
     def show_north(self):
         self.imageWorld.setPixmap(QtGui.QPixmap("North_america.svg"))
@@ -704,6 +722,11 @@ class Ui_mainMenu(object):
         self.AF_blueW.hide()
         self.AS_SpermW_2.hide()
         self.Main_monkSeal.hide()
+        self.Main_furSeal.show()
+        self.Main_blueW.show()
+        self.Main_finw.show()
+        self.Main_hump.show()
+
 
         self.NA_blueW.show()
         self.NA_blueW_3.show()
@@ -761,13 +784,13 @@ class Ui_mainMenu(object):
         self.AS_SpermW_2.hide()
         self.Main_finw.hide()
         self.Main_furSeal.hide()
-
-
         self.SA_greatwS.show()
+        self.Main_hump.show()
+        self.Main_blueW.show()
         self.Main_monkSeal.show()
         self.Main_monkSeal.setGeometry(QtCore.QRect(280, 210, 61, 41))
         self.Main_hump.setGeometry(QtCore.QRect(570, 240, 61, 41))
-        self.Main_Hhead.setGeometry(QtCore.QRect(680, 150, 61, 41))
+        self.Main_Hhead.setGeometry(QtCore.QRect(680, 110, 61, 41))
         self.Main_blueW.setGeometry(QtCore.QRect(720, 370, 61, 41))
         self.Main_SpermW.setGeometry(QtCore.QRect(1140, 410, 61, 41))
         self.Main_greatW.setGeometry(QtCore.QRect(600, 300, 61, 41))
@@ -805,14 +828,13 @@ class Ui_mainMenu(object):
         self.Main_blueW.hide()
         self.Main_furSeal.hide()
         self.SA_greatwS.hide()
-
+        self.Main_monkSeal.hide()
         self.AS_SpermW.show()
         self.AS_greatwS.show()
         self.AS_greatwS_2.show()
         self.AS_headS.show()
         self.AS_headS_2.show()
-
-
+        self.Main_hump.show()
         self.Main_hump.setGeometry(QtCore.QRect(510, 390, 61, 41))
         self.Main_Hhead.setGeometry(QtCore.QRect(710, 420, 61, 41))
         self.Main_SpermW.setGeometry(QtCore.QRect(1130, 260, 61, 41))
@@ -841,10 +863,8 @@ class Ui_mainMenu(object):
         self.AF_greatwS_3.hide()
         self.AF_blueW.hide()
         self.AS_SpermW_2.show()
-        self.Main_furSeal.hide()
-        self.Main_furSeal.hide()
-        self.Main_monkSeal.hide()
         self.SA_greatwS.hide()
+        self.AS_SpermW_2.hide()
 
         self.AS_SpermW.hide()
         self.AS_greatwS.hide()
@@ -859,6 +879,12 @@ class Ui_mainMenu(object):
         self.AUS_SpermW_2.show()
         self.AUS_humpW.show()
         self.AUS_humpW_2.show()
+        self.Main_finw.show()
+        self.Main_furSeal.hide()
+        self.Main_monkSeal.hide()
+        self.Main_blueW.show()
+        self.Main_hump.show()
+
 
         self.Main_hump.setGeometry(QtCore.QRect(650, 350, 61, 41))
         self.Main_Hhead.setGeometry(QtCore.QRect(1020, 540, 61, 41))
@@ -885,12 +911,7 @@ class Ui_mainMenu(object):
         self.NA_finW.hide()
         self.NA_humpW.hide()
         self.AS_SpermW_2.hide()
-        self.Main_furSeal.hide()
-        self.Main_furSeal.hide()
-        self.Main_monkSeal.hide()
-        self.Main_hump.hide()
         self.SA_greatwS.hide()
-
         self.AS_SpermW.hide()
         self.AS_greatwS.hide()
         self.AS_greatwS_2.hide()
@@ -910,6 +931,12 @@ class Ui_mainMenu(object):
         self.AF_greatwS_3.show()
         self.AF_blueW.show()
 
+        self.Main_blueW.show()
+        self.Main_finw.show()
+        self.Main_finw.show()
+        self.Main_furSeal.hide()
+        self.Main_monkSeal.hide()
+        self.Main_hump.hide()
         self.Main_Hhead.setGeometry(QtCore.QRect(1240, 430, 61, 41))
         self.Main_SpermW.setGeometry(QtCore.QRect(640, 440, 61, 41))
         self.Main_greatW.setGeometry(QtCore.QRect(1120, 570, 61, 41))
@@ -924,6 +951,14 @@ class Ui_mainMenu(object):
         else:
             self.zoomMenu.hide()  # hides zoom menu as if it is not hidden it must be shown
             self.zoomMenu.hidden = True  # sets hidden varibale to true
+
+    def Show_monkInfo(self):
+        self.window = QtWidgets.QDialog()
+        self.ui = Information()
+        self.ui.setupUi(self.window)
+        self.window.show()
+
+
 
 
     def retranslateUi(self, mainMenu):

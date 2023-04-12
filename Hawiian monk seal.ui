@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Dialog</class>
- <widget class="QDialog" name="Dialog">
+ <class>Information</class>
+ <widget class="QDialog" name="Information">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
     <width>770</width>
-    <height>599</height>
+    <height>667</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -31,7 +31,7 @@ font: 18pt &quot;Palatino Linotype&quot;;</string>
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>../Hawaiian-Monk-Seal.webp</pixmap>
+    <pixmap>hawaii-monk-seal.jpg</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>

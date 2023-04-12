@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>information</class>
- <widget class="QDialog" name="information">
+ <class>information_Fur</class>
+ <widget class="QDialog" name="information_Fur">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -51,7 +51,7 @@ color: rgb(255, 170, 255);
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>../northern-fur-seal.png</pixmap>
+    <pixmap>northern-fur-seal.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
