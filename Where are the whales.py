@@ -9,6 +9,8 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5.QtCore import QDate
+from PyQt5.QtCore import *
 from MonkSeal import Information
 from BlueWhale import Info_BW
 from Fin import Info_fw
@@ -17,6 +19,7 @@ from Greatwhite import Info_GWS
 from HammerH import Info_HH
 from Humpback import Info_hump
 from SpermWhale import Info_sw
+from Prediction import prediction_NA
 class Ui_mainMenu(object):
     def setupUi(self, mainMenu):
         mainMenu.setObjectName("mainMenu")
@@ -34,19 +37,19 @@ class Ui_mainMenu(object):
         self.menu.setGeometry(QtCore.QRect(0, 50, 201, 581))
         self.menu.setObjectName("menu")
         self.searchBut = QtWidgets.QPushButton(self.menu)
-        self.searchBut.setGeometry(QtCore.QRect(0, 140, 201, 31))
+        self.searchBut.setGeometry(QtCore.QRect(0, 110, 201, 31))
         self.searchBut.setStyleSheet("font: 16pt \"Palatino Linotype\";\n"
                                         "background-color: rgb(77, 98, 175);\n"
                                         "color: rgb(255, 255, 255);")
         self.searchBut.setObjectName("searchBut")
         self.overlayBut = QtWidgets.QPushButton(self.menu)
-        self.overlayBut.setGeometry(QtCore.QRect(0, 230, 201, 31))
+        self.overlayBut.setGeometry(QtCore.QRect(0, 190, 201, 31))
         self.overlayBut.setStyleSheet("background-color: rgb(77, 98, 175);\n"
                                           "color: rgb(255, 255, 255);\n"
                                           "font: 16pt \"Palatino Linotype\";")
         self.overlayBut.setObjectName("overlayBut")
         self.sightingBut = QtWidgets.QPushButton(self.menu)
-        self.sightingBut.setGeometry(QtCore.QRect(0, 330, 201, 31))
+        self.sightingBut.setGeometry(QtCore.QRect(0, 290, 201, 31))
         self.sightingBut.setStyleSheet("background-color: rgb(77, 98, 175);\n"
                                            "color: rgb(255, 255, 255);\n"
                                            "font: 16pt \"Palatino Linotype\";")
@@ -54,6 +57,47 @@ class Ui_mainMenu(object):
         self.graphicsView = QtWidgets.QGraphicsView(self.menu)
         self.graphicsView.setGeometry(QtCore.QRect(200, 60, 256, 192))
         self.graphicsView.setObjectName("graphicsView")
+        self.Prediction = QtWidgets.QPushButton(self.menu)
+        self.Prediction.setGeometry(QtCore.QRect(0, 390, 201, 31))
+        self.Prediction.setStyleSheet("font: 16pt \"Palatino Linotype\";\n"
+                                      "background-color: rgb(77, 98, 175);\n"
+                                      "color: rgb(255, 255, 255);")
+        self.Prediction.setObjectName("Prediction")
+        self.Predict_menu = QtWidgets.QWidget(self.menu)
+        self.Predict_menu.setGeometry(QtCore.QRect(30, 420, 141, 171))
+        self.Predict_menu.setStyleSheet("background-color: rgb(77, 98, 175);")
+        self.Predict_menu.setObjectName("Predict_menu")
+        self.bw = QtWidgets.QPushButton(self.Predict_menu)
+        self.bw.setGeometry(QtCore.QRect(10, 10, 121, 23))
+        self.bw.setStyleSheet("color: rgb(77, 98, 175);\n"
+                              "font: 8pt \"Palatino Linotype\";\n"
+                              "\n"
+                              "background-color: rgb(255, 255, 255);\n"
+                              "")
+        self.bw.setObjectName("bw")
+        self.fw = QtWidgets.QPushButton(self.Predict_menu)
+        self.fw.setGeometry(QtCore.QRect(10, 40, 121, 23))
+        self.fw.setStyleSheet("background-color: rgb(255, 255, 255);\n"
+                              "color: rgb(77, 98, 175);")
+        self.fw.setObjectName("fw")
+        self.hb = QtWidgets.QPushButton(self.Predict_menu)
+        self.hb.setGeometry(QtCore.QRect(10, 70, 121, 23))
+        self.hb.setStyleSheet("background-color: rgb(255, 255, 255);\n"
+                              "color: rgb(77, 98, 175);\n"
+                              "")
+        self.hb.setObjectName("hb")
+        self.sw = QtWidgets.QPushButton(self.Predict_menu)
+        self.sw.setGeometry(QtCore.QRect(10, 100, 121, 23))
+        self.sw.setStyleSheet("background-color: rgb(255, 255, 255);\n"
+                              "color: rgb(77, 98, 175);\n"
+                              "")
+        self.sw.setObjectName("sw")
+        self.close = QtWidgets.QPushButton(self.Predict_menu)
+        self.close.setGeometry(QtCore.QRect(10, 130, 121, 23))
+        self.close.setStyleSheet("background-color: rgb(255, 255, 255);\n"
+                                "color: rgb(77, 98, 175);\n"
+                                "")
+        self.close.setObjectName("close")
         self.imageWorld = QtWidgets.QLabel(self.centralwidget)
         self.imageWorld.setGeometry(QtCore.QRect(200, 70, 1141, 571))
         self.imageWorld.setText("")
@@ -105,14 +149,7 @@ class Ui_mainMenu(object):
         self.world.setStyleSheet("background-color: rgb(255, 255, 255);\n"
                                      "color: rgb(77, 98, 175);")
         self.world.setObjectName("world")
-        self.exit = QtWidgets.QPushButton(self.zoomMenu)
-        self.exit.setGeometry(QtCore.QRect(90, 0, 21, 21))
-        self.exit.setText("")
-        icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("../../../../../Downloads/gross-dark-cross.png"), QtGui.QIcon.Normal,
-                       QtGui.QIcon.Off)
-        self.exit.setIcon(icon)
-        self.exit.setObjectName("exit")
+
         self.Main_blueW = QtWidgets.QPushButton(self.centralwidget)
         self.Main_blueW.setGeometry(QtCore.QRect(360, 410, 61, 41))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
@@ -537,7 +574,26 @@ class Ui_mainMenu(object):
         self.AS_SpermW_2.setPixmap(QtGui.QPixmap("spermWhale.png"))
         self.AS_SpermW_2.setScaledContents(True)
         self.AS_SpermW_2.setObjectName("AS_SpermW_2")
-
+        self.instructions = QtWidgets.QLabel(self.centralwidget)
+        self.instructions.setGeometry(QtCore.QRect(540, 40, 501, 20))
+        self.instructions.setStyleSheet("background-color: rgb(246, 208, 255);\n"
+                                        "font: 14pt \"Palatino Linotype\";")
+        self.instructions.setObjectName("instructions")
+        self.month = QtWidgets.QLineEdit(self.centralwidget)
+        self.month.setGeometry(QtCore.QRect(1062, 39, 121, 21))
+        self.month.setStyleSheet("background-color: rgb(246, 208, 255);\n"
+                                 "font: 14pt \"Palatino Linotype\";")
+        self.month.setObjectName("month")
+        self.enter = QtWidgets.QPushButton(self.centralwidget)
+        self.enter.setGeometry(QtCore.QRect(1200, 30, 91, 31))
+        self.enter.setStyleSheet("background-color: rgb(77, 98, 175);\n"
+                                 "font: 14pt \"Palatino Linotype\";\n"
+                                 "\n"
+                                 "color: rgb(255, 255, 255);")
+        self.enter.setObjectName("enter")
+        self.month.hide()
+        self.enter.hide()
+        self.instructions.hide()
         self.imageWorld.raise_()
         self.heading.raise_()
         self.menu.raise_()
@@ -585,6 +641,9 @@ class Ui_mainMenu(object):
         self.AF_greatwS_3.raise_()
         self.AF_blueW.raise_()
         self.AS_SpermW_2.raise_()
+        self.month.raise_()
+        self.enter.raise_()
+        self.instructions.raise_()
         mainMenu.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(mainMenu)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 1355, 21))
@@ -620,11 +679,17 @@ class Ui_mainMenu(object):
         self.World_hump_2.clicked.connect(self.show_humpInfo)
         self.Main_SpermW.clicked.connect(self.show_spermWInfo)
         self.World_SpermW_2.clicked.connect(self.show_spermWInfo)
+        self.Prediction.clicked.connect(self.show_predictMenu)
+        self.bw.clicked.connect(self.show_predictionBW)
+        self.close.clicked.connect(self.close_predict)
+
 
 
 
         self.zoomMenu.hide()  # hide widget
         self.zoomMenu.hidden = True  # set zoom menu to be hidden
+        self.Predict_menu.hide()
+        self.Predict_menu.hidden = True
     # subroutine for when world button is selected (resets map back to original overview of map)
         self.NA_blueW.hide()# setting all icons not on main world map to hidden
         self.NA_blueW_3.hide()
@@ -699,6 +764,10 @@ class Ui_mainMenu(object):
         self.Main_finw.show()
         self.Main_blueW.show()
 
+        self.Main_Hhead.show()
+        self.Main_SpermW.show()
+        self.Main_greatW.show()
+
         self.Main_finw.setGeometry(QtCore.QRect(500, 160, 61, 41))
         self.Main_hump.setGeometry(QtCore.QRect(860, 280, 61, 41))
         self.Main_Hhead.setGeometry(QtCore.QRect(410, 260, 61, 41))
@@ -750,6 +819,10 @@ class Ui_mainMenu(object):
         self.Main_blueW.show()
         self.Main_finw.show()
         self.Main_hump.show()
+
+        self.Main_Hhead.show()
+        self.Main_SpermW.show()
+        self.Main_greatW.show()
 
 
         self.NA_blueW.show()
@@ -812,6 +885,11 @@ class Ui_mainMenu(object):
         self.Main_hump.show()
         self.Main_blueW.show()
         self.Main_monkSeal.show()
+
+        self.Main_Hhead.show()
+        self.Main_SpermW.show()
+        self.Main_greatW.show()
+
         self.Main_monkSeal.setGeometry(QtCore.QRect(280, 210, 61, 41))
         self.Main_hump.setGeometry(QtCore.QRect(570, 240, 61, 41))
         self.Main_Hhead.setGeometry(QtCore.QRect(680, 110, 61, 41))
@@ -858,6 +936,10 @@ class Ui_mainMenu(object):
         self.AS_greatwS_2.show()
         self.AS_headS.show()
         self.AS_headS_2.show()
+
+        self.Main_Hhead.show()
+        self.Main_SpermW.show()
+        self.Main_greatW.show()
         self.Main_hump.show()
         self.Main_hump.setGeometry(QtCore.QRect(510, 390, 61, 41))
         self.Main_Hhead.setGeometry(QtCore.QRect(710, 420, 61, 41))
@@ -908,6 +990,10 @@ class Ui_mainMenu(object):
         self.Main_monkSeal.hide()
         self.Main_blueW.show()
         self.Main_hump.show()
+
+        self.Main_Hhead.show()
+        self.Main_SpermW.show()
+        self.Main_greatW.show()
 
 
         self.Main_hump.setGeometry(QtCore.QRect(650, 350, 61, 41))
@@ -961,6 +1047,10 @@ class Ui_mainMenu(object):
         self.Main_furSeal.hide()
         self.Main_monkSeal.hide()
         self.Main_hump.hide()
+
+        self.Main_Hhead.show()
+        self.Main_SpermW.show()
+        self.Main_greatW.show()
         self.Main_Hhead.setGeometry(QtCore.QRect(1240, 430, 61, 41))
         self.Main_SpermW.setGeometry(QtCore.QRect(640, 440, 61, 41))
         self.Main_greatW.setGeometry(QtCore.QRect(1120, 570, 61, 41))
@@ -987,6 +1077,7 @@ class Ui_mainMenu(object):
         self.ui = Info_BW()
         self.ui.setupUi(self.window)
         self.window.show()
+
 
     def show_finInfo(self):
         self.window = QtWidgets.QDialog()
@@ -1023,6 +1114,78 @@ class Ui_mainMenu(object):
         self.ui = Info_sw()
         self.ui.setupUi(self.window)
         self.window.show()
+
+    def show_predictionBW(self):
+        self.imageWorld.setPixmap(QtGui.QPixmap("North_america.svg"))
+        self.World_blueW_2.hide()
+        self.World_blueW_3.hide()
+        self.World_Hhead_3.hide()
+        self.World_Hhead_2.hide()
+        self.World_SpermW_2.hide()
+        self.World_hump_2.hide()
+        self.World_greatW_3.hide()
+        self.World_greatW_2.hide()
+
+        self.AUS_humpW_2.hide()
+        self.AUS_headS.hide()
+        self.AUS_SpermW.hide()
+        self.AUS_SpermW_2.hide()
+        self.AUS_humpW.hide()
+        self.AUS_greatwS.hide()
+        self.AUS_greatwS_2.hide()
+        self.AF_headS.hide()
+        self.AF_headS_3.hide()
+        self.AF_headS_2.hide()
+        self.AF_greatwS_3.hide()
+        self.AF_blueW.hide()
+        self.AS_SpermW.hide()
+        self.AS_headS.hide()
+        self.AS_headS_2.hide()
+        self.AS_greatwS_2.hide()
+        self.AS_greatwS.hide()
+        self.AS_SpermW_2.hide()
+        self.NA_blueW.hide()
+        self.NA_blueW_3.hide()
+        self.NA_blueW_4.hide()
+        self.NA_SpermW.hide()
+        self.NA_finW.hide()
+        self.NA_humpW.hide()
+        self.NA_greatwS.hide()
+        self.SA_greatwS.hide()
+        self.SA_spermW.hide()
+        self.Main_hump.hide()
+        self.Main_furSeal.hide()
+        self.Main_monkSeal.hide()
+        self.Main_finw.hide()
+        self.Main_blueW.show()
+        self.Main_Hhead.hide()
+        self.Main_SpermW.hide()
+        self.Main_greatW.hide()
+        self.zoom.hide()
+        self.zoomMenu.hide()
+        self.month.show()
+        self.instructions.show()
+        self.enter.show()
+
+
+
+    def close_predict(self):
+        self.month.hide()
+        self.instructions.hide()
+        self.enter.hide()
+        self.zoom.show()
+    def show_predictMenu(self):
+        if self.Predict_menu.hidden:  # checks whether it is shown or hidden
+            self.Predict_menu.show()  # shows the zoom menu
+            self.Predict_menu.hidden = False  # sets hidden variable to false
+        else:
+            self.Predict_menu.hide()  # hides zoom menu as if it is not hidden it must be shown
+            self.Predict_menu.hidden = True  # sets hidden varibale to true
+
+    def valide_month(self):
+        user_month = self.month.text()
+        if user_month == "October":
+
     def retranslateUi(self, mainMenu):
         _translate = QtCore.QCoreApplication.translate
         mainMenu.setWindowTitle(_translate("mainMenu", "MainWindow"))
@@ -1030,6 +1193,12 @@ class Ui_mainMenu(object):
         self.searchBut.setText(_translate("mainMenu", "Search"))
         self.overlayBut.setText(_translate("mainMenu", "Overlays"))
         self.sightingBut.setText(_translate("mainMenu", "Sightings"))
+        self.Prediction.setText(_translate("mainMenu", "Prediction"))
+        self.bw.setText(_translate("mainMenu", "Blue Whale"))
+        self.fw.setText(_translate("mainMenu", "Fin whale"))
+        self.hb.setText(_translate("mainMenu", "Humpback whale"))
+        self.sw.setText(_translate("mainMenu", "Sperm Whale"))
+        self.close.setText(_translate("mainMenu", "Close"))
         self.zoom.setText(_translate("mainMenu", "Zoom in"))
         self.northA.setText(_translate("mainMenu", "North America"))
         self.southA.setText(_translate("mainMenu", "South America"))
@@ -1037,6 +1206,10 @@ class Ui_mainMenu(object):
         self.australia.setText(_translate("mainMenu", "Australia"))
         self.africa.setText(_translate("mainMenu", "Africa"))
         self.world.setText(_translate("mainMenu", "Zoom Out"))
+
+        self.enter.setText(_translate("mainMenu", "Enter"))
+        self.instructions.setText(_translate("mainMenu", "Set the date for when you want to see where Whales will be:"))
+
 
 
 if __name__ == "__main__":

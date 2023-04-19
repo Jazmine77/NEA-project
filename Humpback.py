@@ -36,9 +36,9 @@ class Info_hump(object):
         self.photo.setPixmap(QtGui.QPixmap("C:\\Users\\neals\\Documents\\computer science\\NEA-project\\hbw.png"))
         self.photo.setScaledContents(True)
         self.photo.setObjectName("photo")
-        self.prediction = QtWidgets.QPushButton(Info_hump)
-        self.prediction.setGeometry(QtCore.QRect(450, 430, 241, 61))
-        self.prediction.setObjectName("prediction")
+        self.prediction_hb = QtWidgets.QPushButton(Info_hump)
+        self.prediction_hb.setGeometry(QtCore.QRect(450, 430, 241, 61))
+        self.prediction_hb.setObjectName("prediction")
 
         self.retranslateUi(Info_hump)
         QtCore.QMetaObject.connectSlotsByName(Info_hump)
@@ -60,7 +60,7 @@ class Info_hump(object):
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:20pt; font-style:italic; color:#ffaaff;\">Life span: </span><span style=\" color:#000000;\"> 80-90 years </span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:20pt; font-style:italic; color:#ffaaff;\">Description</span><span style=\" color:#000000;\">: Bodies are primarily black but individuals have varying amount of white markings on their pectoral fins,bellies and tails They can grow up to 16 metres in length and have 30 broad ventral grooves on throat and chest.</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"https://uk.whales.org/support/adopt/humpback/\"><span style=\" text-decoration: underline; color:#0000ff;\">Adopt a humpback whale</span></a></p></body></html>"))
-        self.prediction.setText(_translate("Info_hump", "Predicted movement"))
+        self.prediction_hb.setText(_translate("Info_hump", "Predicted movement"))
 
 
 if __name__ == "__main__":
