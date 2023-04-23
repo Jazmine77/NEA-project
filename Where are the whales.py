@@ -19,7 +19,8 @@ from Greatwhite import Info_GWS
 from HammerH import Info_HH
 from Humpback import Info_hump
 from SpermWhale import Info_sw
-from Prediction import prediction_NA
+from datetime import datetime
+
 class Ui_mainMenu(object):
     def setupUi(self, mainMenu):
         mainMenu.setObjectName("mainMenu")
@@ -98,6 +99,20 @@ class Ui_mainMenu(object):
                                 "color: rgb(77, 98, 175);\n"
                                 "")
         self.close.setObjectName("close")
+        self.key = QtWidgets.QLabel(self.menu)
+        self.key.setGeometry(QtCore.QRect(10, 20, 181, 51))
+        self.key.setStyleSheet("background-color: rgb(246, 208, 255);\n"
+                               "color: rgb(0, 0, 0);\n"
+                               "font: 11pt \"Palatino Linotype\";")
+        self.key.setObjectName("key")
+        self.key_cross = QtWidgets.QLabel(self.menu)
+        self.key_cross.setGeometry(QtCore.QRect(20, 30, 41, 41))
+        self.key_cross.setStyleSheet("background-color: rgb(246, 208, 255);")
+        self.key_cross.setText("")
+        self.key_cross.setPixmap(QtGui.QPixmap(
+            "../../../Downloads/kisspng-font-awesome-computer-icons-symbol-cross-eye-5ade2087697f36.1985684515245067594321.png"))
+        self.key_cross.setScaledContents(True)
+        self.key_cross.setObjectName("key_cross")
         self.imageWorld = QtWidgets.QLabel(self.centralwidget)
         self.imageWorld.setGeometry(QtCore.QRect(200, 70, 1141, 571))
         self.imageWorld.setText("")
@@ -591,6 +606,29 @@ class Ui_mainMenu(object):
                                  "\n"
                                  "color: rgb(255, 255, 255);")
         self.enter.setObjectName("enter")
+        self.location_now = QtWidgets.QLabel(self.centralwidget)
+        self.location_now.setGeometry(QtCore.QRect(480, 330, 41, 41))
+        self.location_now.setStyleSheet("background-color: rgb(200, 234, 251);")
+        self.location_now.setText("")
+        self.location_now.setPixmap(QtGui.QPixmap(
+            "../../../Downloads/kisspng-font-awesome-computer-icons-symbol-cross-eye-5ade2087697f36.1985684515245067594321.png"))
+        self.location_now.setScaledContents(True)
+        self.location_now.setObjectName("location_now")
+        self.SA_dot = QtWidgets.QLabel(self.centralwidget)
+        self.SA_dot.setGeometry(QtCore.QRect(200, 160, 101, 51))
+        self.SA_dot.setStyleSheet("background-color: rgb(200, 235, 255);")
+        self.SA_dot.setText("")
+        self.SA_dot.setScaledContents(True)
+        self.SA_dot.setObjectName("SA_dot")
+
+        self.SA_dot.raise_()
+        self.SA_dot.hide()
+        self.key.hide()
+        self.key.raise_()
+        self.key_cross.hide()
+        self.key_cross.raise_()
+        self.location_now.hide()
+        self.location_now.raise_()
         self.month.hide()
         self.enter.hide()
         self.instructions.hide()
@@ -681,7 +719,9 @@ class Ui_mainMenu(object):
         self.World_SpermW_2.clicked.connect(self.show_spermWInfo)
         self.Prediction.clicked.connect(self.show_predictMenu)
         self.bw.clicked.connect(self.show_predictionBW)
+
         self.close.clicked.connect(self.close_predict)
+        self.enter.clicked.connect(self.valide_month)
 
 
 
@@ -758,6 +798,7 @@ class Ui_mainMenu(object):
         self.NA_greatwS.hide()
         self.SA_greatwS.hide()
         self.SA_spermW.hide()
+        self.SA_dot.hide()
         self.Main_hump.show()
         self.Main_furSeal.show()
         self.Main_monkSeal.show()
@@ -796,6 +837,7 @@ class Ui_mainMenu(object):
         self.NA_humpW.hide()
         self.SA_spermW.hide()
         self.SA_greatwS.hide()
+        self.SA_dot.hide()
         self.AS_SpermW.hide()
         self.AS_greatwS.hide()
         self.AS_greatwS_2.hide()
@@ -882,6 +924,7 @@ class Ui_mainMenu(object):
         self.Main_finw.hide()
         self.Main_furSeal.hide()
         self.SA_greatwS.show()
+        self.SA_dot.show()
         self.Main_hump.show()
         self.Main_blueW.show()
         self.Main_monkSeal.show()
@@ -930,7 +973,10 @@ class Ui_mainMenu(object):
         self.Main_blueW.hide()
         self.Main_furSeal.hide()
         self.SA_greatwS.hide()
+        self.SA_dot.hide()
         self.Main_monkSeal.hide()
+
+        self.SA_spermW.hide()
         self.AS_SpermW.show()
         self.AS_greatwS.show()
         self.AS_greatwS_2.show()
@@ -970,6 +1016,8 @@ class Ui_mainMenu(object):
         self.AF_blueW.hide()
         self.AS_SpermW_2.show()
         self.SA_greatwS.hide()
+        self.SA_dot.hide()
+        self.SA_spermW.hide()
         self.AS_SpermW_2.hide()
 
         self.AS_SpermW.hide()
@@ -1022,6 +1070,8 @@ class Ui_mainMenu(object):
         self.NA_humpW.hide()
         self.AS_SpermW_2.hide()
         self.SA_greatwS.hide()
+        self.SA_dot.hide()
+        self.SA_spermW.hide()
         self.AS_SpermW.hide()
         self.AS_greatwS.hide()
         self.AS_greatwS_2.hide()
@@ -1115,6 +1165,7 @@ class Ui_mainMenu(object):
         self.ui.setupUi(self.window)
         self.window.show()
 
+    current_month = datetime.now().month
     def show_predictionBW(self):
         self.imageWorld.setPixmap(QtGui.QPixmap("North_america.svg"))
         self.World_blueW_2.hide()
@@ -1153,6 +1204,7 @@ class Ui_mainMenu(object):
         self.NA_greatwS.hide()
         self.SA_greatwS.hide()
         self.SA_spermW.hide()
+        self.SA_dot.hide()
         self.Main_hump.hide()
         self.Main_furSeal.hide()
         self.Main_monkSeal.hide()
@@ -1161,11 +1213,27 @@ class Ui_mainMenu(object):
         self.Main_Hhead.hide()
         self.Main_SpermW.hide()
         self.Main_greatW.hide()
+
         self.zoom.hide()
         self.zoomMenu.hide()
         self.month.show()
         self.instructions.show()
         self.enter.show()
+        self.Main_blueW.show()
+        self.key.show()
+        self.key_cross.show()
+        self.location_now.show()
+
+    def valide_month(self):
+        current_month = datetime.now()
+        current_month = current_month.strftime("%m")
+        if current_month == "04":
+            self.Main_blueW.setGeometry(QtCore.QRect(0, 0, 61, 41))
+        else:
+            self.Main_blueW.setGeometry(QtCore.QRect(89, 0, 61, 41))
+
+
+
 
 
 
@@ -1174,6 +1242,9 @@ class Ui_mainMenu(object):
         self.instructions.hide()
         self.enter.hide()
         self.zoom.show()
+        self.key.hide()
+        self.key_cross.hide()
+        self.location_now.hide()
     def show_predictMenu(self):
         if self.Predict_menu.hidden:  # checks whether it is shown or hidden
             self.Predict_menu.show()  # shows the zoom menu
@@ -1182,9 +1253,17 @@ class Ui_mainMenu(object):
             self.Predict_menu.hide()  # hides zoom menu as if it is not hidden it must be shown
             self.Predict_menu.hidden = True  # sets hidden varibale to true
 
-    def valide_month(self):
+    def date(self):
+        x= 0
+        y= 0
         user_month = self.month.text()
         if user_month == "October":
+            x = x + 1
+            y = y + 1
+
+            self.Main_blueW.setGeometry(QtCore.QRect(x, y, 61, 41))
+        else:
+            self.Main_blueW.setGeometry(QtCore.QRect(1161, 141, 61, 41))
 
     def retranslateUi(self, mainMenu):
         _translate = QtCore.QCoreApplication.translate
@@ -1199,6 +1278,7 @@ class Ui_mainMenu(object):
         self.hb.setText(_translate("mainMenu", "Humpback whale"))
         self.sw.setText(_translate("mainMenu", "Sperm Whale"))
         self.close.setText(_translate("mainMenu", "Close"))
+        self.key.setText(_translate("mainMenu", "             : Current Location"))
         self.zoom.setText(_translate("mainMenu", "Zoom in"))
         self.northA.setText(_translate("mainMenu", "North America"))
         self.southA.setText(_translate("mainMenu", "South America"))
