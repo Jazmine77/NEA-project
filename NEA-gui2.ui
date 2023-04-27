@@ -264,7 +264,7 @@ font: 11pt &quot;Palatino Linotype&quot;;</string>
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap>../../../Downloads/kisspng-font-awesome-computer-icons-symbol-cross-eye-5ade2087697f36.1985684515245067594321.png</pixmap>
+      <pixmap>cross.png</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
@@ -284,7 +284,7 @@ font: 11pt &quot;Palatino Linotype&quot;;</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>South_America.svg</pixmap>
+     <pixmap>world_map.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -312,8 +312,8 @@ color: rgb(255, 255, 255);</string>
    <widget class="QWidget" name="zoomMenu" native="true">
     <property name="geometry">
      <rect>
-      <x>1210</x>
-      <y>80</y>
+      <x>1220</x>
+      <y>70</y>
       <width>111</width>
       <height>191</height>
      </rect>
@@ -444,175 +444,6 @@ color: rgb(77, 98, 175);</string>
        <normaloff>../../../../../Downloads/gross-dark-cross.png</normaloff>../../../../../Downloads/gross-dark-cross.png</iconset>
      </property>
     </widget>
-    <widget class="QWidget" name="zoomMenu_2" native="true">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>0</y>
-       <width>111</width>
-       <height>191</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(77, 98, 175);</string>
-     </property>
-     <widget class="QPushButton" name="northA_2">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>10</y>
-        <width>75</width>
-        <height>23</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">color: rgb(77, 98, 175);
-font: 8pt &quot;Palatino Linotype&quot;;
-
-background-color: rgb(255, 255, 255);
-</string>
-      </property>
-      <property name="text">
-       <string>North America</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="southA_2">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>40</y>
-        <width>75</width>
-        <height>23</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(255, 255, 255);
-color: rgb(77, 98, 175);</string>
-      </property>
-      <property name="text">
-       <string>South America</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="asia_2">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>70</y>
-        <width>75</width>
-        <height>23</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(255, 255, 255);
-color: rgb(77, 98, 175);
-</string>
-      </property>
-      <property name="text">
-       <string>Asia</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="australia_2">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>100</y>
-        <width>75</width>
-        <height>23</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(255, 255, 255);
-color: rgb(77, 98, 175);</string>
-      </property>
-      <property name="text">
-       <string>Australia</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="africa_2">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>130</y>
-        <width>75</width>
-        <height>23</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(255, 255, 255);
-color: rgb(77, 98, 175);</string>
-      </property>
-      <property name="text">
-       <string>Africa</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="world_2">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>160</y>
-        <width>75</width>
-        <height>23</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(255, 255, 255);
-color: rgb(77, 98, 175);</string>
-      </property>
-      <property name="text">
-       <string>Zoom Out</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="exit_2">
-      <property name="geometry">
-       <rect>
-        <x>90</x>
-        <y>0</y>
-        <width>21</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="icon">
-       <iconset>
-        <normaloff>../../../../../Downloads/gross-dark-cross.png</normaloff>../../../../../Downloads/gross-dark-cross.png</iconset>
-      </property>
-     </widget>
-    </widget>
-   </widget>
-   <widget class="QPushButton" name="World_blueW">
-    <property name="geometry">
-     <rect>
-      <x>580</x>
-      <y>530</y>
-      <width>61</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">
-background-color: rgb(182, 220, 244);</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="icon">
-     <iconset>
-      <normaloff>Bluewhale.png</normaloff>Bluewhale.png</iconset>
-    </property>
-    <property name="iconSize">
-     <size>
-      <width>60</width>
-      <height>60</height>
-     </size>
-    </property>
    </widget>
    <widget class="QPushButton" name="World_blueW_2">
     <property name="geometry">
@@ -881,8 +712,8 @@ background-color: rgb(182, 220, 244);</string>
    <widget class="QPushButton" name="World_furSeal">
     <property name="geometry">
      <rect>
-      <x>1161</x>
-      <y>140</y>
+      <x>1170</x>
+      <y>130</y>
       <width>61</width>
       <height>41</height>
      </rect>
@@ -982,39 +813,6 @@ background-color: rgb(182, 220, 244);</string>
      <rect>
       <x>1180</x>
       <y>400</y>
-      <width>61</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-color: rgb(182, 220, 244);
-background-color: rgb(182, 220, 244);</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="icon">
-     <iconset>
-      <normaloff>../../../.designer/backup/GreatWshark.png</normaloff>../../../.designer/backup/GreatWshark.png</iconset>
-    </property>
-    <property name="iconSize">
-     <size>
-      <width>60</width>
-      <height>60</height>
-     </size>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="World_greatW_3">
-    <property name="geometry">
-     <rect>
-      <x>1120</x>
-      <y>190</y>
       <width>61</width>
       <height>41</height>
      </rect>
@@ -1656,8 +1454,8 @@ background-color: rgb(218, 240, 253);</string>
    <widget class="QLabel" name="instructions">
     <property name="geometry">
      <rect>
-      <x>540</x>
-      <y>40</y>
+      <x>480</x>
+      <y>50</y>
       <width>501</width>
       <height>20</height>
      </rect>
@@ -1667,47 +1465,14 @@ background-color: rgb(218, 240, 253);</string>
 font: 14pt &quot;Palatino Linotype&quot;;</string>
     </property>
     <property name="text">
-     <string>Set the date for when you want to see where Whales will be:</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="month">
-    <property name="geometry">
-     <rect>
-      <x>1062</x>
-      <y>39</y>
-      <width>121</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(246, 208, 255);
-font: 14pt &quot;Palatino Linotype&quot;;</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="zoom_2">
-    <property name="geometry">
-     <rect>
-      <x>1200</x>
-      <y>30</y>
-      <width>91</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(77, 98, 175);
-font: 14pt &quot;Palatino Linotype&quot;;
-
-color: rgb(255, 255, 255);</string>
-    </property>
-    <property name="text">
-     <string>Enter</string>
+     <string>Select a time period to see the future movment of the whale</string>
     </property>
    </widget>
    <widget class="QPushButton" name="World_blueW_4">
     <property name="geometry">
      <rect>
-      <x>510</x>
-      <y>450</y>
+      <x>570</x>
+      <y>510</y>
       <width>61</width>
       <height>41</height>
      </rect>
@@ -1739,8 +1504,8 @@ color: rgb(255, 255, 255);</string>
    <widget class="QPushButton" name="World_blueW_5">
     <property name="geometry">
      <rect>
-      <x>540</x>
-      <y>490</y>
+      <x>840</x>
+      <y>580</y>
       <width>61</width>
       <height>41</height>
      </rect>
@@ -1772,7 +1537,7 @@ color: rgb(255, 255, 255);</string>
    <widget class="QPushButton" name="World_blueW_6">
     <property name="geometry">
      <rect>
-      <x>840</x>
+      <x>890</x>
       <y>590</y>
       <width>61</width>
       <height>41</height>
@@ -1804,8 +1569,8 @@ color: rgb(255, 255, 255);</string>
    <widget class="QPushButton" name="World_blueW_7">
     <property name="geometry">
      <rect>
-      <x>470</x>
-      <y>450</y>
+      <x>760</x>
+      <y>580</y>
       <width>61</width>
       <height>41</height>
      </rect>
@@ -1819,39 +1584,6 @@ color: rgb(255, 255, 255);</string>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(255, 180, 29);
 </string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="icon">
-     <iconset>
-      <normaloff>Bluewhale.png</normaloff>Bluewhale.png</iconset>
-    </property>
-    <property name="iconSize">
-     <size>
-      <width>60</width>
-      <height>60</height>
-     </size>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="World_blueW_8">
-    <property name="geometry">
-     <rect>
-      <x>340</x>
-      <y>230</y>
-      <width>61</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">
-background-color: rgb(182, 220, 244);</string>
     </property>
     <property name="text">
      <string/>
@@ -1883,7 +1615,7 @@ background-color: rgb(182, 220, 244);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../Downloads/kisspng-font-awesome-computer-icons-symbol-cross-eye-5ade2087697f36.1985684515245067594321.png</pixmap>
+     <pixmap>cross.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1893,9 +1625,9 @@ background-color: rgb(182, 220, 244);</string>
     <property name="geometry">
      <rect>
       <x>200</x>
-      <y>160</y>
+      <y>170</y>
       <width>101</width>
-      <height>61</height>
+      <height>51</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -1904,11 +1636,404 @@ background-color: rgb(182, 220, 244);</string>
     <property name="text">
      <string/>
     </property>
-    <property name="pixmap">
-     <pixmap>../../../.designer/backup/spermWhale.png</pixmap>
-    </property>
     <property name="scaledContents">
-     <bool>true</bool>
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="World_blueW_9">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>540</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+background-color: rgb(255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Bluewhale.png</normaloff>Bluewhale.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>60</width>
+      <height>60</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="World_blueW_10">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>460</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+background-color: rgb(0, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Bluewhale.png</normaloff>Bluewhale.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>60</width>
+      <height>60</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="World_blueW_11">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>410</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(170, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Bluewhale.png</normaloff>Bluewhale.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>60</width>
+      <height>60</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="World_blueW_12">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>350</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 0, 127);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Bluewhale.png</normaloff>Bluewhale.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>60</width>
+      <height>60</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="World_blueW_13">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>280</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+background-color: rgb(255, 170, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Bluewhale.png</normaloff>Bluewhale.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>60</width>
+      <height>60</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="World_blueW_14">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>230</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(170, 0, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Bluewhale.png</normaloff>Bluewhale.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>60</width>
+      <height>60</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="World_blueW_15">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>420</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 85, 127);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Bluewhale.png</normaloff>Bluewhale.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>60</width>
+      <height>60</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="World_blueW_16">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>340</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Bluewhale.png</normaloff>Bluewhale.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>60</width>
+      <height>60</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="predict">
+    <property name="geometry">
+     <rect>
+      <x>990</x>
+      <y>30</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(77, 98, 175);
+font: 14pt &quot;Palatino Linotype&quot;;
+
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>predictions</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="time_menu" native="true">
+    <property name="geometry">
+     <rect>
+      <x>990</x>
+      <y>70</y>
+      <width>111</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(77, 98, 175);</string>
+    </property>
+    <widget class="QPushButton" name="threeMonths">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>91</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(77, 98, 175);
+font: 8pt &quot;Palatino Linotype&quot;;
+
+background-color: rgb(255, 255, 255);
+</string>
+     </property>
+     <property name="text">
+      <string>3 months</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="sixmonths">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>91</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(77, 98, 175);</string>
+     </property>
+     <property name="text">
+      <string>6 months</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="nineMonths">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>91</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(77, 98, 175);
+</string>
+     </property>
+     <property name="text">
+      <string>9 months</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="twelveMonths_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>91</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(77, 98, 175);</string>
+     </property>
+     <property name="text">
+      <string>12 months</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="World_greatW_3">
+    <property name="geometry">
+     <rect>
+      <x>1120</x>
+      <y>190</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-color: rgb(182, 220, 244);
+background-color: rgb(182, 220, 244);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../.designer/backup/GreatWshark.png</normaloff>../../../.designer/backup/GreatWshark.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>60</width>
+      <height>60</height>
+     </size>
     </property>
    </widget>
    <zorder>imageWorld</zorder>
@@ -1916,7 +2041,6 @@ background-color: rgb(182, 220, 244);</string>
    <zorder>menu</zorder>
    <zorder>zoom</zorder>
    <zorder>zoomMenu</zorder>
-   <zorder>World_blueW</zorder>
    <zorder>World_blueW_2</zorder>
    <zorder>World_blueW_3</zorder>
    <zorder>World_Hhead</zorder>
@@ -1929,7 +2053,6 @@ background-color: rgb(182, 220, 244);</string>
    <zorder>World_hump_2</zorder>
    <zorder>World_hump</zorder>
    <zorder>World_greatW</zorder>
-   <zorder>World_greatW_3</zorder>
    <zorder>World_greatW_2</zorder>
    <zorder>NA_blueW</zorder>
    <zorder>NA_blueW_3</zorder>
@@ -1958,15 +2081,23 @@ background-color: rgb(182, 220, 244);</string>
    <zorder>AF_blueW</zorder>
    <zorder>AS_SpermW_2</zorder>
    <zorder>instructions</zorder>
-   <zorder>month</zorder>
-   <zorder>zoom_2</zorder>
    <zorder>World_blueW_4</zorder>
    <zorder>World_blueW_5</zorder>
    <zorder>World_blueW_6</zorder>
    <zorder>World_blueW_7</zorder>
-   <zorder>World_blueW_8</zorder>
    <zorder>location_now</zorder>
    <zorder>SA_dot</zorder>
+   <zorder>World_blueW_9</zorder>
+   <zorder>World_blueW_10</zorder>
+   <zorder>World_blueW_11</zorder>
+   <zorder>World_blueW_12</zorder>
+   <zorder>World_blueW_13</zorder>
+   <zorder>World_blueW_14</zorder>
+   <zorder>World_blueW_15</zorder>
+   <zorder>World_blueW_16</zorder>
+   <zorder>predict</zorder>
+   <zorder>time_menu</zorder>
+   <zorder>World_greatW_3</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
