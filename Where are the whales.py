@@ -9,8 +9,6 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-from PyQt5.QtCore import QDate
-from PyQt5.QtCore import *
 from MonkSeal import Information
 from BlueWhale import Info_BW
 from Fin import Info_fw
@@ -21,7 +19,9 @@ from Humpback import Info_hump
 from SpermWhale import Info_sw
 from datetime import datetime
 
+
 class Ui_mainMenu(object):
+
     def setupUi(self, mainMenu):
         mainMenu.setObjectName("mainMenu")
         mainMenu.resize(1355, 675)
@@ -30,30 +30,26 @@ class Ui_mainMenu(object):
         self.centralwidget.setObjectName("centralwidget")
         self.heading = QtWidgets.QLabel(self.centralwidget)
         self.heading.setGeometry(QtCore.QRect(430, -10, 341, 61))
-        self.heading.setStyleSheet("color: rgb(77, 98, 175);\n"
-                                       "font: 24pt \"Palatino Linotype\";\n"
-                                       "text-decoration: underline;")
+        self.heading.setStyleSheet("color: rgb(77, 98, 175);\n""font: 24pt \"Palatino Linotype\";\n"
+                                   "text-decoration: underline;")
         self.heading.setObjectName("heading")
         self.menu = QtWidgets.QWidget(self.centralwidget)
         self.menu.setGeometry(QtCore.QRect(0, 50, 201, 581))
         self.menu.setObjectName("menu")
         self.searchBut = QtWidgets.QPushButton(self.menu)
         self.searchBut.setGeometry(QtCore.QRect(0, 110, 201, 31))
-        self.searchBut.setStyleSheet("font: 16pt \"Palatino Linotype\";\n"
-                                        "background-color: rgb(77, 98, 175);\n"
-                                        "color: rgb(255, 255, 255);")
+        self.searchBut.setStyleSheet("font: 16pt \"Palatino Linotype\";\n""background-color: rgb(77, 98, 175);\n"
+                                     "color: rgb(255, 255, 255);")
         self.searchBut.setObjectName("searchBut")
         self.overlayBut = QtWidgets.QPushButton(self.menu)
         self.overlayBut.setGeometry(QtCore.QRect(0, 190, 201, 31))
-        self.overlayBut.setStyleSheet("background-color: rgb(77, 98, 175);\n"
-                                          "color: rgb(255, 255, 255);\n"
-                                          "font: 16pt \"Palatino Linotype\";")
+        self.overlayBut.setStyleSheet("font: 16pt \"Palatino Linotype\";\n""background-color: rgb(77, 98, 175);\n"
+                                      "color: rgb(255, 255, 255);")
         self.overlayBut.setObjectName("overlayBut")
         self.sightingBut = QtWidgets.QPushButton(self.menu)
         self.sightingBut.setGeometry(QtCore.QRect(0, 290, 201, 31))
-        self.sightingBut.setStyleSheet("background-color: rgb(77, 98, 175);\n"
-                                           "color: rgb(255, 255, 255);\n"
-                                           "font: 16pt \"Palatino Linotype\";")
+        self.sightingBut.setStyleSheet("background-color: rgb(77, 98, 175);\n""color: rgb(255, 255, 255);\n"
+                                       "font: 16pt \"Palatino Linotype\";")
         self.sightingBut.setObjectName("sightingBut")
         self.graphicsView = QtWidgets.QGraphicsView(self.menu)
         self.graphicsView.setGeometry(QtCore.QRect(200, 60, 256, 192))
@@ -95,9 +91,7 @@ class Ui_mainMenu(object):
         self.sw.setObjectName("sw")
         self.close = QtWidgets.QPushButton(self.Predict_menu)
         self.close.setGeometry(QtCore.QRect(10, 130, 121, 23))
-        self.close.setStyleSheet("background-color: rgb(255, 255, 255);\n"
-                                "color: rgb(77, 98, 175);\n"
-                                "")
+        self.close.setStyleSheet("background-color: rgb(255, 255, 255);\n""color: rgb(77, 98, 175);\n""")
         self.close.setObjectName("close")
         self.key = QtWidgets.QLabel(self.menu)
         self.key.setGeometry(QtCore.QRect(10, 20, 181, 51))
@@ -109,8 +103,7 @@ class Ui_mainMenu(object):
         self.key_cross.setGeometry(QtCore.QRect(20, 30, 41, 41))
         self.key_cross.setStyleSheet("background-color: rgb(246, 208, 255);")
         self.key_cross.setText("")
-        self.key_cross.setPixmap(QtGui.QPixmap(
-            "../../../Downloads/kisspng-font-awesome-computer-icons-symbol-cross-eye-5ade2087697f36.1985684515245067594321.png"))
+        self.key_cross.setPixmap(QtGui.QPixmap("cross.png"))
         self.key_cross.setScaledContents(True)
         self.key_cross.setObjectName("key_cross")
         self.imageWorld = QtWidgets.QLabel(self.centralwidget)
@@ -121,10 +114,8 @@ class Ui_mainMenu(object):
         self.imageWorld.setObjectName("imageWorld")
         self.zoom = QtWidgets.QPushButton(self.centralwidget)
         self.zoom.setGeometry(QtCore.QRect(1220, 30, 101, 41))
-        self.zoom.setStyleSheet("background-color: rgb(77, 98, 175);\n"
-                                    "font: 14pt \"Palatino Linotype\";\n"
-                                    "\n"
-                                    "color: rgb(255, 255, 255);")
+        self.zoom.setStyleSheet("background-color: rgb(77, 98, 175);\n""font: 14pt \"Palatino Linotype\";"
+                                "color: rgb(255, 255, 255);")
         self.zoom.setObjectName("zoom")
         self.zoomMenu = QtWidgets.QWidget(self.centralwidget)
         self.zoomMenu.setGeometry(QtCore.QRect(1210, 80, 111, 191))
@@ -132,37 +123,28 @@ class Ui_mainMenu(object):
         self.zoomMenu.setObjectName("zoomMenu")
         self.northA = QtWidgets.QPushButton(self.zoomMenu)
         self.northA.setGeometry(QtCore.QRect(10, 10, 75, 23))
-        self.northA.setStyleSheet("color: rgb(77, 98, 175);\n"
-                                      "font: 8pt \"Palatino Linotype\";\n"
-                                      "\n"
-                                      "background-color: rgb(255, 255, 255);\n"
-                                      "")
+        self.northA.setStyleSheet("color: rgb(77, 98, 175);\n""font: 8pt \"Palatino Linotype\";\n""\n"
+                                  """background-color: rgb(255, 255, 255);\n""")
         self.northA.setObjectName("northA")
         self.southA = QtWidgets.QPushButton(self.zoomMenu)
         self.southA.setGeometry(QtCore.QRect(10, 40, 75, 23))
-        self.southA.setStyleSheet("background-color: rgb(255, 255, 255);\n"
-                                      "color: rgb(77, 98, 175);")
+        self.southA.setStyleSheet("background-color: rgb(255, 255, 255);\n""color: rgb(77, 98, 175);")
         self.southA.setObjectName("southA")
         self.asia = QtWidgets.QPushButton(self.zoomMenu)
         self.asia.setGeometry(QtCore.QRect(10, 70, 75, 23))
-        self.asia.setStyleSheet("background-color: rgb(255, 255, 255);\n"
-                                    "color: rgb(77, 98, 175);\n"
-                                    "")
+        self.asia.setStyleSheet("background-color: rgb(255, 255, 255);\n""color: rgb(77, 98, 175);\n""")
         self.asia.setObjectName("asia")
         self.australia = QtWidgets.QPushButton(self.zoomMenu)
         self.australia.setGeometry(QtCore.QRect(10, 100, 75, 23))
-        self.australia.setStyleSheet("background-color: rgb(255, 255, 255);\n"
-                                         "color: rgb(77, 98, 175);")
+        self.australia.setStyleSheet("background-color: rgb(255, 255, 255);\n""color: rgb(77, 98, 175);")
         self.australia.setObjectName("australia")
         self.africa = QtWidgets.QPushButton(self.zoomMenu)
         self.africa.setGeometry(QtCore.QRect(10, 130, 75, 23))
-        self.africa.setStyleSheet("background-color: rgb(255, 255, 255);\n"
-                                      "color: rgb(77, 98, 175);")
+        self.africa.setStyleSheet("background-color: rgb(255, 255, 255);\n""color: rgb(77, 98, 175);")
         self.africa.setObjectName("africa")
         self.world = QtWidgets.QPushButton(self.zoomMenu)
         self.world.setGeometry(QtCore.QRect(10, 160, 75, 23))
-        self.world.setStyleSheet("background-color: rgb(255, 255, 255);\n"
-                                     "color: rgb(77, 98, 175);")
+        self.world.setStyleSheet("background-color: rgb(255, 255, 255);\n""color: rgb(77, 98, 175);")
         self.world.setObjectName("world")
 
         self.Main_blueW = QtWidgets.QPushButton(self.centralwidget)
@@ -172,8 +154,7 @@ class Ui_mainMenu(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.Main_blueW.sizePolicy().hasHeightForWidth())
         self.Main_blueW.setSizePolicy(sizePolicy)
-        self.Main_blueW.setStyleSheet("\n"
-                                          "background-color: rgb(182, 220, 244);")
+        self.Main_blueW.setStyleSheet("background-color: rgb(182, 220, 244);")
         self.Main_blueW.setText("")
         blue_whale = QtGui.QIcon()
         blue_whale.addPixmap(QtGui.QPixmap("Bluewhale.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
@@ -187,8 +168,7 @@ class Ui_mainMenu(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.World_blueW_2.sizePolicy().hasHeightForWidth())
         self.World_blueW_2.setSizePolicy(sizePolicy)
-        self.World_blueW_2.setStyleSheet("border-color: rgb(182, 220, 244);\n"
-                                             "background-color: rgb(182, 220, 244);")
+        self.World_blueW_2.setStyleSheet("background-color: rgb(182, 220, 244);")
         self.World_blueW_2.setText("")
         self.World_blueW_2.setIcon(blue_whale)
         self.World_blueW_2.setIconSize(QtCore.QSize(60, 60))
@@ -200,8 +180,7 @@ class Ui_mainMenu(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.World_blueW_3.sizePolicy().hasHeightForWidth())
         self.World_blueW_3.setSizePolicy(sizePolicy)
-        self.World_blueW_3.setStyleSheet("border-color: rgb(182, 220, 244);\n"
-                                             "background-color: rgb(182, 220, 244);")
+        self.World_blueW_3.setStyleSheet("background-color: rgb(182, 220, 244);")
         self.World_blueW_3.setText("")
         self.World_blueW_3.setIcon(blue_whale)
         self.World_blueW_3.setIconSize(QtCore.QSize(60, 60))
@@ -213,8 +192,7 @@ class Ui_mainMenu(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.Main_Hhead.sizePolicy().hasHeightForWidth())
         self.Main_Hhead.setSizePolicy(sizePolicy)
-        self.Main_Hhead.setStyleSheet("border-color: rgb(182, 220, 244);\n"
-                                          "background-color: rgb(182, 220, 244);")
+        self.Main_Hhead.setStyleSheet("background-color: rgb(182, 220, 244);")
         self.Main_Hhead.setText("")
         hammer_head = QtGui.QIcon()
         hammer_head.addPixmap(QtGui.QPixmap("HheadShark.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
@@ -228,8 +206,7 @@ class Ui_mainMenu(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.World_Hhead_3.sizePolicy().hasHeightForWidth())
         self.World_Hhead_3.setSizePolicy(sizePolicy)
-        self.World_Hhead_3.setStyleSheet("border-color: rgb(182, 220, 244);\n"
-                                             "background-color: rgb(182, 220, 244);")
+        self.World_Hhead_3.setStyleSheet("background-color: rgb(182, 220, 244);")
         self.World_Hhead_3.setText("")
         self.World_Hhead_3.setIcon(hammer_head)
         self.World_Hhead_3.setIconSize(QtCore.QSize(60, 60))
@@ -241,8 +218,7 @@ class Ui_mainMenu(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.World_Hhead_2.sizePolicy().hasHeightForWidth())
         self.World_Hhead_2.setSizePolicy(sizePolicy)
-        self.World_Hhead_2.setStyleSheet("border-color: rgb(182, 220, 244);\n"
-                                             "background-color: rgb(182, 220, 244);")
+        self.World_Hhead_2.setStyleSheet("background-color: rgb(182, 220, 244);")
         self.World_Hhead_2.setText("")
         self.World_Hhead_2.setIcon(hammer_head)
         self.World_Hhead_2.setIconSize(QtCore.QSize(60, 60))
@@ -254,8 +230,7 @@ class Ui_mainMenu(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.World_SpermW_2.sizePolicy().hasHeightForWidth())
         self.World_SpermW_2.setSizePolicy(sizePolicy)
-        self.World_SpermW_2.setStyleSheet("border-color: rgb(182, 220, 244);\n"
-                                              "background-color: rgb(182, 220, 244);")
+        self.World_SpermW_2.setStyleSheet("background-color: rgb(182, 220, 244);")
         self.World_SpermW_2.setText("")
         sperm_whale = QtGui.QIcon()
         sperm_whale.addPixmap(QtGui.QPixmap("spermWhale.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
@@ -269,8 +244,7 @@ class Ui_mainMenu(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.Main_SpermW.sizePolicy().hasHeightForWidth())
         self.Main_SpermW.setSizePolicy(sizePolicy)
-        self.Main_SpermW.setStyleSheet("border-color: rgb(182, 220, 244);\n"
-                                           "background-color: rgb(182, 220, 244);")
+        self.Main_SpermW.setStyleSheet("background-color: rgb(182, 220, 244);")
         self.Main_SpermW.setText("")
         self.Main_SpermW.setIcon(sperm_whale)
         self.Main_SpermW.setIconSize(QtCore.QSize(60, 60))
@@ -282,8 +256,7 @@ class Ui_mainMenu(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.Main_monkSeal.sizePolicy().hasHeightForWidth())
         self.Main_monkSeal.setSizePolicy(sizePolicy)
-        self.Main_monkSeal.setStyleSheet("border-color: rgb(182, 220, 244);\n"
-                                             "background-color: rgb(182, 220, 244);")
+        self.Main_monkSeal.setStyleSheet("background-color: rgb(182, 220, 244);")
         self.Main_monkSeal.setText("")
         monk_seal = QtGui.QIcon()
         monk_seal.addPixmap(QtGui.QPixmap("monkSeal.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
@@ -297,8 +270,7 @@ class Ui_mainMenu(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.Main_furSeal.sizePolicy().hasHeightForWidth())
         self.Main_furSeal.setSizePolicy(sizePolicy)
-        self.Main_furSeal.setStyleSheet("border-color: rgb(182, 220, 244);\n"
-                                            "background-color: rgb(182, 220, 244);")
+        self.Main_furSeal.setStyleSheet("background-color: rgb(182, 220, 244);")
         self.Main_furSeal.setText("")
         fur_seal = QtGui.QIcon()
         fur_seal.addPixmap(QtGui.QPixmap("NorthFSeal.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
@@ -312,8 +284,7 @@ class Ui_mainMenu(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.World_hump_2.sizePolicy().hasHeightForWidth())
         self.World_hump_2.setSizePolicy(sizePolicy)
-        self.World_hump_2.setStyleSheet("border-color: rgb(182, 220, 244);\n"
-                                            "background-color: rgb(182, 220, 244);")
+        self.World_hump_2.setStyleSheet("\n""background-color: rgb(182, 220, 244);")
         self.World_hump_2.setText("")
         humpback = QtGui.QIcon()
         humpback.addPixmap(QtGui.QPixmap("humpbackWhale.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
@@ -327,8 +298,7 @@ class Ui_mainMenu(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.Main_hump.sizePolicy().hasHeightForWidth())
         self.Main_hump.setSizePolicy(sizePolicy)
-        self.Main_hump.setStyleSheet("border-color: rgb(182, 220, 244);\n"
-                                         "background-color: rgb(182, 220, 244);")
+        self.Main_hump.setStyleSheet("\n""background-color: rgb(182, 220, 244);")
         self.Main_hump.setText("")
         self.Main_hump.setIcon(humpback)
         self.Main_hump.setIconSize(QtCore.QSize(60, 60))
@@ -355,8 +325,7 @@ class Ui_mainMenu(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.World_greatW_3.sizePolicy().hasHeightForWidth())
         self.World_greatW_3.setSizePolicy(sizePolicy)
-        self.World_greatW_3.setStyleSheet("border-color: rgb(182, 220, 244);\n"
-                                              "background-color: rgb(182, 220, 244);")
+        self.World_greatW_3.setStyleSheet("border-color: rgb(182, 220, 244);\n""background-color: rgb(182, 220, 244);")
         self.World_greatW_3.setText("")
         self.World_greatW_3.setIcon(great_white)
         self.World_greatW_3.setIconSize(QtCore.QSize(60, 60))
@@ -455,9 +424,7 @@ class Ui_mainMenu(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.SA_spermW.sizePolicy().hasHeightForWidth())
         self.SA_spermW.setSizePolicy(sizePolicy)
-        self.SA_spermW.setStyleSheet("\n"
-"background-color: rgb(200, 235, 255);\n"
-"")
+        self.SA_spermW.setStyleSheet("\n""background-color: rgb(200, 235, 255);\n""")
         self.SA_spermW.setText("")
         self.SA_spermW.setIcon(sperm_whale)
         self.SA_spermW.setIconSize(QtCore.QSize(60, 60))
@@ -576,8 +543,7 @@ class Ui_mainMenu(object):
         self.AF_greatwS_3.setObjectName("AF_greatwS_3")
         self.AF_blueW = QtWidgets.QLabel(self.centralwidget)
         self.AF_blueW.setGeometry(QtCore.QRect(1290, 330, 51, 31))
-        self.AF_blueW.setStyleSheet("\n"
-"background-color: rgb(200, 235, 255);")
+        self.AF_blueW.setStyleSheet("\n""background-color: rgb(200, 235, 255);")
         self.AF_blueW.setText("")
         self.AF_blueW.setPixmap(QtGui.QPixmap("Bluewhale.png"))
         self.AF_blueW.setScaledContents(True)
@@ -609,8 +575,6 @@ class Ui_mainMenu(object):
         self.location_now.setPixmap(QtGui.QPixmap("cross.png"))
         self.location_now.setScaledContents(True)
         self.location_now.setObjectName("location_now")
-
-
         self.SA_dot = QtWidgets.QLabel(self.centralwidget)
         self.SA_dot.setGeometry(QtCore.QRect(200, 161, 101, 51))
         self.SA_dot.setStyleSheet("background-color: rgb(200, 235, 255);")
@@ -686,7 +650,6 @@ class Ui_mainMenu(object):
         self.statusbar.setObjectName("statusbar")
         mainMenu.setStatusBar(self.statusbar)
 
-
         self.retranslateUi(mainMenu)
         QtCore.QMetaObject.connectSlotsByName(mainMenu)
         self.world.clicked.connect(self.show_world)
@@ -717,12 +680,14 @@ class Ui_mainMenu(object):
         self.predict.clicked.connect(self.movement)
         self.close.clicked.connect(self.close_predict)
 
+        self.hb.clicked.connect(self.show_predictionHB)
+
         self.zoomMenu.hide()  # hide widget
         self.zoomMenu.hidden = True  # set zoom menu to be hidden
         self.Predict_menu.hide()
         self.Predict_menu.hidden = True
     # subroutine for when world button is selected (resets map back to original overview of map)
-        self.NA_blueW.hide()# setting all icons not on main world map to hidden
+        self.NA_blueW.hide()  # setting all icons not on main world map to hidden
         self.NA_blueW_3.hide()
         self.NA_blueW_4.hide()
         self.NA_SpermW.hide()
@@ -750,7 +715,9 @@ class Ui_mainMenu(object):
         self.AF_blueW.hide()
         self.AS_SpermW_2.hide()
         self.SA_dot.hide()
+
     def show_world(self):
+
         self.imageWorld.setPixmap(QtGui.QPixmap("world_map.png"))  # map from files called and displayed in label
         self.World_blueW_2.show()
         self.World_blueW_3.show()
@@ -760,7 +727,6 @@ class Ui_mainMenu(object):
         self.World_hump_2.show()
         self.World_greatW_3.show()
         self.World_greatW_2.show()
-
         self.AUS_humpW_2.hide()
         self.AUS_headS.hide()
         self.AUS_SpermW.hide()
@@ -807,7 +773,6 @@ class Ui_mainMenu(object):
         self.Main_furSeal.setGeometry(QtCore.QRect(1161, 140, 61, 41))
         self.Main_greatW.setGeometry(QtCore.QRect(1180, 400, 61, 41))
         self.Main_monkSeal.setGeometry(QtCore.QRect(200, 260, 51, 61))
-
 
     def show_north(self):
         self.imageWorld.setPixmap(QtGui.QPixmap("North_america.svg"))
@@ -924,7 +889,7 @@ class Ui_mainMenu(object):
         self.Main_greatW.setGeometry(QtCore.QRect(600, 300, 61, 41))
 
     def show_asia(self):
-        self.imageWorld.setPixmap(QtGui.QPixmap("Asia.png")) # map of asia set using pixmap in main world label
+        self.imageWorld.setPixmap(QtGui.QPixmap("Asia.png"))  # map of asia set using pixmap in main world label
         self.World_blueW_2.hide()
         self.World_blueW_3.hide()
         self.World_Hhead_3.hide()
@@ -975,9 +940,9 @@ class Ui_mainMenu(object):
         self.Main_SpermW.setGeometry(QtCore.QRect(1130, 260, 61, 41))
         self.Main_greatW.setGeometry(QtCore.QRect(1070, 330, 61, 41))
 
-
     def show_aus(self):
-        self.imageWorld.setPixmap(QtGui.QPixmap("australia.svg")) # map of australia shown in label
+
+        self.imageWorld.setPixmap(QtGui.QPixmap("australia.svg"))  # map of australia shown in label
         self.World_blueW_2.hide()
         self.World_blueW_3.hide()
         self.World_Hhead_3.hide()
@@ -1025,8 +990,6 @@ class Ui_mainMenu(object):
         self.Main_Hhead.show()
         self.Main_SpermW.show()
         self.Main_greatW.show()
-
-
         self.Main_hump.setGeometry(QtCore.QRect(650, 350, 61, 41))
         self.Main_Hhead.setGeometry(QtCore.QRect(1020, 540, 61, 41))
         self.Main_SpermW.setGeometry(QtCore.QRect(950, 270, 61, 41))
@@ -1111,7 +1074,6 @@ class Ui_mainMenu(object):
         self.ui.setupUi(self.window)
         self.window.show()
 
-
     def show_finInfo(self):
         self.window = QtWidgets.QDialog()
         self.ui = Info_fw()
@@ -1152,8 +1114,8 @@ class Ui_mainMenu(object):
     current_month = current_month.strftime("%m")
     x = 0
     y = 0
-    def show_predictionBW(self):
-        self.imageWorld.setPixmap(QtGui.QPixmap("North_america.svg"))
+
+    def hide_all(self):
         self.World_blueW_2.hide()
         self.World_blueW_3.hide()
         self.World_Hhead_3.hide()
@@ -1200,6 +1162,21 @@ class Ui_mainMenu(object):
         self.Main_greatW.hide()
         self.zoom.hide()
         self.zoomMenu.hide()
+
+    def show_predictionHB(self):
+        self.hide_all()
+        self.instructions.show()
+        self.predict.show()
+        self.key.show()
+        self.key_cross.show()
+        self.Main_hump.show()
+        self.Main_blueW.hide()
+        self.imageWorld.setPixmap(QtGui.QPixmap("australia.svg"))
+
+    def show_predictionBW(self):
+        self.imageWorld.setPixmap(QtGui.QPixmap("North_america.svg"))
+
+        self.hide_all()
         self.instructions.show()
         self.predict.show()
         self.Main_blueW.show()
@@ -1317,7 +1294,6 @@ class Ui_mainMenu(object):
     summerY = 220
     winterX = 910
     winterY = 600
-
 
     def movement(self):
         difference_x = 0
@@ -1453,6 +1429,7 @@ class Ui_mainMenu(object):
                         self.Main_blueW.setGeometry(QtCore.QRect(self.x, self.y, 61, 41))
                         self.x = 570
                         self.y = 510
+
     def retranslateUi(self, mainMenu):
         _translate = QtCore.QCoreApplication.translate
         mainMenu.setWindowTitle(_translate("mainMenu", "MainWindow"))
@@ -1477,11 +1454,12 @@ class Ui_mainMenu(object):
         self.instructions.setText(_translate("mainMenu", "Select predict to see the future movement in six months"))
         self.predict.setText(_translate("mainMenu", "Predict"))
 
+
 if __name__ == "__main__":
-        import sys
-        app = QtWidgets.QApplication(sys.argv)
-        mainMenu = QtWidgets.QMainWindow()
-        ui = Ui_mainMenu()
-        ui.setupUi(mainMenu)
-        mainMenu.show()
-        sys.exit(app.exec_())
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    mainMenu = QtWidgets.QMainWindow()
+    ui = Ui_mainMenu()
+    ui.setupUi(mainMenu)
+    mainMenu.show()
+    sys.exit(app.exec_())
