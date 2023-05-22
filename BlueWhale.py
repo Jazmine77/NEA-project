@@ -39,11 +39,6 @@ class Info_BW(object):
         self.info_box.setGeometry(QtCore.QRect(10, 70, 751, 341))
         self.info_box.setStyleSheet("")
         self.info_box.setObjectName("info_box")
-        self.prediction_bw = QtWidgets.QPushButton(Information_BW)
-        self.prediction_bw.setGeometry(QtCore.QRect(400, 490, 351, 61))
-        self.prediction_bw.setStyleSheet("font: 11pt \"MS Shell Dlg 2\";\n"
-"font: 14pt \"Palatino Linotype\";")
-        self.prediction_bw.setObjectName("prediction_2")
 
         self.retranslateUi(Information_BW)
         QtCore.QMetaObject.connectSlotsByName(Information_BW)
@@ -67,7 +62,7 @@ class Info_BW(object):
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:20pt; font-style:italic; color:#ffaaff;\">Life span: </span><span style=\" color:#000000;\">Blue whales live on average around 80-90 years </span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:20pt; font-style:italic; color:#ffaaff;\">Description</span><span style=\" color:#000000;\">: Long body(24m) and generally slender shape with mottled blue-gray colouring that appears light blue under water.A wide head and 80-90 long groves lengthwise down the throat and chest its mouth contains up to 800 plates of baleen and thick corse bristles for catching food</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"https://gifts.worldwildlife.org/gift-center/gifts/Species-Adoptions/Blue-Whale.aspx?sc=AWY1800OQ18317A01909RX&amp;_ga=2.222029272.1925783259.1679854196-319976745.1675645274\"><span style=\" text-decoration: underline; color:#0000ff;\">Adopt a blue whale</span></a></p></body></html>"))
-        self.prediction_bw.setText(_translate("Information_BW", "Predicted movement in America"))
+
 
 
 if __name__ == "__main__":

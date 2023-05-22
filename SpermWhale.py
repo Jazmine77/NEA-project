@@ -27,9 +27,6 @@ class Info_sw(object):
 "color: rgb(255, 170, 255);\n"
 "")
         self.title.setObjectName("title")
-        self.prediction_sw = QtWidgets.QPushButton(Information_sw)
-        self.prediction_sw.setGeometry(QtCore.QRect(480, 470, 241, 61))
-        self.prediction_sw.setObjectName("prediction")
         self.photo = QtWidgets.QLabel(Information_sw)
         self.photo.setGeometry(QtCore.QRect(50, 410, 351, 181))
         self.photo.setText("")
@@ -47,7 +44,6 @@ class Info_sw(object):
         _translate = QtCore.QCoreApplication.translate
         Information_sw.setWindowTitle(_translate("Information_sw", "Information"))
         self.title.setText(_translate("Information_sw", "Sperm Whale"))
-        self.prediction_sw.setText(_translate("Information_sw", "Predicted movement"))
         self.info_box.setHtml(_translate("Information_sw", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"

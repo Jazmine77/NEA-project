@@ -61,7 +61,7 @@ class Ui_mainMenu(object):
                                       "color: rgb(255, 255, 255);")
         self.Prediction.setObjectName("Prediction")
         self.Predict_menu = QtWidgets.QWidget(self.menu)
-        self.Predict_menu.setGeometry(QtCore.QRect(30, 420, 141, 171))
+        self.Predict_menu.setGeometry(QtCore.QRect(30, 420, 141, 101))
         self.Predict_menu.setStyleSheet("background-color: rgb(77, 98, 175);")
         self.Predict_menu.setObjectName("Predict_menu")
         self.bw = QtWidgets.QPushButton(self.Predict_menu)
@@ -72,35 +72,25 @@ class Ui_mainMenu(object):
                               "background-color: rgb(255, 255, 255);\n"
                               "")
         self.bw.setObjectName("bw")
-        self.fw = QtWidgets.QPushButton(self.Predict_menu)
-        self.fw.setGeometry(QtCore.QRect(10, 40, 121, 23))
-        self.fw.setStyleSheet("background-color: rgb(255, 255, 255);\n"
-                              "color: rgb(77, 98, 175);")
-        self.fw.setObjectName("fw")
         self.hb = QtWidgets.QPushButton(self.Predict_menu)
-        self.hb.setGeometry(QtCore.QRect(10, 70, 121, 23))
+        self.hb.setGeometry(QtCore.QRect(10, 40, 121, 23))
         self.hb.setStyleSheet("background-color: rgb(255, 255, 255);\n"
                               "color: rgb(77, 98, 175);\n"
                               "")
         self.hb.setObjectName("hb")
-        self.sw = QtWidgets.QPushButton(self.Predict_menu)
-        self.sw.setGeometry(QtCore.QRect(10, 100, 121, 23))
-        self.sw.setStyleSheet("background-color: rgb(255, 255, 255);\n"
-                              "color: rgb(77, 98, 175);\n"
-                              "")
-        self.sw.setObjectName("sw")
         self.close = QtWidgets.QPushButton(self.Predict_menu)
-        self.close.setGeometry(QtCore.QRect(10, 130, 121, 23))
+        self.close.setGeometry(QtCore.QRect(10, 70, 121, 23))
         self.close.setStyleSheet("background-color: rgb(255, 255, 255);\n""color: rgb(77, 98, 175);\n""")
         self.close.setObjectName("close")
         self.key = QtWidgets.QLabel(self.menu)
-        self.key.setGeometry(QtCore.QRect(10, 20, 181, 51))
+        self.key.setGeometry(QtCore.QRect(10, 20, 191, 51))
         self.key.setStyleSheet("background-color: rgb(246, 208, 255);\n"
+                               "font: 10pt \"Palatino Linotype\";\n"
                                "color: rgb(0, 0, 0);\n"
-                               "font: 11pt \"Palatino Linotype\";")
+                               "")
         self.key.setObjectName("key")
         self.key_cross = QtWidgets.QLabel(self.menu)
-        self.key_cross.setGeometry(QtCore.QRect(20, 30, 41, 41))
+        self.key_cross.setGeometry(QtCore.QRect(20, 30, 31, 31))
         self.key_cross.setStyleSheet("background-color: rgb(246, 208, 255);")
         self.key_cross.setText("")
         self.key_cross.setPixmap(QtGui.QPixmap("cross.png"))
@@ -556,12 +546,12 @@ class Ui_mainMenu(object):
         self.AS_SpermW_2.setScaledContents(True)
         self.AS_SpermW_2.setObjectName("AS_SpermW_2")
         self.instructions = QtWidgets.QLabel(self.centralwidget)
-        self.instructions.setGeometry(QtCore.QRect(510, 40, 471, 20))
+        self.instructions.setGeometry(QtCore.QRect(350, 40, 701, 20))
         self.instructions.setStyleSheet("background-color: rgb(246, 208, 255);\n"
                                         "font: 14pt \"Palatino Linotype\";")
         self.instructions.setObjectName("instructions")
         self.predict = QtWidgets.QPushButton(self.centralwidget)
-        self.predict.setGeometry(QtCore.QRect(990, 30, 111, 41))
+        self.predict.setGeometry(QtCore.QRect(1060, 30, 111, 41))
         self.predict.setStyleSheet("background-color: rgb(77, 98, 175);\n"
                                    "font: 14pt \"Palatino Linotype\";\n"
                                    "\n"
@@ -581,9 +571,86 @@ class Ui_mainMenu(object):
         self.SA_dot.setText("")
         self.SA_dot.setScaledContents(False)
         self.SA_dot.setObjectName("SA_dot")
+        self.month = QtWidgets.QPushButton(self.centralwidget)
+        self.month.setGeometry(QtCore.QRect(210, 20, 131, 41))
+        self.month.setStyleSheet("background-color: rgb(77, 98, 175);\n" "font: 14pt \"Palatino Linotype\";\n"
+                                      "\n"
+                                      "color: rgb(255, 255, 255);")
+        self.month.setObjectName("month")
+        self.month_menu = QtWidgets.QWidget(self.centralwidget)
+        self.month_menu.setGeometry(QtCore.QRect(230, 70, 111, 371))
+        self.month_menu.setStyleSheet("background-color: rgb(77, 98, 175);")
+        self.month_menu.setObjectName("month_menu")
+        self.jan = QtWidgets.QPushButton(self.month_menu)
+        self.jan.setGeometry(QtCore.QRect(10, 10, 91, 23))
+        self.jan.setStyleSheet("color: rgb(77, 98, 175);\n"
+                               "font: 8pt \"Palatino Linotype\";\n"
+                               "\n"
+                               "background-color: rgb(255, 255, 255);\n"
+                               "")
+        self.jan.setObjectName("jan")
+        self.feb = QtWidgets.QPushButton(self.month_menu)
+        self.feb.setGeometry(QtCore.QRect(10, 40, 91, 23))
+        self.feb.setStyleSheet("background-color: rgb(255, 255, 255);\n"
+                               "color: rgb(77, 98, 175);")
+        self.feb.setObjectName("feb")
+        self.march = QtWidgets.QPushButton(self.month_menu)
+        self.march.setGeometry(QtCore.QRect(10, 70, 91, 23))
+        self.march.setStyleSheet("background-color: rgb(255, 255, 255);\n"
+                                 "color: rgb(77, 98, 175);\n"
+                                 "")
+        self.march.setObjectName("march")
+        self.april = QtWidgets.QPushButton(self.month_menu)
+        self.april.setGeometry(QtCore.QRect(10, 100, 91, 23))
+        self.april.setStyleSheet("background-color: rgb(255, 255, 255);\n"
+                                 "color: rgb(77, 98, 175);")
+        self.april.setObjectName("april")
+        self.may = QtWidgets.QPushButton(self.month_menu)
+        self.may.setGeometry(QtCore.QRect(10, 130, 91, 23))
+        self.may.setStyleSheet("background-color: rgb(255, 255, 255);\n"
+                               "color: rgb(77, 98, 175);")
+        self.may.setObjectName("may")
+        self.june = QtWidgets.QPushButton(self.month_menu)
+        self.june.setGeometry(QtCore.QRect(10, 160, 91, 23))
+        self.june.setStyleSheet("background-color: rgb(255, 255, 255);\n"
+                                "color: rgb(77, 98, 175);")
+        self.june.setObjectName("june")
+        self.july = QtWidgets.QPushButton(self.month_menu)
+        self.july.setGeometry(QtCore.QRect(10, 190, 91, 23))
+        self.july.setStyleSheet("background-color: rgb(255, 255, 255);\n"
+                                "color: rgb(77, 98, 175);")
+        self.july.setObjectName("july")
+        self.aug = QtWidgets.QPushButton(self.month_menu)
+        self.aug.setGeometry(QtCore.QRect(10, 220, 91, 23))
+        self.aug.setStyleSheet("background-color: rgb(255, 255, 255);\n"
+                               "color: rgb(77, 98, 175);")
+        self.aug.setObjectName("aug")
+        self.sep = QtWidgets.QPushButton(self.month_menu)
+        self.sep.setGeometry(QtCore.QRect(10, 250, 91, 23))
+        self.sep.setStyleSheet("background-color: rgb(255, 255, 255);\n"
+                               "color: rgb(77, 98, 175);")
+        self.sep.setObjectName("sep")
+        self.oct = QtWidgets.QPushButton(self.month_menu)
+        self.oct.setGeometry(QtCore.QRect(10, 280, 91, 23))
+        self.oct.setStyleSheet("background-color: rgb(255, 255, 255);\n"
+                               "color: rgb(77, 98, 175);")
+        self.oct.setObjectName("oct")
+        self.nov = QtWidgets.QPushButton(self.month_menu)
+        self.nov.setGeometry(QtCore.QRect(10, 310, 91, 23))
+        self.nov.setStyleSheet("background-color: rgb(255, 255, 255);\n"
+                               "color: rgb(77, 98, 175);")
+        self.nov.setObjectName("nov")
+        self.dec = QtWidgets.QPushButton(self.month_menu)
+        self.dec.setGeometry(QtCore.QRect(10, 340, 91, 23))
+        self.dec.setStyleSheet("background-color: rgb(255, 255, 255);\n"
+                               "color: rgb(77, 98, 175);")
+        self.dec.setObjectName("dec")
+        self.month.raise_()
+        self.month.hide()
+        self.month_menu.raise_()
+
         self.predict.hide()
         self.predict.raise_()
-
         self.instructions.hide()
         self.imageWorld.raise_()
         self.heading.raise_()
@@ -679,9 +746,23 @@ class Ui_mainMenu(object):
         self.bw.clicked.connect(self.show_predictionBW)
         self.predict.clicked.connect(self.movement)
         self.close.clicked.connect(self.close_predict)
-
         self.hb.clicked.connect(self.show_predictionHB)
+        self.month.clicked.connect(self.show_monthMenu)
+        self.feb.clicked.connect(self.feb_location)
+        self.jan.clicked.connect(self.jan_location)
+        self.march.clicked.connect(self.march_location)
+        self.april.clicked.connect(self.april_location)
+        self.may.clicked.connect(self.may_location)
+        self.june.clicked.connect(self.june_location)
+        self.july.clicked.connect(self.july_location)
+        self.aug.clicked.connect(self.aug_location)
+        self.sep.clicked.connect(self.sep_location)
+        self.oct.clicked.connect(self.oct_location)
+        self.nov.clicked.connect(self.nov_location)
+        self.dec.clicked.connect(self.dec_location)
 
+        self.month_menu.hide()
+        self.month_menu.hidden = True
         self.zoomMenu.hide()  # hide widget
         self.zoomMenu.hidden = True  # set zoom menu to be hidden
         self.Predict_menu.hide()
@@ -1074,6 +1155,7 @@ class Ui_mainMenu(object):
         self.ui.setupUi(self.window)
         self.window.show()
 
+
     def show_finInfo(self):
         self.window = QtWidgets.QDialog()
         self.ui = Info_fw()
@@ -1109,6 +1191,7 @@ class Ui_mainMenu(object):
         self.ui = Info_sw()
         self.ui.setupUi(self.window)
         self.window.show()
+
 
     current_month = datetime.now()
     current_month = current_month.strftime("%m")
@@ -1163,19 +1246,46 @@ class Ui_mainMenu(object):
         self.zoom.hide()
         self.zoomMenu.hide()
 
+    movement_BW = False
+    movement_HB = False
+    def show_predictMenu(self):
+
+        if self.Predict_menu.hidden:  # checks whether it is shown or hidden
+            self.Predict_menu.show()  # shows the predict menu
+            self.Predict_menu.hidden = False  # sets hidden variable to false
+        else:
+            self.Predict_menu.hide()  # hides zoom menu as if it is not hidden it must be shown
+            self.Predict_menu.hidden = True  # sets hidden varibale to true
+
+    def show_monthMenu(self):
+
+        if self.month_menu.hidden:  # checks whether it is shown or hidden
+            self.month_menu.show()  # shows the predict menu
+            self.month_menu.hidden = False  # sets hidden variable to false
+        else:
+            self.month_menu.hide()  # hides zoom menu as if it is not hidden it must be shown
+            self.month_menu.hidden = True  # sets hidden varibale to true
+
     def show_predictionHB(self):
+        self.movement_HB = True
+        self.movement_BW = False
+        self.imageWorld.setPixmap(QtGui.QPixmap("HumpbackMap.png"))
+        self.month.show()
+        self.month_menu.raise_()
         self.hide_all()
         self.instructions.show()
         self.predict.show()
         self.key.show()
+        self.location_now.show()
         self.key_cross.show()
         self.Main_hump.show()
+        self.Main_hump.raise_()
         self.Main_blueW.hide()
-        self.imageWorld.setPixmap(QtGui.QPixmap("australia.svg"))
+
+        self.cross_HB()
 
     def show_predictionBW(self):
         self.imageWorld.setPixmap(QtGui.QPixmap("North_america.svg"))
-
         self.hide_all()
         self.instructions.show()
         self.predict.show()
@@ -1183,92 +1293,355 @@ class Ui_mainMenu(object):
         self.key.show()
         self.key_cross.show()
         self.location_now.show()
-        self.Main_blueW.show()
         self.Main_blueW.raise_()
+        self.cross_BW()
+        self.month.show()
+        self.month_menu.raise_()
+        self.movement_BW = True
+        self.movement_HB = False
 
-        self.cross_location()
+    def feb_location(self) :
+        self.current_month = "02"
+        if self.movement_BW == True:
+            self.location_now.setGeometry(QtCore.QRect(760, 580, 61, 41))
+            self.Main_blueW.setGeometry(QtCore.QRect(760, 580, 61, 41))
+            self.x = 760
+            self.y = 580
 
-    def cross_location(self):
+        elif self.movement_HB == True:
+            self.location_now.setGeometry(QtCore.QRect(600, 480, 41, 31))
+            self.Main_hump.setGeometry(QtCore.QRect(600, 480, 41, 31))
+            self.Main_hump.setIconSize(QtCore.QSize(40, 40))
+            self.x = 600
+            self.y = 480
+
+    def jan_location(self):
+        self.current_month = "01"
+        if self.movement_BW == True:
+            self.location_now.setGeometry(QtCore.QRect(890, 590, 61, 41))
+            self.Main_blueW.setGeometry(QtCore.QRect(890, 590, 61, 41))
+            self.x = 890
+            self.y = 590
+
+        elif self.movement_HB == True:
+            self.location_now.setGeometry(QtCore.QRect(510, 470, 41, 31))
+            self.Main_hump.setGeometry(QtCore.QRect(510, 470, 41, 31))
+            self.Main_hump.setIconSize(QtCore.QSize(40, 40))
+            self.x = 510
+            self.y = 470
+
+    def march_location(self):
+        self.current_month = "03"
+        if self.movement_BW == True:
+            self.location_now.setGeometry(QtCore.QRect(640, 540, 61, 41))
+            self.Main_blueW.setGeometry(QtCore.QRect(640, 540, 61, 41))
+            self.x = 640
+            self.y = 540
+
+        elif self.movement_HB == True:
+            self.location_now.setGeometry(QtCore.QRect(690, 420, 41, 31))
+            self.Main_hump.setGeometry(QtCore.QRect(690, 420, 41, 31))
+            self.Main_hump.setIconSize(QtCore.QSize(40, 40))
+            self.x = 690
+            self.y = 420
+
+
+    def april_location(self):
+        self.current_month = "04"
+        if self.movement_BW == True:
+            self.location_now.setGeometry(QtCore.QRect(520, 460, 61, 41))
+            self.Main_blueW.setGeometry(QtCore.QRect(520, 460, 61, 41))
+            self.x = 520
+            self.y = 460
+
+        elif self.movement_HB == True:
+            self.location_now.setGeometry(QtCore.QRect(680, 350, 41, 31))
+            self.Main_hump.setGeometry(QtCore.QRect(680, 350, 41, 31))
+            self.Main_hump.setIconSize(QtCore.QSize(40, 40))
+            self.x = 870
+            self.y = 350
+
+
+    def may_location(self):
+        self.current_month = "05"
+        if self.movement_BW == True:
+            self.location_now.setGeometry(QtCore.QRect(470, 410, 61, 41))
+            self.Main_blueW.setGeometry(QtCore.QRect(470, 410, 61, 41))
+            self.x = 470
+            self.y = 410
+        elif self.movement_HB == True:
+            self.location_now.setGeometry(QtCore.QRect(900, 320, 41, 31))
+            self.Main_hump.setGeometry(QtCore.QRect(900, 320, 41, 31))
+            self.Main_hump.setIconSize(QtCore.QSize(40, 40))
+            self.x = 900
+            self.y = 320
+
+
+    def june_location(self):
+        self.current_month = "06"
+        if self.movement_BW == True:
+            self.location_now.setGeometry(QtCore.QRect(460, 350, 61, 41))
+            self.Main_blueW.setGeometry(QtCore.QRect(460, 350, 61, 41))
+            self.x = 460
+            self.y = 350
+        elif self.movement_HB == True:
+            self.location_now.setGeometry(QtCore.QRect(930, 290, 41, 31))
+            self.Main_hump.setGeometry(QtCore.QRect(930, 290, 41, 31))
+            self.Main_hump.setIconSize(QtCore.QSize(40, 40))
+            self.x = 930
+            self.y = 290
+
+    def july_location(self):
+        self.current_month = "07"
+        if self.movement_BW == True:
+            self.location_now.setGeometry(QtCore.QRect(430, 230, 61, 41))
+            self.Main_blueW.setGeometry(QtCore.QRect(430, 230, 61, 41))
+            self.x = 430
+            self.y = 230
+
+        elif self.movement_HB == True:
+            self.location_now.setGeometry(QtCore.QRect(960, 220, 41, 31))
+            self.Main_hump.setGeometry(QtCore.QRect(960, 220, 41, 31))
+            self.Main_hump.setIconSize(QtCore.QSize(40, 40))
+            self.x = 960
+            self.y = 220
+
+
+    def aug_location(self):
+        self.current_month = "08"
+        if self.movement_BW == True:
+            self.location_now.setGeometry(QtCore.QRect(440, 280, 61, 41))
+            self.Main_blueW.setGeometry(QtCore.QRect(440, 280, 61, 41))
+            self.x = 440
+            self.y = 280
+
+        elif self.movement_HB == True:
+            self.location_now.setGeometry(QtCore.QRect(940, 200, 41, 31))
+            self.Main_hump.setGeometry(QtCore.QRect(940, 200, 41, 31))
+            self.Main_hump.setIconSize(QtCore.QSize(40, 40))
+            self.x = 940
+            self.y = 200
+
+
+    def sep_location(self):
+        self.current_month = "09"
+        if self.movement_BW == True:
+            self.location_now.setGeometry(QtCore.QRect(420, 340, 61, 41))
+            self.Main_blueW.setGeometry(QtCore.QRect(420, 340, 61, 41))
+            self.x = 420
+            self.y = 340
+
+        elif self.movement_HB == True:
+            self.location_now.setGeometry(QtCore.QRect(960, 280, 41, 31))
+            self.Main_hump.setGeometry(QtCore.QRect(960, 280, 41, 31))
+            self.Main_hump.setIconSize(QtCore.QSize(40, 40))
+            self.x = 960
+            self.y = 280
+
+
+    def oct_location(self):
+        self.current_month = "10"
+        if self.movement_BW == True:
+            self.location_now.setGeometry(QtCore.QRect(440, 420, 61, 41))
+            self.Main_blueW.setGeometry(QtCore.QRect(440, 420, 61, 41))
+            self.x = 440
+            self.y = 420
+
+        elif self.movement_HB == True:
+            self.location_now.setGeometry(QtCore.QRect(890, 330, 41, 31))
+            self.Main_hump.setGeometry(QtCore.QRect(890, 330, 41, 31))
+            self.Main_hump.setIconSize(QtCore.QSize(40, 40))
+            self.x = 890
+            self.y = 330
+
+
+    def nov_location(self):
+        self.current_month = "11"
+        if self.movement_BW == True:
+            self.location_now.setGeometry(QtCore.QRect(570, 510, 61, 41))
+            self.Main_blueW.setGeometry(QtCore.QRect(570, 510, 61, 41))
+            self.x = 570
+            self.y = 510
+        elif self.movement_HB == True:
+            self.location_now.setGeometry(QtCore.QRect(840, 370, 41, 31))
+            self.Main_hump.setGeometry(QtCore.QRect(840, 370, 41, 31))
+            self.Main_hump.setIconSize(QtCore.QSize(40, 40))
+            self.x = 840
+            self.y = 370
+
+    def dec_location(self):
+        self.current_month = "12"
+        if self.movement_BW == True:
+            self.location_now.setGeometry(QtCore.QRect(840, 580, 61, 41))
+            self.Main_blueW.setGeometry(QtCore.QRect(840, 580, 61, 41))
+            self.x = 840
+            self.y = 580
+        elif self.movement_HB:
+            self.location_now.setGeometry(QtCore.QRect(760, 400, 41, 31))
+            self.Main_hump.setGeometry(QtCore.QRect(760, 400, 41, 31))
+            self.Main_hump.setIconSize(QtCore.QSize(40, 40))
+            self.x = 760
+            self.y = 400
+
+    def cross_BW(self):
         if self.current_month == "04":
             self.location_now.setGeometry(QtCore.QRect(520, 460, 61, 41))
             self.Main_blueW.setGeometry(QtCore.QRect(520, 460, 61, 41))
             self.x = 520
             self.y = 460
-            return self.x
-            return self.y
+
         elif self.current_month == "01":
             self.location_now.setGeometry(QtCore.QRect(890, 590, 61, 41))
             self.Main_blueW.setGeometry(QtCore.QRect(890, 590, 61, 41))
             self.x = 890
             self.y = 590
-            return self.x
-            return self.y
+
         elif self.current_month == "02":
             self.location_now.setGeometry(QtCore.QRect(760, 580, 61, 41))
             self.Main_blueW.setGeometry(QtCore.QRect(760, 580, 61, 41))
             self.x = 760
             self.y = 580
-            return self.x
-            return self.y
+
         elif self.current_month == "03":
             self.location_now.setGeometry(QtCore.QRect(640, 540, 61, 41))
             self.Main_blueW.setGeometry(QtCore.QRect(640, 540, 61, 41))
             self.x = 640
             self.y = 540
-            return self.x
-            return self.y
+
         elif self.current_month == "05":
             self.location_now.setGeometry(QtCore.QRect(470, 410, 61, 41))
             self.Main_blueW.setGeometry(QtCore.QRect(470, 410, 61, 41))
             self.x = 470
             self.y = 410
-            return self.x
-            return self.y
+
         elif self.current_month == "06":
             self.location_now.setGeometry(QtCore.QRect(460, 350, 61, 41))
             self.Main_blueW.setGeometry(QtCore.QRect(460, 350, 61, 41))
             self.x = 460
             self.y = 350
-            return self.x
-            return self.y
+
         elif self.current_month == "07":
-            self.location_now.setGeometry(QtCore.QRect(43, 230, 61, 41))
-            self.Main_blueW.setGeometry(QtCore.QRect(43, 230, 61, 41))
-            self.x = 43
+            self.location_now.setGeometry(QtCore.QRect(430, 230, 61, 41))
+            self.Main_blueW.setGeometry(QtCore.QRect(430, 230, 61, 41))
+            self.x = 430
             self.y = 230
-            return self.x
-            return self.y
+
         elif self.current_month == "08":
             self.location_now.setGeometry(QtCore.QRect(440, 280, 61, 41))
             self.Main_blueW.setGeometry(QtCore.QRect(440, 280, 61, 41))
             self.x = 440
             self.y = 280
+
         elif self.current_month == "09":
             self.location_now.setGeometry(QtCore.QRect(420, 340, 61, 41))
             self.Main_blueW.setGeometry(QtCore.QRect(420, 340, 61, 41))
             self.x = 420
             self.y = 340
+
         elif self.current_month == "10":
             self.location_now.setGeometry(QtCore.QRect(440, 420, 61, 41))
             self.Main_blueW.setGeometry(QtCore.QRect(440, 420, 61, 41))
-            self.current = 440
-            self.current = 420
-            return self.x
-            return self.y
+            self.x = 440
+            self.y = 420
+
         elif self.current_month == "11":
             self.location_now.setGeometry(QtCore.QRect(570, 510, 61, 41))
             self.Main_blueW.setGeometry(QtCore.QRect(570, 510, 61, 41))
             self.x = 570
             self.y = 510
-            return self.x
-            return self.y
+
         elif self.current_month == "12":
             self.location_now.setGeometry(QtCore.QRect(840, 580, 61, 41))
             self.Main_blueW.setGeometry(QtCore.QRect(840, 580, 61, 41))
             self.x = 840
             self.y = 580
-            return self.x
-            return self.y
+
+
+    def cross_HB(self):
+        if self.current_month == "01":
+            self.location_now.setGeometry(QtCore.QRect(510, 470, 41, 31))
+            self.Main_hump.setGeometry(QtCore.QRect(510, 470, 41, 31))
+            self.Main_hump.setIconSize(QtCore.QSize(40, 40))
+            self.x = 510
+            self.y = 470
+
+        elif self.current_month == "02":
+            self.location_now.setGeometry(QtCore.QRect(600, 480, 41, 31))
+            self.Main_hump.setGeometry(QtCore.QRect(600, 480, 41, 31))
+            self.Main_hump.setIconSize(QtCore.QSize(40, 40))
+            self.x = 600
+            self.y = 480
+
+        elif self.current_month == "03":
+            self.location_now.setGeometry(QtCore.QRect(690, 420, 41, 31))
+            self.Main_hump.setGeometry(QtCore.QRect(690, 420, 41, 31))
+            self.Main_hump.setIconSize(QtCore.QSize(40, 40))
+            self.x = 690
+            self.y = 420
+
+        elif self.current_month == "04":
+            self.location_now.setGeometry(QtCore.QRect(680, 350, 41, 31))
+            self.Main_hump.setGeometry(QtCore.QRect(680, 350, 41, 31))
+            self.Main_hump.setIconSize(QtCore.QSize(40, 40))
+            self.x = 870
+            self.y = 350
+
+        elif self.current_month == "05":
+            self.location_now.setGeometry(QtCore.QRect(900, 320, 41, 31))
+            self.Main_hump.setGeometry(QtCore.QRect(900, 320, 41, 31))
+            self.Main_hump.setIconSize(QtCore.QSize(40, 40))
+            self.x = 900
+            self.y = 320
+
+        elif self.current_month == "06":
+            self.location_now.setGeometry(QtCore.QRect(930, 290, 41, 31))
+            self.Main_hump.setGeometry(QtCore.QRect(930, 290, 41, 31))
+            self.Main_hump.setIconSize(QtCore.QSize(40, 40))
+            self.x = 930
+            self.y = 290
+
+        elif self.current_month == "07":
+            self.location_now.setGeometry(QtCore.QRect(960, 220, 41, 31))
+            self.Main_hump.setGeometry(QtCore.QRect(960, 220, 41, 31))
+            self.Main_hump.setIconSize(QtCore.QSize(40, 40))
+            self.x = 960
+            self.y = 220
+
+        elif self.current_month == "08":
+            self.location_now.setGeometry(QtCore.QRect(940, 200, 41, 31))
+            self.Main_hump.setGeometry(QtCore.QRect(940, 200, 41, 31))
+            self.Main_hump.setIconSize(QtCore.QSize(40, 40))
+            self.x = 940
+            self.y = 200
+
+        elif self.current_month == "09":
+            self.location_now.setGeometry(QtCore.QRect(960, 280, 41, 31))
+            self.Main_hump.setGeometry(QtCore.QRect(960, 280, 41, 31))
+            self.Main_hump.setIconSize(QtCore.QSize(40, 40))
+            self.x = 960
+            self.y = 280
+
+        elif self.current_month == "10":
+            self.location_now.setGeometry(QtCore.QRect(890, 330, 41, 31))
+            self.Main_hump.setGeometry(QtCore.QRect(890, 330, 41, 31))
+            self.Main_hump.setIconSize(QtCore.QSize(40, 40))
+            self.x = 890
+            self.y = 330
+
+        elif self.current_month == "11":
+            self.location_now.setGeometry(QtCore.QRect(840, 370, 41, 31))
+            self.Main_hump.setGeometry(QtCore.QRect(840, 370, 41, 31))
+            self.Main_hump.setIconSize(QtCore.QSize(40, 40))
+            self.x = 840
+            self.y = 370
+
+        elif self.current_month == "12":
+            self.location_now.setGeometry(QtCore.QRect(760, 400, 41, 31))
+            self.Main_hump.setGeometry(QtCore.QRect(760, 400, 41, 31))
+            self.Main_hump.setIconSize(QtCore.QSize(40, 40))
+            self.x = 760
+            self.y = 400
+
 
     def close_predict(self):
         self.instructions.hide()
@@ -1277,14 +1650,8 @@ class Ui_mainMenu(object):
         self.key.hide()
         self.key_cross.hide()
         self.location_now.hide()
-
-    def show_predictMenu(self):
-        if self.Predict_menu.hidden:  # checks whether it is shown or hidden
-            self.Predict_menu.show()  # shows the predict menu
-            self.Predict_menu.hidden = False  # sets hidden variable to false
-        else:
-            self.Predict_menu.hide()  # hides zoom menu as if it is not hidden it must be shown
-            self.Predict_menu.hidden = True  # sets hidden varibale to true
+        self.month.hide()
+        self.month_menu.hide()
 
     winter = ["12", "01", "02"]
     summer = ["06", "07", "08"]
@@ -1296,139 +1663,325 @@ class Ui_mainMenu(object):
     winterY = 600
 
     def movement(self):
-        difference_x = 0
-        difference_y = 0
-        difference_x = self.winterX - self.summerX
-        difference_y = self.winterY - self.summerY
-
-        if self.current_month in self.summer:
-            self.x = self.x - difference_x
-            self.y = self.y - difference_y
-            if 380 <= self.y <= 450:
-                self.x = 460
-                self.Main_blueW.setGeometry(QtCore.QRect(self.x, self.y, 61, 41))
-
-            else:
-                self.Main_blueW.setGeometry(QtCore.QRect(self.x, self.y, 61, 41))
-            if self.current_month == "06":
-                self.x = 460
-                self.y = 350
-            elif self.current_month == "07":
-                self.x = 43
-                self.y = 230
-            elif self.current_month == "08":
-                self.x = 440
-                self.y = 280
-
-        elif self.current_month in self.winter:
-            self.x = self.x + difference_x
-            self.y = self.y + difference_y
-            if 380 <= self.y <= 450:
-                self.x = 460
-                self.Main_blueW.setGeometry(QtCore.QRect(self.x, self.y, 61, 41))
-
-            else:
-                self.Main_blueW.setGeometry(QtCore.QRect(self.x, self.y, 61, 41))
-
-            if self.current_month == "12":
-                self.x = 840
-                self.y = 580
-            elif self.current_month == "01":
-                self.x = 890
-                self.y = 590
-            elif self.current_month == "02":
-                self.x = 760
-                self.y = 580
-
-        elif self.current_month in self.spring:
-            if self.current_month == "03":
-                difference_x = difference_x / 2
-                difference_y = difference_y / 2
-                self.x = self.x - difference_x
-                self.y = self.y - difference_y
-                if 380 <= self.y <= 450:
-                    self.x = 460
-                    self.Main_blueW.setGeometry(QtCore.QRect(self.x, self.y, 61, 41))
-                    self.x = 640
-                    self.y = 540
-                else:
-                    self.Main_blueW.setGeometry(QtCore.QRect(self.x, self.y, 61, 41))
-                    self.x = 640
-                    self.y = 54
-            else:
-                difference_x = difference_x / 4
-                difference_y = difference_y / 4
-                if self.current_month == "04":
-                    self.x = self.x - difference_x
-                    self.y = self.y - difference_y
-                    if 380 <= self.y <= 450:
-                        self.x = 460
-                        self.Main_blueW.setGeometry(QtCore.QRect(self.x, self.y, 61, 41))
-                        self.x = 520
-                        self.y = 470
-
-                    else:
-                        self.Main_blueW.setGeometry(QtCore.QRect(self.x, self.y, 61, 41))
-                        self.x = 520
-                        self.y = 470
-                else:
-                    self.x = self.x + difference_x
-                    self.y = self.y + difference_y
-                    if 380 <= self.y <= 450:
-                        self.x = 460
-                        self.Main_blueW.setGeometry(QtCore.QRect(self.x, self.y, 61, 41))
-                        self.x = 470
-                        self.y = 410
-                    else:
-                        self.Main_blueW.setGeometry(QtCore.QRect(self.x, self.y, 61, 41))
-                        self.x = 470
-                        self.y = 410
-
-        elif self.current_month in self.autumn:
-            if self.current_month == "09":
-                difference_x = difference_x / 2
-                difference_y = difference_y / 2
+        if self.movement_BW == True :
+            difference_x = 0
+            difference_y = 0
+            difference_x = self.winterX - self.summerX
+            difference_y = self.winterY - self.summerY
+            if self.current_month in self.summer:
                 self.x = self.x + difference_x
                 self.y = self.y + difference_y
+                self.y = int(self.y)
+                self.x = int(self.x)
                 if 380 <= self.y <= 450:
                     self.x = 460
                     self.Main_blueW.setGeometry(QtCore.QRect(self.x, self.y, 61, 41))
-                    self.x = 420
-                    self.y = 340
+                elif self.y > 590:
+                    self.y = 590
+                    self.Main_blueW.setGeometry(QtCore.QRect(self.x, self.y, 61, 41))
                 else:
                     self.Main_blueW.setGeometry(QtCore.QRect(self.x, self.y, 61, 41))
-                    self.x = 420
-                    self.y = 340
-            else:
-                difference_x = difference_x / 4
-                difference_y = difference_y / 4
-                if self.current_month == "10":
-                    self.x = self.x + difference_x
-                    self.y = self.y + difference_y
-                    if 380 <= self.y <= 450:
-                        self.x = 460
-                        self.Main_blueW.setGeometry(QtCore.QRect(self.x, self.y, 61, 41))
-                        self.current = 440
-                        self.current = 420
+                if self.current_month == "06":
+                    self.x = 460
+                    self.y = 350
+                elif self.current_month == "07":
+                    self.x = 43
+                    self.y = 230
+                elif self.current_month == "08":
+                    self.x = 440
+                    self.y = 280
 
-                    else:
-                        self.Main_blueW.setGeometry(QtCore.QRect(self.x, self.y, 61, 41))
-                        self.current = 440
-                        self.current = 420
+            elif self.current_month in self.winter:
+                self.x = self.x - difference_x
+                self.y = self.y - difference_y
+                self.y = int(self.y)
+                self.x = int(self.x)
+                if 380 <= self.y <= 450:
+                    self.x = 460
+                    self.Main_blueW.setGeometry(QtCore.QRect(self.x, self.y, 61, 41))
+                elif self.y > 590:
+                    self.y = 590
+                    self.Main_blueW.setGeometry(QtCore.QRect(self.x, self.y, 61, 41))
 
                 else:
+                    self.Main_blueW.setGeometry(QtCore.QRect(self.x, self.y, 61, 41))
+
+                if self.current_month == "12":
+                    self.x = 840
+                    self.y = 580
+                elif self.current_month == "01":
+                    self.x = 890
+                    self.y = 590
+                elif self.current_month == "02":
+                    self.x = 760
+                    self.y = 580
+
+            elif self.current_month in self.spring:
+                if self.current_month == "03":
+                    difference_x = difference_x / 2
+                    difference_y = difference_y / 2
                     self.x = self.x - difference_x
                     self.y = self.y - difference_y
+                    self.y = int(self.y)
+                    self.x = int(self.x)
                     if 380 <= self.y <= 450:
                         self.x = 460
                         self.Main_blueW.setGeometry(QtCore.QRect(self.x, self.y, 61, 41))
-                        self.x = 570
-                        self.y = 510
-
+                        self.x = 640
+                        self.y = 540
                     else:
                         self.Main_blueW.setGeometry(QtCore.QRect(self.x, self.y, 61, 41))
-                        self.x = 570
-                        self.y = 510
+                        self.x = 640
+                        self.y = 540
+                else:
+                    difference_x = difference_x / 4
+                    difference_y = difference_y / 4
+                    self.y = int(self.y)
+                    self.x = int(self.x)
+                    if self.current_month == "04":
+                        self.x = self.x - difference_x
+                        self.y = self.y - difference_y
+                        if 380 <= self.y <= 450:
+                            self.x = 460
+                            self.Main_blueW.setGeometry(QtCore.QRect(self.x, self.y, 61, 41))
+                            self.x = 520
+                            self.y = 470
+
+                        else:
+                            self.Main_blueW.setGeometry(QtCore.QRect(self.x, self.y, 61, 41))
+                            self.x = 520
+                            self.y = 470
+                    else:
+                        self.x = self.x + difference_x
+                        self.y = self.y + difference_y
+                        if 380 <= self.y <= 450:
+                            self.x = 460
+                            self.Main_blueW.setGeometry(QtCore.QRect(self.x, self.y, 61, 41))
+                            self.x = 470
+                            self.y = 410
+                        else:
+                            self.Main_blueW.setGeometry(QtCore.QRect(self.x, self.y, 61, 41))
+                            self.x = 470
+                            self.y = 410
+
+            elif self.current_month in self.autumn:
+                if self.current_month == "09":
+                    difference_x = difference_x / 2
+                    difference_y = difference_y / 2
+                    self.x = self.x + difference_x
+                    self.y = self.y + difference_y
+                    self.y = int(self.y)
+                    self.x = int(self.x)
+                    if 380 <= self.y <= 450:
+                        self.x = 460
+                        self.Main_blueW.setGeometry(QtCore.QRect(self.x, self.y, 61, 41))
+                        self.x = 420
+                        self.y = 340
+                    else:
+                        self.Main_blueW.setGeometry(QtCore.QRect(self.x, self.y, 61, 41))
+                        self.x = 420
+                        self.y = 340
+                else:
+                    difference_x = difference_x / 4
+                    difference_y = difference_y / 4
+                    self.y = int(self.y)
+                    self.x = int(self.x)
+                    if self.current_month == "10":
+                        self.x = self.x + difference_x
+                        self.y = self.y + difference_y
+                        if 380 <= self.y <= 450:
+                            self.x = 460
+                            self.Main_blueW.setGeometry(QtCore.QRect(self.x, self.y, 61, 41))
+                            self.current = 440
+                            self.current = 420
+
+                        else:
+                            self.Main_blueW.setGeometry(QtCore.QRect(self.x, self.y, 61, 41))
+                            self.current = 440
+                            self.current = 420
+
+                    else:
+                        self.x = self.x - difference_x
+                        self.y = self.y - difference_y
+                        if 380 <= self.y <= 450:
+                            self.x = 460
+                            self.Main_blueW.setGeometry(QtCore.QRect(self.x, self.y, 61, 41))
+                            self.x = 570
+                            self.y = 510
+
+                        else:
+                            self.Main_blueW.setGeometry(QtCore.QRect(self.x, self.y, 61, 41))
+                            self.x = 570
+                            self.y = 510
+
+        elif self.movement_HB == True :
+            distance_x = 0
+            distance_x = 940 - 520
+            speed = 9.4
+            six_month = 0
+            six_month = 24 * 183
+            distance_km = 0
+            distance_km = speed * six_month
+            distance_y = 0
+            distance_y = distance_km * 0.00678
+            if self.current_month in self.spring :
+                distance_y = distance_y / 4
+                distance_y = int(distance_y)
+                if self.current_month == "03":
+                    distance_x = distance_x / 2
+                    self.y = self.y - distance_y
+                    self.x = self.x + distance_x
+                    self.y = int(self.y)
+                    self.x = int(self.x)
+                    if self.x >= 900 :
+                        self.x = 920
+                        self.Main_hump.setGeometry(QtCore.QRect(self.x, self.y, 41, 31))
+                    else:
+                        self.Main_hump.setGeometry(QtCore.QRect(self.x, self.y, 41, 31))
+                elif self.current_month == "04":
+                    distance_x = distance_x / 6
+                    self.x = self.x + distance_x
+                    self.y = self.y - distance_y
+                    self.y = int(self.y)
+                    self.x = int(self.x)
+                    self.Main_hump.setGeometry(QtCore.QRect(self.x, self.y, 41, 31))
+                elif self.current_month == "05" :
+                    distance_x = distance_x / 6
+                    self.x = self.x - distance_x
+                    self.y = self.y + distance_y
+                    self.y = int(self.y)
+                    self.x = int(self.x)
+                    self.Main_hump.setGeometry(QtCore.QRect(self.x, self.y, 41, 31 ))
+
+                if self.current_month == "03":
+                    self.x = 690
+                    self.y = 420
+
+                elif self.current_month == "04":
+                    self.x = 870
+                    self.y = 350
+
+                elif self.current_month == "05":
+                    self.x = 900
+                    self.y = 320
+
+
+            elif self.current_month in self.autumn :
+                distance_y = distance_y / 4
+                distance_y = int(distance_y)
+                if self.current_month == "09":
+                    distance_x = distance_x / 2
+                    self.y = int(self.y)
+                    self.x = int(self.x)
+                    self.y = self.y + distance_y
+                    self.x = self.x - distance_x
+
+                    if self.x >= 900 :
+                        self.x = 920
+                        self.Main_hump.setGeometry(QtCore.QRect(self.x, self.y, 41, 31))
+                    else:
+                        self.Main_hump.setGeometry(QtCore.QRect(self.x, self.y, 41, 31))
+                elif self.current_month == "10":
+                    distance_x = distance_x / 6
+                    self.x = self.x - distance_x
+                    self.y = self.y + distance_y
+                    self.y = int(self.y)
+                    self.x = int(self.x)
+                    self.Main_hump.setGeometry(QtCore.QRect(self.x, self.y, 41, 31))
+                elif self.current_month == "11" :
+                    distance_x = distance_x / 6
+                    self.x = self.x + distance_x
+                    self.y = self.y - distance_y
+                    self.y = int(self.y)
+                    self.x = int(self.x)
+                    self.Main_hump.setGeometry(QtCore.QRect(self.x, self.y, 41, 31 ))
+
+                if self.current_month == "09":
+                    self.x = 960
+                    self.y = 280
+
+                elif self.current_month == "10":
+                    self.x = 890
+                    self.y = 330
+
+                elif self.current_month == "11":
+                    self.x = 840
+                    self.y = 370
+
+            elif self.current_month in self.summer :
+                if self.current_month == "06":
+                    distance_y = distance_y / 2
+                    self.y = self.y + distance_y
+                    distance_x = distance_x / 2
+                    self.x = self.x - distance_x
+                    self.y = int(self.y)
+                    self.x = int(self.x)
+                    self.Main_hump.setGeometry(QtCore.QRect(self.x, self.y, 41, 31))
+                elif self.current_month == "07" or self.current_month == "08":
+                    self.y = self.y + distance_y
+                    self.x = self.x - distance_x
+                    self.y = int(self.y)
+                    self.x = int(self.x)
+                    self.Main_hump.setGeometry(QtCore.QRect(self.x, self.y, 41, 31))
+
+                if self.current_month == "06":
+                    self.x = 930
+                    self.y = 290
+
+                elif self.current_month == "07":
+                    self.x = 960
+                    self.y = 220
+                elif self.current_month == "08":
+                    self.x = 940
+                    self.y = 200
+
+            elif self.current_month in self.winter:
+                if self.current_month == "12":
+                    distance_y = distance_y / 2
+                    distance_y = int(distance_y)
+                    self.y = self.y - distance_y
+                    distance_x = distance_x / 2
+                    self.x = self.x + distance_x
+                    self.y = int(self.y)
+                    self.x = int(self.x)
+                    self.Main_hump.setGeometry(QtCore.QRect(self.x, self.y, 41, 31))
+
+                elif self.current_month == "01" or self.current_month == "02":
+                    self.y = self.y - distance_y
+                    self.x = self.x + distance_x
+                    self.y = int(self.y)
+                    self.x = int(self.x)
+                    self.Main_hump.setGeometry(QtCore.QRect(self.x, self.y, 41, 31))
+                    if self.x < 950 or self.x <= 1050:
+                        self.x = 960
+                        self.Main_hump.setGeometry(QtCore.QRect(self.x, self.y, 41, 31))
+                    else:
+                        self.Main_hump.setGeometry(QtCore.QRect(self.x, self.y, 41, 31))
+
+                if self.current_month == "12":
+                    self.x = 760
+                    self.y = 400
+                elif self.current_month == "01":
+                    self.x = 510
+                    self.y = 470
+
+                elif self.current_month == "02":
+                    self.x = 600
+                    self.y = 480
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     def retranslateUi(self, mainMenu):
         _translate = QtCore.QCoreApplication.translate
@@ -1439,11 +1992,9 @@ class Ui_mainMenu(object):
         self.sightingBut.setText(_translate("mainMenu", "Sightings"))
         self.Prediction.setText(_translate("mainMenu", "Prediction"))
         self.bw.setText(_translate("mainMenu", "Blue Whale"))
-        self.fw.setText(_translate("mainMenu", "Fin whale"))
         self.hb.setText(_translate("mainMenu", "Humpback whale"))
-        self.sw.setText(_translate("mainMenu", "Sperm Whale"))
         self.close.setText(_translate("mainMenu", "Close"))
-        self.key.setText(_translate("mainMenu", "             : Current Location"))
+        self.key.setText(_translate("mainMenu",  "             : Current selected month"))
         self.zoom.setText(_translate("mainMenu", "Zoom in"))
         self.northA.setText(_translate("mainMenu", "North America"))
         self.southA.setText(_translate("mainMenu", "South America"))
@@ -1451,8 +2002,23 @@ class Ui_mainMenu(object):
         self.australia.setText(_translate("mainMenu", "Australia"))
         self.africa.setText(_translate("mainMenu", "Africa"))
         self.world.setText(_translate("mainMenu", "Zoom Out"))
-        self.instructions.setText(_translate("mainMenu", "Select predict to see the future movement in six months"))
+        self.instructions.setText(_translate("mainMenu", "select predict to see future movement in six months from the current month selected"))
         self.predict.setText(_translate("mainMenu", "Predict"))
+        self.predict.setText(_translate("mainMenu", "predict"))
+        self.month.setText(_translate("mainMenu", "current month"))
+        self.jan.setText(_translate("mainMenu", "January"))
+        self.feb.setText(_translate("mainMenu", "February"))
+        self.march.setText(_translate("mainMenu", "March"))
+        self.april.setText(_translate("mainMenu", "April"))
+        self.may.setText(_translate("mainMenu", "May"))
+        self.june.setText(_translate("mainMenu", "June"))
+        self.july.setText(_translate("mainMenu", "July"))
+        self.aug.setText(_translate("mainMenu", "August"))
+        self.sep.setText(_translate("mainMenu", "September"))
+        self.oct.setText(_translate("mainMenu", "October"))
+        self.nov.setText(_translate("mainMenu", "November"))
+        self.dec.setText(_translate("mainMenu", "December"))
+
 
 
 if __name__ == "__main__":

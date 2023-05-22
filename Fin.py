@@ -30,9 +30,6 @@ class Info_fw(object):
         self.textBrowser = QtWidgets.QTextBrowser(Info_fw)
         self.textBrowser.setGeometry(QtCore.QRect(10, 70, 751, 341))
         self.textBrowser.setObjectName("textBrowser")
-        self.prediction_fw = QtWidgets.QPushButton(Info_fw)
-        self.prediction_fw.setGeometry(QtCore.QRect(420, 420, 241, 61))
-        self.prediction_fw.setObjectName("prediction")
         self.photo = QtWidgets.QLabel(Info_fw)
         self.photo.setGeometry(QtCore.QRect(40, 420, 361, 191))
         self.photo.setText("")
@@ -60,7 +57,6 @@ class Info_fw(object):
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:20pt; font-style:italic; color:#ffaaff;\">Role in ecosystem</span><span style=\" color:#000000;\">: They are at the top of the ecosystem and play an important role have an important role in overall health of the marine environment.Each whale sequesters 33 tons of CO2 on aveage taking that carbon out of the atmosphere for centuries.</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:20pt; font-style:italic; color:#ffaaff;\">Life span</span><span style=\" color:#000000;\">: 80-90 years</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:20pt; font-style:italic; color:#ffaaff;\">Description</span><span style=\" color:#000000;\">: Sleek, streamlined bodies with V-shaped bodies.They have a tall, hooked dorsal fin that rises at a shallow angle from the back. They have distinctive colours of black or dark brownish-gray on the back and sides.Many have several light-grey, V-shaped chevron behind their heads on the underside of the tail flukes is white with a grey border.This markings are unique and can be used to identify indiviuals</span></p></body></html>"))
-        self.prediction_fw.setText(_translate("Info_fw", "Predicted movement"))
 
 
 if __name__ == "__main__":
