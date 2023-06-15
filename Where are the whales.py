@@ -573,8 +573,7 @@ class Ui_mainMenu(object):
         self.SA_dot.setObjectName("SA_dot")
         self.month = QtWidgets.QPushButton(self.centralwidget)
         self.month.setGeometry(QtCore.QRect(210, 20, 131, 41))
-        self.month.setStyleSheet("background-color: rgb(77, 98, 175);\n" "font: 14pt \"Palatino Linotype\";\n"
-                                      "\n"
+        self.month.setStyleSheet("background-color: rgb(77, 98, 175);\n" "font: 14pt \"Palatino Linotype\";\n""\n"
                                       "color: rgb(255, 255, 255);")
         self.month.setObjectName("month")
         self.month_menu = QtWidgets.QWidget(self.centralwidget)
@@ -645,6 +644,38 @@ class Ui_mainMenu(object):
         self.dec.setStyleSheet("background-color: rgb(255, 255, 255);\n"
                                "color: rgb(77, 98, 175);")
         self.dec.setObjectName("dec")
+        self.bluePast = QtWidgets.QPushButton(self.centralwidget)
+        self.bluePast.setGeometry(QtCore.QRect(480, 190, 61, 41))
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.bluePast.sizePolicy().hasHeightForWidth())
+        self.bluePast.setSizePolicy(sizePolicy)
+        self.bluePast.setStyleSheet("background-color: rgb(200, 235, 255);")
+        self.bluePast.setText("")
+        blue_fade = QtGui.QIcon()
+        blue_fade.addPixmap(QtGui.QPixmap("BlueFaded.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.bluePast.setIcon(blue_fade)
+        self.bluePast.setIconSize(QtCore.QSize(60, 60))
+        self.bluePast.setObjectName("bluePast")
+        self.HumpbackPast = QtWidgets.QPushButton(self.centralwidget)
+        self.HumpbackPast.setGeometry(QtCore.QRect(490, 240, 41, 31))
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.HumpbackPast.sizePolicy().hasHeightForWidth())
+        self.HumpbackPast.setSizePolicy(sizePolicy)
+        self.HumpbackPast.setStyleSheet("background-color: rgb(182, 220, 244);")
+        self.HumpbackPast.setText("")
+        hump_fade = QtGui.QIcon()
+        hump_fade.addPixmap(QtGui.QPixmap("HumpbackFade.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.HumpbackPast.setIcon(hump_fade)
+        self.HumpbackPast.setIconSize(QtCore.QSize(40, 40))
+        self.HumpbackPast.setObjectName("HumpbackPast")
+        self.HumpbackPast.raise_()
+        self.HumpbackPast.hide()
+        self.bluePast.raise_()
+        self.bluePast.hide()
         self.month.raise_()
         self.month.hide()
         self.month_menu.raise_()
@@ -1155,7 +1186,6 @@ class Ui_mainMenu(object):
         self.ui.setupUi(self.window)
         self.window.show()
 
-
     def show_finInfo(self):
         self.window = QtWidgets.QDialog()
         self.ui = Info_fw()
@@ -1191,7 +1221,6 @@ class Ui_mainMenu(object):
         self.ui = Info_sw()
         self.ui.setupUi(self.window)
         self.window.show()
-
 
     current_month = datetime.now()
     current_month = current_month.strftime("%m")
@@ -1248,8 +1277,8 @@ class Ui_mainMenu(object):
 
     movement_BW = False
     movement_HB = False
-    def show_predictMenu(self):
 
+    def show_predictMenu(self):
         if self.Predict_menu.hidden:  # checks whether it is shown or hidden
             self.Predict_menu.show()  # shows the predict menu
             self.Predict_menu.hidden = False  # sets hidden variable to false
@@ -1258,7 +1287,6 @@ class Ui_mainMenu(object):
             self.Predict_menu.hidden = True  # sets hidden varibale to true
 
     def show_monthMenu(self):
-
         if self.month_menu.hidden:  # checks whether it is shown or hidden
             self.month_menu.show()  # shows the predict menu
             self.month_menu.hidden = False  # sets hidden variable to false
@@ -1281,7 +1309,6 @@ class Ui_mainMenu(object):
         self.Main_hump.show()
         self.Main_hump.raise_()
         self.Main_blueW.hide()
-
         self.cross_HB()
 
     def show_predictionBW(self):
@@ -1300,7 +1327,7 @@ class Ui_mainMenu(object):
         self.movement_BW = True
         self.movement_HB = False
 
-    def feb_location(self) :
+    def feb_location(self):
         self.current_month = "02"
         if self.movement_BW == True:
             self.location_now.setGeometry(QtCore.QRect(760, 580, 61, 41))
@@ -1345,7 +1372,6 @@ class Ui_mainMenu(object):
             self.x = 690
             self.y = 420
 
-
     def april_location(self):
         self.current_month = "04"
         if self.movement_BW == True:
@@ -1361,7 +1387,6 @@ class Ui_mainMenu(object):
             self.x = 870
             self.y = 350
 
-
     def may_location(self):
         self.current_month = "05"
         if self.movement_BW == True:
@@ -1375,7 +1400,6 @@ class Ui_mainMenu(object):
             self.Main_hump.setIconSize(QtCore.QSize(40, 40))
             self.x = 900
             self.y = 320
-
 
     def june_location(self):
         self.current_month = "06"
@@ -1406,7 +1430,6 @@ class Ui_mainMenu(object):
             self.x = 960
             self.y = 220
 
-
     def aug_location(self):
         self.current_month = "08"
         if self.movement_BW == True:
@@ -1421,7 +1444,6 @@ class Ui_mainMenu(object):
             self.Main_hump.setIconSize(QtCore.QSize(40, 40))
             self.x = 940
             self.y = 200
-
 
     def sep_location(self):
         self.current_month = "09"
@@ -1438,7 +1460,6 @@ class Ui_mainMenu(object):
             self.x = 960
             self.y = 280
 
-
     def oct_location(self):
         self.current_month = "10"
         if self.movement_BW == True:
@@ -1453,7 +1474,6 @@ class Ui_mainMenu(object):
             self.Main_hump.setIconSize(QtCore.QSize(40, 40))
             self.x = 890
             self.y = 330
-
 
     def nov_location(self):
         self.current_month = "11"
@@ -1556,7 +1576,6 @@ class Ui_mainMenu(object):
             self.x = 840
             self.y = 580
 
-
     def cross_HB(self):
         if self.current_month == "01":
             self.location_now.setGeometry(QtCore.QRect(510, 470, 41, 31))
@@ -1642,7 +1661,6 @@ class Ui_mainMenu(object):
             self.x = 760
             self.y = 400
 
-
     def close_predict(self):
         self.instructions.hide()
         self.predict.hide()
@@ -1652,6 +1670,8 @@ class Ui_mainMenu(object):
         self.location_now.hide()
         self.month.hide()
         self.month_menu.hide()
+        self.Main_hump.setIconSize(QtCore.QSize(60, 60))
+        self.Main_hump.setGeometry(QtCore.QRect(self.x, self.y, 61, 41))
 
     winter = ["12", "01", "02"]
     summer = ["06", "07", "08"]
@@ -1663,7 +1683,7 @@ class Ui_mainMenu(object):
     winterY = 600
 
     def movement(self):
-        if self.movement_BW == True :
+        if self.movement_BW == True:
             difference_x = 0
             difference_y = 0
             difference_x = self.winterX - self.summerX
@@ -1685,7 +1705,7 @@ class Ui_mainMenu(object):
                     self.x = 460
                     self.y = 350
                 elif self.current_month == "07":
-                    self.x = 43
+                    self.x = 430
                     self.y = 230
                 elif self.current_month == "08":
                     self.x = 440
@@ -1739,10 +1759,13 @@ class Ui_mainMenu(object):
                     self.y = int(self.y)
                     self.x = int(self.x)
                     if self.current_month == "04":
+                        difference_y = difference_y / 2
                         self.x = self.x - difference_x
                         self.y = self.y - difference_y
                         if 380 <= self.y <= 450:
                             self.x = 460
+                            self.y = int(self.y)
+                            self.x = int(self.x)
                             self.Main_blueW.setGeometry(QtCore.QRect(self.x, self.y, 61, 41))
                             self.x = 520
                             self.y = 470
@@ -1760,6 +1783,8 @@ class Ui_mainMenu(object):
                             self.x = 470
                             self.y = 410
                         else:
+                            self.y = int(self.y)
+                            self.x = int(self.x)
                             self.Main_blueW.setGeometry(QtCore.QRect(self.x, self.y, 61, 41))
                             self.x = 470
                             self.y = 410
@@ -1784,74 +1809,82 @@ class Ui_mainMenu(object):
                 else:
                     difference_x = difference_x / 4
                     difference_y = difference_y / 4
-                    self.y = int(self.y)
-                    self.x = int(self.x)
+
                     if self.current_month == "10":
                         self.x = self.x + difference_x
                         self.y = self.y + difference_y
                         if 380 <= self.y <= 450:
                             self.x = 460
+                            self.y = int(self.y)
+                            self.x = int(self.x)
                             self.Main_blueW.setGeometry(QtCore.QRect(self.x, self.y, 61, 41))
-                            self.current = 440
-                            self.current = 420
+                            self.x = 440
+                            self.y = 420
 
                         else:
+                            self.y = int(self.y)
+                            self.x = int(self.x)
                             self.Main_blueW.setGeometry(QtCore.QRect(self.x, self.y, 61, 41))
-                            self.current = 440
-                            self.current = 420
+                            self.x = 440
+                            self.y = 420
 
                     else:
                         self.x = self.x - difference_x
                         self.y = self.y - difference_y
                         if 380 <= self.y <= 450:
                             self.x = 460
+                            self.y = int(self.y)
+                            self.x = int(self.x)
                             self.Main_blueW.setGeometry(QtCore.QRect(self.x, self.y, 61, 41))
                             self.x = 570
                             self.y = 510
 
                         else:
+                            self.y = int(self.y)
+                            self.x = int(self.x)
                             self.Main_blueW.setGeometry(QtCore.QRect(self.x, self.y, 61, 41))
                             self.x = 570
                             self.y = 510
 
-        elif self.movement_HB == True :
+        elif self.movement_HB == True:
             distance_x = 0
+            six_month = 0
             distance_x = 940 - 520
             speed = 9.4
-            six_month = 0
             six_month = 24 * 183
             distance_km = 0
             distance_km = speed * six_month
             distance_y = 0
             distance_y = distance_km * 0.00678
-            if self.current_month in self.spring :
+            if self.current_month in self.spring:
                 distance_y = distance_y / 4
                 distance_y = int(distance_y)
                 if self.current_month == "03":
-                    distance_x = distance_x / 2
+                    distance_y = distance_y * 2
                     self.y = self.y - distance_y
                     self.x = self.x + distance_x
                     self.y = int(self.y)
                     self.x = int(self.x)
-                    if self.x >= 900 :
-                        self.x = 920
+                    if self.x >= 950:
+                        self.x = 970
                         self.Main_hump.setGeometry(QtCore.QRect(self.x, self.y, 41, 31))
                     else:
                         self.Main_hump.setGeometry(QtCore.QRect(self.x, self.y, 41, 31))
                 elif self.current_month == "04":
+                    distance_y = distance_y / 2
                     distance_x = distance_x / 6
                     self.x = self.x + distance_x
                     self.y = self.y - distance_y
                     self.y = int(self.y)
                     self.x = int(self.x)
                     self.Main_hump.setGeometry(QtCore.QRect(self.x, self.y, 41, 31))
-                elif self.current_month == "05" :
+                elif self.current_month == "05":
                     distance_x = distance_x / 6
                     self.x = self.x - distance_x
                     self.y = self.y + distance_y
                     self.y = int(self.y)
                     self.x = int(self.x)
-                    self.Main_hump.setGeometry(QtCore.QRect(self.x, self.y, 41, 31 ))
+                    self.Main_hump.setGeometry(QtCore.QRect(self.x, self.y, 41, 31))
 
                 if self.current_month == "03":
                     self.x = 690
@@ -1865,8 +1898,7 @@ class Ui_mainMenu(object):
                     self.x = 900
                     self.y = 320
 
-
-            elif self.current_month in self.autumn :
+            elif self.current_month in self.autumn:
                 distance_y = distance_y / 4
                 distance_y = int(distance_y)
                 if self.current_month == "09":
@@ -1876,10 +1908,14 @@ class Ui_mainMenu(object):
                     self.y = self.y + distance_y
                     self.x = self.x - distance_x
 
-                    if self.x >= 900 :
+                    if self.x >= 900:
+                        self.y = int(self.y)
+                        self.x = int(self.x)
                         self.x = 920
                         self.Main_hump.setGeometry(QtCore.QRect(self.x, self.y, 41, 31))
                     else:
+                        self.y = int(self.y)
+                        self.x = int(self.x)
                         self.Main_hump.setGeometry(QtCore.QRect(self.x, self.y, 41, 31))
                 elif self.current_month == "10":
                     distance_x = distance_x / 6
@@ -1888,13 +1924,13 @@ class Ui_mainMenu(object):
                     self.y = int(self.y)
                     self.x = int(self.x)
                     self.Main_hump.setGeometry(QtCore.QRect(self.x, self.y, 41, 31))
-                elif self.current_month == "11" :
+                elif self.current_month == "11":
                     distance_x = distance_x / 6
                     self.x = self.x + distance_x
                     self.y = self.y - distance_y
                     self.y = int(self.y)
                     self.x = int(self.x)
-                    self.Main_hump.setGeometry(QtCore.QRect(self.x, self.y, 41, 31 ))
+                    self.Main_hump.setGeometry(QtCore.QRect(self.x, self.y, 41, 31))
 
                 if self.current_month == "09":
                     self.x = 960
@@ -1908,7 +1944,7 @@ class Ui_mainMenu(object):
                     self.x = 840
                     self.y = 370
 
-            elif self.current_month in self.summer :
+            elif self.current_month in self.summer:
                 if self.current_month == "06":
                     distance_y = distance_y / 2
                     self.y = self.y + distance_y
@@ -1969,20 +2005,6 @@ class Ui_mainMenu(object):
                     self.x = 600
                     self.y = 480
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     def retranslateUi(self, mainMenu):
         _translate = QtCore.QCoreApplication.translate
         mainMenu.setWindowTitle(_translate("mainMenu", "MainWindow"))
@@ -2002,7 +2024,7 @@ class Ui_mainMenu(object):
         self.australia.setText(_translate("mainMenu", "Australia"))
         self.africa.setText(_translate("mainMenu", "Africa"))
         self.world.setText(_translate("mainMenu", "Zoom Out"))
-        self.instructions.setText(_translate("mainMenu", "select predict to see future movement in six months from the current month selected"))
+        self.instructions.setText(_translate("mainMenu","select predict to see future movement in six months from the current month selected"))
         self.predict.setText(_translate("mainMenu", "Predict"))
         self.predict.setText(_translate("mainMenu", "predict"))
         self.month.setText(_translate("mainMenu", "current month"))
@@ -2018,8 +2040,6 @@ class Ui_mainMenu(object):
         self.oct.setText(_translate("mainMenu", "October"))
         self.nov.setText(_translate("mainMenu", "November"))
         self.dec.setText(_translate("mainMenu", "December"))
-
-
 
 if __name__ == "__main__":
     import sys
