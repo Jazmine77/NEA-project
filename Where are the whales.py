@@ -565,7 +565,8 @@ class Ui_mainMenu(object):
         self.SA_dot.setObjectName("SA_dot")
         self.month = QtWidgets.QPushButton(self.centralwidget)
         self.month.setGeometry(QtCore.QRect(210, 20, 131, 41))
-        self.month.setStyleSheet("background-color: rgb(77, 98, 175);\n" "font: 14pt \"Palatino Linotype\";\n""\n""color: rgb(255, 255, 255);")
+        self.month.setStyleSheet("background-color: rgb(77, 98, 175);\n" "font: 14pt \"Palatino Linotype\";\n""\n"
+                                 "color: rgb(255, 255, 255);")
         self.month.setObjectName("month")
         self.month_menu = QtWidgets.QWidget(self.centralwidget)
         self.month_menu.setGeometry(QtCore.QRect(230, 70, 111, 371))
@@ -667,7 +668,7 @@ class Ui_mainMenu(object):
         self.HumpbackPast.hide()
         self.bluePast.raise_()
         self.bluePast.hide()
-        self.month.raise_()  # raising all buttons, labels and widgets so they appear above the plane
+        self.month.raise_()  # raising all buttons, labels and widgets, so they appear above the plane
         self.month.hide()  # month menu is hidden because it is not shown until prediction is selected
         self.month_menu.raise_()
         self.predict.hide()  # hidden because it is not shown until prediction is selected
@@ -769,7 +770,7 @@ class Ui_mainMenu(object):
         self.close.clicked.connect(self.close_predict)  # connects to subroutine that set the main window to world map
         self.hb.clicked.connect(self.show_predictionHB)  # connects to subroutine that shows prediction for humpback
         self.month.clicked.connect(self.show_monthMenu)  # connects to subroutine that displays month menu
-        self.feb.clicked.connect(self.feb_location)  #
+        self.feb.clicked.connect(self.feb_location)  # connects to subroutine to set button location for that month
         self.jan.clicked.connect(self.jan_location)
         self.march.clicked.connect(self.march_location)
         self.april.clicked.connect(self.april_location)
@@ -782,13 +783,13 @@ class Ui_mainMenu(object):
         self.nov.clicked.connect(self.nov_location)
         self.dec.clicked.connect(self.dec_location)
 
-        self.month_menu.hide()
-        self.month_menu.hidden = True
-        self.zoomMenu.hide()  # hide widget
-        self.zoomMenu.hidden = True  # set zoom menu to be hidden
+        self.month_menu.hide()  # hide widget
+        self.month_menu.hidden = True  # sets month_menu to be hidden so hidden = true
+        self.zoomMenu.hide()
+        self.zoomMenu.hidden = True
         self.Predict_menu.hide()
         self.Predict_menu.hidden = True
-    # subroutine for when world button is selected (resets map back to original overview of map)
+
         self.NA_blueW.hide()  # setting all icons not on main world map to hidden
         self.NA_blueW_2.hide()
         self.NA_SpermW.hide()
@@ -816,7 +817,8 @@ class Ui_mainMenu(object):
         self.AF_blueW.hide()
         self.AS_SpermW_2.hide()
         self.SA_dot.hide()
-    def hide_AUS(self):
+
+    def hide_AUS(self):  # hides all buttons and labels that are related to Australia
         self.AUS_humpW_2.hide()
         self.AUS_headS.hide()
         self.AUS_SpermW.hide()
@@ -824,13 +826,15 @@ class Ui_mainMenu(object):
         self.AUS_humpW.hide()
         self.AUS_greatwS.hide()
         self.AUS_greatwS_2.hide()
-    def hide_AF(self):
+
+    def hide_AF(self):  # hides all buttons and labels that are related to Africa
         self.AF_headS.hide()
         self.AF_headS_3.hide()
         self.AF_headS_2.hide()
         self.AF_greatwS.hide()
         self.AF_blueW.hide()
-    def hide_AS(self):
+
+    def hide_AS(self):  # hides all buttons and labels that are related to Asia
         self.AS_SpermW.hide()
         self.AS_headS.hide()
         self.AS_headS_2.hide()
@@ -838,7 +842,7 @@ class Ui_mainMenu(object):
         self.AS_greatwS.hide()
         self.AS_SpermW_2.hide()
 
-    def hide_NA(self):
+    def hide_NA(self):  # hides all buttons and labels that are related to North America
         self.NA_blueW.hide()
         self.NA_blueW_2.hide()
         self.NA_SpermW.hide()
@@ -846,12 +850,12 @@ class Ui_mainMenu(object):
         self.NA_humpW.hide()
         self.NA_greatwS.hide()
 
-    def hide_SA(self):
+    def hide_SA(self):  # hides all buttons and labels that are related to South America
         self.SA_greatwS.hide()
         self.SA_spermW.hide()
         self.SA_dot.hide()
 
-    def hide_World(self):
+    def hide_World(self):  # hides all buttons and labels that are related to the main world map
         self.World_blueW_2.hide()
         self.World_blueW.hide()
         self.World_Hhead.hide()
@@ -863,13 +867,13 @@ class Ui_mainMenu(object):
 
     def show_world(self):
         self.imageWorld.setPixmap(QtGui.QPixmap("world_map.png"))  # map from files called and displayed in label
-        self.hide_NA()
+        self.hide_NA()  # hides all other buttons and labels not invloved with the world map
         self.hide_SA()
         self.hide_AF()
         self.hide_AUS()
         self.hide_AS()
 
-        self.World_blueW_2.show()
+        self.World_blueW_2.show()  # shows all buttons and labels for world and main as previosuly been set to hidden
         self.World_blueW.show()
         self.World_Hhead.show()
         self.World_Hhead_2.show()
@@ -888,7 +892,7 @@ class Ui_mainMenu(object):
         self.Main_SpermW.show()
         self.Main_greatW.show()
 
-        self.Main_finw.setGeometry(QtCore.QRect(500, 160, 61, 41))
+        self.Main_finw.setGeometry(QtCore.QRect(500, 160, 61, 41))  # sets the correct location of all main buttons
         self.Main_hump.setGeometry(QtCore.QRect(860, 280, 61, 41))
         self.Main_Hhead.setGeometry(QtCore.QRect(410, 260, 61, 41))
         self.Main_blueW.setGeometry(QtCore.QRect(360, 410, 61, 41))
@@ -898,13 +902,13 @@ class Ui_mainMenu(object):
         self.Main_monkSeal.setGeometry(QtCore.QRect(200, 260, 51, 61))
 
     def show_north(self):
-        self.imageWorld.setPixmap(QtGui.QPixmap("North_america.svg"))
-        self.hide_AS()
+        self.imageWorld.setPixmap(QtGui.QPixmap("North_america.svg"))  # north america map set from files using pixmap
+        self.hide_AS()  # hides all other buttons and labels not relating to North America or main
         self.hide_SA()
         self.hide_AF()
         self.hide_AUS()
         self.hide_World()
-        self.Main_monkSeal.hide()
+        self.Main_monkSeal.hide()  # monk seal is hidden as it is not in North America
         self.Main_furSeal.show()
         self.Main_blueW.show()
         self.Main_finw.show()
@@ -918,7 +922,7 @@ class Ui_mainMenu(object):
         self.NA_finW.show()
         self.NA_humpW.show()
 
-        self.Main_finw.setGeometry(QtCore.QRect(1040, 200, 61, 41))
+        self.Main_finw.setGeometry(QtCore.QRect(1040, 200, 61, 41))  # sets correct location of main in relation to NA
         self.Main_hump.setGeometry(QtCore.QRect(650, 540, 61, 41))
         self.Main_Hhead.setGeometry(QtCore.QRect(1020, 540, 61, 41))
         self.Main_blueW.setGeometry(QtCore.QRect(440, 230, 61, 41))
@@ -932,7 +936,7 @@ class Ui_mainMenu(object):
         self.hide_AF()
         self.hide_AUS()
         self.hide_AS()
-        self.hide_World()
+        self.hide_World()  # hides all other icons apart from South America or main
         self.SA_greatwS.show()
         self.SA_dot.show()
         self.Main_hump.show()
@@ -943,7 +947,7 @@ class Ui_mainMenu(object):
         self.Main_greatW.show()
         self.Main_furSeal.hide()
         self.Main_finw.hide()
-        self.Main_monkSeal.setGeometry(QtCore.QRect(280, 210, 61, 41))
+        self.Main_monkSeal.setGeometry(QtCore.QRect(280, 210, 61, 41))  # sets correct location of main icons
         self.Main_hump.setGeometry(QtCore.QRect(570, 240, 61, 41))
         self.Main_Hhead.setGeometry(QtCore.QRect(680, 110, 61, 41))
         self.Main_blueW.setGeometry(QtCore.QRect(720, 370, 61, 41))
@@ -956,9 +960,8 @@ class Ui_mainMenu(object):
         self.hide_SA()
         self.hide_AF()
         self.hide_AUS()
-        self.hide_World()
+        self.hide_World()  # all icons are hidden aprt form ones relatinh to Asia or main
         self.AS_SpermW_2.show()
-
         self.AS_SpermW.show()
         self.AS_greatwS.show()
         self.AS_greatwS_2.show()
@@ -969,23 +972,22 @@ class Ui_mainMenu(object):
         self.Main_SpermW.show()
         self.Main_greatW.show()
         self.Main_hump.show()
-        self.Main_monkSeal.hide()
+        self.Main_monkSeal.hide()  # monk seal,blue whale, fur seal and fin whale are not in Asia so are hidden
         self.Main_blueW.hide()
         self.Main_furSeal.hide()
         self.Main_finw.hide()
-        self.Main_hump.setGeometry(QtCore.QRect(510, 390, 61, 41))
+        self.Main_hump.setGeometry(QtCore.QRect(510, 390, 61, 41))  # setting location of main icons in Asia
         self.Main_Hhead.setGeometry(QtCore.QRect(710, 420, 61, 41))
         self.Main_SpermW.setGeometry(QtCore.QRect(1130, 260, 61, 41))
         self.Main_greatW.setGeometry(QtCore.QRect(1070, 330, 61, 41))
 
     def show_aus(self):
-
         self.imageWorld.setPixmap(QtGui.QPixmap("australia.svg"))  # map of australia shown in label
         self.hide_NA()
         self.hide_SA()
         self.hide_AF()
         self.hide_AS()
-        self.hide_World()
+        self.hide_World()  # setting all icons to hidden apart from ones relating to Austalia or main
 
         self.AUS_headS.show()
         self.AUS_greatwS.show()
@@ -1001,7 +1003,7 @@ class Ui_mainMenu(object):
         self.Main_Hhead.show()
         self.Main_SpermW.show()
         self.Main_greatW.show()
-        self.Main_furSeal.hide()
+        self.Main_furSeal.hide()  # fur and monk seal are hidden as they are not in Australia
         self.Main_monkSeal.hide()
         self.Main_hump.setGeometry(QtCore.QRect(650, 350, 61, 41))
         self.Main_Hhead.setGeometry(QtCore.QRect(1020, 540, 61, 41))
@@ -1016,7 +1018,7 @@ class Ui_mainMenu(object):
         self.hide_SA()
         self.hide_AS()
         self.hide_AUS()
-        self.hide_World()
+        self.hide_World()  # hides all other icons apart from Africa or main
         self.AF_headS.show()
         self.AF_headS_3.show()
         self.AF_headS_2.show()
@@ -1025,15 +1027,13 @@ class Ui_mainMenu(object):
 
         self.Main_blueW.show()
         self.Main_finw.show()
-
         self.Main_hump.hide()
-        self.Main_monkSeal.hide()
-
+        self.Main_monkSeal.hide()  # monk seal, fur seal and humpabck whale are hidden as they are not in Africa
         self.Main_furSeal.hide()
         self.Main_Hhead.show()
         self.Main_SpermW.show()
         self.Main_greatW.show()
-        self.Main_Hhead.setGeometry(QtCore.QRect(1240, 430, 61, 41))
+        self.Main_Hhead.setGeometry(QtCore.QRect(1240, 430, 61, 41))  # setting location to correct ins in Africa
         self.Main_SpermW.setGeometry(QtCore.QRect(640, 440, 61, 41))
         self.Main_greatW.setGeometry(QtCore.QRect(1120, 570, 61, 41))
         self.Main_finw.setGeometry(QtCore.QRect(330, 70, 61, 41))
@@ -1049,10 +1049,12 @@ class Ui_mainMenu(object):
             self.zoomMenu.hidden = True  # sets hidden varibale to true
 
     def Show_monkInfo(self):
-        self.window = QtWidgets.QDialog()
-        self.ui = Information()
-        self.ui.setupUi(self.window)
-        self.window.show()
+        self.window = QtWidgets.QDialog()  # the window is a dialog window
+        self.ui = Information()  # class which is imported then set as the user interface
+        self.ui.setupUi(self.window)  # sets the ui on to  the window
+        self.window.show()  # shows the window
+
+    # the same comments apply to all the seperate information windows below
 
     def show_blueInfo(self):
         self.window = QtWidgets.QDialog()
@@ -1096,12 +1098,13 @@ class Ui_mainMenu(object):
         self.ui.setupUi(self.window)
         self.window.show()
 
-    current_month = datetime.now()
-    current_month = current_month.strftime("%m")
-    x = 0
-    y = 0
+    current_month = datetime.now()  # sets the date and time which is imported from datetime feature in python
+    current_month = current_month.strftime("%m")  # extracts just the month and sets it a string in the format "06"
 
-    def hide_all(self):
+    x = 0  # sets the value of x as 0 for the x coordinate
+    y = 0  # sets the vlaue of y as 0 for the y coordinate
+
+    def hide_all(self):  # hides all icons and the zoom menu so prediction feature can be displayed
         self.hide_AS()
         self.hide_AUS()
         self.hide_AF()
@@ -1120,33 +1123,33 @@ class Ui_mainMenu(object):
         self.zoom.hide()
         self.zoomMenu.hide()
 
-    movement_BW = False
+    movement_BW = False  # seting both options from prediction menu as false as neither has been slcted yet
     movement_HB = False
 
     def show_predictMenu(self):
         if self.Predict_menu.hidden:  # checks whether it is shown or hidden
-            self.Predict_menu.show()  # shows the predict menu
+            self.Predict_menu.show()  # shows the prediction menu
             self.Predict_menu.hidden = False  # sets hidden variable to false
         else:
-            self.Predict_menu.hide()  # hides zoom menu as if it is not hidden it must be shown
+            self.Predict_menu.hide()  # hides predict menu as if it is not hidden it must be shown
             self.Predict_menu.hidden = True  # sets hidden varibale to true
 
     def show_monthMenu(self):
         if self.month_menu.hidden:  # checks whether it is shown or hidden
-            self.month_menu.show()  # shows the predict menu
+            self.month_menu.show()  # shows the month menu
             self.month_menu.hidden = False  # sets hidden variable to false
         else:
-            self.month_menu.hide()  # hides zoom menu as if it is not hidden it must be shown
-            self.month_menu.hidden = True  # sets hidden varibale to true
+            self.month_menu.hide()  # hides month menu as if it is not hidden it must be shown
+            self.month_menu.hidden = True  # sets hidden variable to true
 
     def show_predictionHB(self):
-        self.movement_HB = True
-        self.movement_BW = False
-        self.imageWorld.setPixmap(QtGui.QPixmap("HumpbackMap.png"))
+        self.movement_HB = True  # true as humpback has been selected
+        self.movement_BW = False  # resets as false as may have previously been true
+        self.imageWorld.setPixmap(QtGui.QPixmap("HumpbackMap.png"))  # sets pixmap to humpback whale prediction map
         self.month.show()
-        self.month_menu.raise_()
+        self.month_menu.raise_()  # raises so is above the plane so can be seen
         self.hide_all()
-        self.instructions.show()
+        self.instructions.show()  # instructions, key,predict button and cross icon shown as they are part of prediction
         self.predict.show()
         self.key.show()
         self.location_now.show()
@@ -1154,41 +1157,42 @@ class Ui_mainMenu(object):
         self.Main_hump.show()
         self.Main_hump.raise_()
         self.Main_blueW.hide()
-        self.cross_HB()
+        self.cross_HB()  # sets location of humpback whale and cross icon based off current month by calling subroutine
 
     def show_predictionBW(self):
-        self.imageWorld.setPixmap(QtGui.QPixmap("North_america.svg"))
+        self.imageWorld.setPixmap(QtGui.QPixmap("North_america.svg"))  # sets pixmap to North America map
         self.hide_all()
-        self.instructions.show()
+        self.instructions.show()  # instructions, key,predict button and cross icon shown as they are part of prediction
         self.predict.show()
         self.Main_blueW.show()
         self.key.show()
         self.key_cross.show()
         self.location_now.show()
         self.Main_blueW.raise_()
-        self.cross_BW()
+        self.cross_BW()  # sets location of blue whale and cross icon based off current month by calling subroutine
         self.month.show()
         self.month_menu.raise_()
-        self.movement_BW = True
-        self.movement_HB = False
+        self.movement_BW = True  # true as blue whale has been selected
+        self.movement_HB = False  # resets as false as may have previously been true
 
-    def feb_location(self):
-        self.current_month = "02"
-        if self.movement_BW == True:
+    def feb_location(self):  # subroutine that is connected to the button febaury in month menu
+        self.current_month = "02"  # current month the user wants to see is now the second month of the year
+        if self.movement_BW == True:  # ignore PEP8 warning as risk has been evaluated
             self.location_now.setGeometry(QtCore.QRect(760, 580, 61, 41))
             self.Main_blueW.setGeometry(QtCore.QRect(760, 580, 61, 41))
-            self.x = 760
+            self.x = 760  # sets both blue whale and cross icon to same location and then records the value of x and y
             self.y = 580
 
         elif self.movement_HB == True:
             self.location_now.setGeometry(QtCore.QRect(600, 480, 41, 31))
             self.Main_hump.setGeometry(QtCore.QRect(600, 480, 41, 31))
-            self.Main_hump.setIconSize(QtCore.QSize(40, 40))
-            self.x = 600
+            self.Main_hump.setIconSize(QtCore.QSize(40, 40))  # sets the size of icon in button smaller
+            self.x = 600  # sets both humpback whale and cross icon to same location and then records value of x and y
             self.y = 480
 
-    def jan_location(self):
-        self.current_month = "01"
+    # for each month the same operations are performed but the values of x and y change as well as the geometry
+    def jan_location(self):  # subroutine that is connected to the button January  in month menu
+        self.current_month = "01"  # current month the user wants to see is now the first month of the year
         if self.movement_BW == True:
             self.location_now.setGeometry(QtCore.QRect(890, 590, 61, 41))
             self.Main_blueW.setGeometry(QtCore.QRect(890, 590, 61, 41))
@@ -1202,8 +1206,8 @@ class Ui_mainMenu(object):
             self.x = 510
             self.y = 470
 
-    def march_location(self):
-        self.current_month = "03"
+    def march_location(self):  # subroutine that is connected to the button March in month menu
+        self.current_month = "03"  # current month the user wants to see is now the third month of the year
         if self.movement_BW == True:
             self.location_now.setGeometry(QtCore.QRect(640, 540, 61, 41))
             self.Main_blueW.setGeometry(QtCore.QRect(640, 540, 61, 41))
@@ -1218,7 +1222,7 @@ class Ui_mainMenu(object):
             self.y = 420
 
     def april_location(self):
-        self.current_month = "04"
+        self.current_month = "04"  # current month the user wants to see is now the fourth month of the year
         if self.movement_BW == True:
             self.location_now.setGeometry(QtCore.QRect(520, 460, 61, 41))
             self.Main_blueW.setGeometry(QtCore.QRect(520, 460, 61, 41))
@@ -1233,7 +1237,7 @@ class Ui_mainMenu(object):
             self.y = 350
 
     def may_location(self):
-        self.current_month = "05"
+        self.current_month = "05"  # current month the user wants to see is now the fifth month of the year
         if self.movement_BW == True:
             self.location_now.setGeometry(QtCore.QRect(470, 410, 61, 41))
             self.Main_blueW.setGeometry(QtCore.QRect(470, 410, 61, 41))
@@ -1247,7 +1251,7 @@ class Ui_mainMenu(object):
             self.y = 320
 
     def june_location(self):
-        self.current_month = "06"
+        self.current_month = "06"  # current month the user wants to see is now the sixth month of the year
         if self.movement_BW == True:
             self.location_now.setGeometry(QtCore.QRect(460, 350, 61, 41))
             self.Main_blueW.setGeometry(QtCore.QRect(460, 350, 61, 41))
@@ -1261,7 +1265,7 @@ class Ui_mainMenu(object):
             self.y = 290
 
     def july_location(self):
-        self.current_month = "07"
+        self.current_month = "07"  # current month the user wants to see is now the seventh month of the year
         if self.movement_BW == True:
             self.location_now.setGeometry(QtCore.QRect(430, 230, 61, 41))
             self.Main_blueW.setGeometry(QtCore.QRect(430, 230, 61, 41))
@@ -1276,7 +1280,7 @@ class Ui_mainMenu(object):
             self.y = 220
 
     def aug_location(self):
-        self.current_month = "08"
+        self.current_month = "08"  # current month the user wants to see is now the eighth month of the year
         if self.movement_BW == True:
             self.location_now.setGeometry(QtCore.QRect(440, 280, 61, 41))
             self.Main_blueW.setGeometry(QtCore.QRect(440, 280, 61, 41))
@@ -1291,7 +1295,7 @@ class Ui_mainMenu(object):
             self.y = 200
 
     def sep_location(self):
-        self.current_month = "09"
+        self.current_month = "09"  # current month the user wants to see is now the ninth month of the year
         if self.movement_BW == True:
             self.location_now.setGeometry(QtCore.QRect(420, 340, 61, 41))
             self.Main_blueW.setGeometry(QtCore.QRect(420, 340, 61, 41))
@@ -1306,7 +1310,7 @@ class Ui_mainMenu(object):
             self.y = 280
 
     def oct_location(self):
-        self.current_month = "10"
+        self.current_month = "10"  # current month the user wants to see is now the tenth month of the year
         if self.movement_BW == True:
             self.location_now.setGeometry(QtCore.QRect(440, 420, 61, 41))
             self.Main_blueW.setGeometry(QtCore.QRect(440, 420, 61, 41))
@@ -1321,7 +1325,7 @@ class Ui_mainMenu(object):
             self.y = 330
 
     def nov_location(self):
-        self.current_month = "11"
+        self.current_month = "11"  # current month the user wants to see is now the elventh month of the year
         if self.movement_BW == True:
             self.location_now.setGeometry(QtCore.QRect(570, 510, 61, 41))
             self.Main_blueW.setGeometry(QtCore.QRect(570, 510, 61, 41))
@@ -1335,7 +1339,7 @@ class Ui_mainMenu(object):
             self.y = 370
 
     def dec_location(self):
-        self.current_month = "12"
+        self.current_month = "12"  # current month the user wants to see is now the twelth month of the year
         if self.movement_BW == True:
             self.location_now.setGeometry(QtCore.QRect(840, 580, 61, 41))
             self.Main_blueW.setGeometry(QtCore.QRect(840, 580, 61, 41))
@@ -1348,7 +1352,7 @@ class Ui_mainMenu(object):
             self.x = 760
             self.y = 400
 
-    def cross_BW(self):
+    def cross_BW(self):  # location of blue whale, cross icon and x and y set  based on value of current month
         if self.current_month == "04":
             self.location_now.setGeometry(QtCore.QRect(520, 460, 61, 41))
             self.Main_blueW.setGeometry(QtCore.QRect(520, 460, 61, 41))
@@ -1421,14 +1425,14 @@ class Ui_mainMenu(object):
             self.x = 840
             self.y = 580
 
-    def cross_HB(self):
+    def cross_HB(self):  # location of cross, humpback whale set
         if self.current_month == "01":
-            self.location_now.setGeometry(QtCore.QRect(510, 470, 41, 31))
+            self.location_now.setGeometry(QtCore.QRect(510, 470, 41, 31))  # cross icon same location as humpback whale
             self.Main_hump.setGeometry(QtCore.QRect(510, 470, 41, 31))
-            self.Main_hump.setIconSize(QtCore.QSize(40, 40))
-            self.x = 510
+            self.Main_hump.setIconSize(QtCore.QSize(40, 40))  # humpback whale icon size is set to be smaller
+            self.x = 510  # x and y values set as same value as coordinates for humpback whale
             self.y = 470
-
+        # comments apply for all months below with different values
         elif self.current_month == "02":
             self.location_now.setGeometry(QtCore.QRect(600, 480, 41, 31))
             self.Main_hump.setGeometry(QtCore.QRect(600, 480, 41, 31))
@@ -1507,7 +1511,7 @@ class Ui_mainMenu(object):
             self.y = 400
 
     def close_predict(self):
-        self.instructions.hide()
+        self.instructions.hide()  # hiding all buttons and labels that relate to the prediction feature
         self.predict.hide()
         self.zoom.show()
         self.key.hide()
@@ -1515,40 +1519,39 @@ class Ui_mainMenu(object):
         self.location_now.hide()
         self.month.hide()
         self.month_menu.hide()
-        self.Main_hump.setIconSize(QtCore.QSize(60, 60))
-        self.Main_hump.setGeometry(QtCore.QRect(self.x, self.y, 61, 41))
-        self.show_world()
+        self.Main_hump.setIconSize(QtCore.QSize(60, 60))  # resetting the size of the icon in button
+        self.Main_hump.setGeometry(QtCore.QRect(self.x, self.y, 61, 41))  # resetting the size of the button
+        self.show_world()  # calling on subroutine to reset the map as world map and icons
 
-
-    winter = ["12", "01", "02"]
-    summer = ["06", "07", "08"]
-    autumn = ["09", "10", "11"]
-    spring = ["03", "04", "05"]
-    summerX = 450
-    summerY = 220
-    winterX = 910
-    winterY = 600
+    winter = ["12", "01", "02"]  # months that are in winter
+    summer = ["06", "07", "08"]  # months that are in summer
+    autumn = ["09", "10", "11"]  # months that are in autumn
+    spring = ["03", "04", "05"]  # months that are in spring
+    summerX = 450  # further point west at the summer migration point
+    summerY = 220  # highest point on map at the summer migration point
+    winterX = 910  # furthest point east at the winter migration point
+    winterY = 600  # lowest point on map at winter migration point
 
     def movement(self):
         if self.movement_BW == True:
             difference_x = 0
             difference_y = 0
-            difference_x = self.winterX - self.summerX
-            difference_y = self.winterY - self.summerY
-            if self.current_month in self.summer:
-                self.x = self.x + difference_x
-                self.y = self.y + difference_y
-                self.y = int(self.y)
+            difference_x = self.winterX - self.summerX  # calculating distance between the two furthest migration point
+            difference_y = self.winterY - self.summerY  # calculating distance between the highest and lowest point
+            if self.current_month in self.summer:  # calculating migration for sixth months from any months in summer
+                self.x = self.x + difference_x  # adding total to increase y so icon moves east
+                self.y = self.y + difference_y  # adding total distance to increase y coordinate so icon moves down
+                self.y = int(self.y)  # needs to be an integer not a float
                 self.x = int(self.x)
-                if 380 <= self.y <= 450:
-                    self.x = 460
+                if 380 <= self.y <= 450:  # checks if y coordinate is between the top and bottom of California
+                    self.x = 460  # sets the x coordinate to be further east ,so it is closer to the coast of california
                     self.Main_blueW.setGeometry(QtCore.QRect(self.x, self.y, 61, 41))
-                elif self.y > 590:
+                elif self.y > 590:  # checks if y coordinate is too high and therefore on land
                     self.y = 590
                     self.Main_blueW.setGeometry(QtCore.QRect(self.x, self.y, 61, 41))
                 else:
                     self.Main_blueW.setGeometry(QtCore.QRect(self.x, self.y, 61, 41))
-                if self.current_month == "06":
+                if self.current_month == "06":  # resets x and y to represent the current month
                     self.x = 460
                     self.y = 350
                 elif self.current_month == "07":
@@ -1560,20 +1563,20 @@ class Ui_mainMenu(object):
 
             elif self.current_month in self.winter:
                 self.x = self.x - difference_x
-                self.y = self.y - difference_y
+                self.y = self.y - difference_y  # distance is taken away from y to decrease y to move icon upwards
                 self.y = int(self.y)
                 self.x = int(self.x)
-                if 380 <= self.y <= 450:
-                    self.x = 460
+                if 380 <= self.y <= 450:  # checks if y coordinate is between the top and bottom of California
+                    self.x = 460  # sets the x coordinate to be further east ,so it is closer to the coast of california
                     self.Main_blueW.setGeometry(QtCore.QRect(self.x, self.y, 61, 41))
-                elif self.y > 590:
+                elif self.y > 590:  # checks if y coordinate is too high and therefore on land
                     self.y = 590
                     self.Main_blueW.setGeometry(QtCore.QRect(self.x, self.y, 61, 41))
 
                 else:
                     self.Main_blueW.setGeometry(QtCore.QRect(self.x, self.y, 61, 41))
 
-                if self.current_month == "12":
+                if self.current_month == "12":  # resets x and y to represent the current month
                     self.x = 840
                     self.y = 580
                 elif self.current_month == "01":
@@ -1584,11 +1587,11 @@ class Ui_mainMenu(object):
                     self.y = 580
 
             elif self.current_month in self.spring:
-                if self.current_month == "03":
-                    difference_x = difference_x / 2
+                if self.current_month == "03":  # breaking down months in spring as there is great variety in migration
+                    difference_x = difference_x / 2  # migration distance is /2 as whales are between migration points
                     difference_y = difference_y / 2
                     self.x = self.x - difference_x
-                    self.y = self.y - difference_y
+                    self.y = self.y - difference_y  # distance is taken away from y to decrease y to move icon upwards
                     self.y = int(self.y)
                     self.x = int(self.x)
                     if 380 <= self.y <= 450:
@@ -1601,13 +1604,13 @@ class Ui_mainMenu(object):
                         self.x = 640
                         self.y = 540
                 else:
-                    difference_x = difference_x / 4
+                    difference_x = difference_x / 4  # opposite stage of migration in sixth months but similar location
                     difference_y = difference_y / 4
                     self.y = int(self.y)
                     self.x = int(self.x)
                     if self.current_month == "04":
                         difference_y = difference_y / 2
-                        self.x = self.x - difference_x
+                        self.x = self.x - difference_x  # taking away from distance so x decreases and moves east
                         self.y = self.y - difference_y
                         if 380 <= self.y <= 450:
                             self.x = 460
@@ -1622,7 +1625,8 @@ class Ui_mainMenu(object):
                             self.x = 520
                             self.y = 470
                     else:
-                        self.x = self.x + difference_x
+                        self.x = self.x + difference_x  # added so moves west
+                        # for may the whale is actually now below the cross icon so distance  is added
                         self.y = self.y + difference_y
                         if 380 <= self.y <= 450:
                             self.x = 460
@@ -1640,8 +1644,9 @@ class Ui_mainMenu(object):
                 if self.current_month == "09":
                     difference_x = difference_x / 2
                     difference_y = difference_y / 2
-                    self.x = self.x + difference_x
-                    self.y = self.y + difference_y
+                    # not moving from one point to another directly so distance icon moves is reduced
+                    self.x = self.x + difference_x  # adding total to increase x coordinate to move further west
+                    self.y = self.y + difference_y  # adding total distance to increase y coordinate so icon moves down
                     self.y = int(self.y)
                     self.x = int(self.x)
                     if 380 <= self.y <= 450:
@@ -1656,10 +1661,10 @@ class Ui_mainMenu(object):
                 else:
                     difference_x = difference_x / 4
                     difference_y = difference_y / 4
-
+        # distance for oct and nov is less because they are going in oppposite directions but are in similar locations
                     if self.current_month == "10":
-                        self.x = self.x + difference_x
-                        self.y = self.y + difference_y
+                        self.x = self.x + difference_x  # moves icon west
+                        self.y = self.y + difference_y  # moves icon downwards
                         if 380 <= self.y <= 450:
                             self.x = 460
                             self.y = int(self.y)
@@ -1676,8 +1681,8 @@ class Ui_mainMenu(object):
                             self.y = 420
 
                     else:
-                        self.x = self.x - difference_x
-                        self.y = self.y - difference_y
+                        self.x = self.x - difference_x  # x is lower so moves west
+                        self.y = self.y - difference_y  # for nov the whale actually moves up
                         if 380 <= self.y <= 450:
                             self.x = 460
                             self.y = int(self.y)
@@ -1696,30 +1701,38 @@ class Ui_mainMenu(object):
         elif self.movement_HB == True:
             distance_x = 0
             six_month = 0
-            distance_x = 940 - 520
-            speed = 9.4
+            distance_x = 940 - 520  # distance between the furthest points east and west
+            speed = 9.4  # average speed km/hour
             six_month = 24 * 183
+            # calculates hours in sixth months by times sixth months in weeks by the amount of hours in a day
             distance_km = 0
             distance_km = speed * six_month
+            # calculates distance using total hours in sixth motnhs by aveage distance moved per houts
             distance_y = 0
+            # value calculated from dividing distance moved by difference in y coordinates to give one value of y
             distance_y = distance_km * 0.00678
+            # times total differnce by one y coordinate to give total migration in terms of y
+
             if self.current_month in self.spring:
                 distance_y = distance_y / 4
-                distance_y = int(distance_y)
+                distance_y = int(distance_y)  # needs to an interger to work as a value for a y coordinate
                 if self.current_month == "03":
                     distance_y = distance_y * 2
-                    self.y = self.y - distance_y
-                    self.x = self.x + distance_x
+        # not between the two points directly so distance icon moves is half as it is reaches summer point and goes back
+                    self.y = self.y - distance_y  # is moving up so taken away
+                    self.x = self.x + distance_x  # moving east so is added to x coordinate
                     self.y = int(self.y)
                     self.x = int(self.x)
                     if self.x >= 950:
                         self.x = 970
+                        # checks if icon is too far west so is on land and then sets it to be just off the coast
                         self.Main_hump.setGeometry(QtCore.QRect(self.x, self.y, 41, 31))
                     else:
                         self.Main_hump.setGeometry(QtCore.QRect(self.x, self.y, 41, 31))
                 elif self.current_month == "04":
                     distance_y = distance_y / 2
                     distance_x = distance_x / 6
+                    # both distances reduced as it is in a similar but opposite place in six months
                     self.x = self.x + distance_x
                     self.y = self.y - distance_y
                     self.y = int(self.y)
@@ -1727,12 +1740,13 @@ class Ui_mainMenu(object):
                     self.Main_hump.setGeometry(QtCore.QRect(self.x, self.y, 41, 31))
                 elif self.current_month == "05":
                     distance_x = distance_x / 6
-                    self.x = self.x - distance_x
-                    self.y = self.y + distance_y
+                    # same is true for May and April but for April the distance is even more similar
+                    self.x = self.x - distance_x  # moving east
+                    self.y = self.y + distance_y  # moving downwards
                     self.y = int(self.y)
                     self.x = int(self.x)
                     self.Main_hump.setGeometry(QtCore.QRect(self.x, self.y, 41, 31))
-
+# resetting x and y coordinates after every calculation so if prediction is selected again the output will be the same
                 if self.current_month == "03":
                     self.x = 690
                     self.y = 420
@@ -1746,19 +1760,19 @@ class Ui_mainMenu(object):
                     self.y = 320
 
             elif self.current_month in self.autumn:
-                distance_y = distance_y / 4
+                distance_y = distance_y / 4  # only y distance is consistent so is set before any autumn month is set
                 distance_y = int(distance_y)
                 if self.current_month == "09":
-                    distance_x = distance_x / 2
+                    distance_x = distance_x / 2  # half  the distance between points
                     self.y = int(self.y)
                     self.x = int(self.x)
-                    self.y = self.y + distance_y
-                    self.x = self.x - distance_x
+                    self.y = self.y + distance_y  # moving downwards
+                    self.x = self.x - distance_x  # moving east
 
                     if self.x >= 900:
                         self.y = int(self.y)
                         self.x = int(self.x)
-                        self.x = 920
+                        self.x = 920  # checks if icon is on land and moves it east
                         self.Main_hump.setGeometry(QtCore.QRect(self.x, self.y, 41, 31))
                     else:
                         self.y = int(self.y)
@@ -1766,15 +1780,15 @@ class Ui_mainMenu(object):
                         self.Main_hump.setGeometry(QtCore.QRect(self.x, self.y, 41, 31))
                 elif self.current_month == "10":
                     distance_x = distance_x / 6
-                    self.x = self.x - distance_x
-                    self.y = self.y + distance_y
+                    self.x = self.x - distance_x  # taken away so moves further west
+                    self.y = self.y + distance_y  # moves downwards
                     self.y = int(self.y)
                     self.x = int(self.x)
                     self.Main_hump.setGeometry(QtCore.QRect(self.x, self.y, 41, 31))
                 elif self.current_month == "11":
                     distance_x = distance_x / 6
-                    self.x = self.x + distance_x
-                    self.y = self.y - distance_y
+                    self.x = self.x + distance_x  # moves further west
+                    self.y = self.y - distance_y  # taken away so moves up
                     self.y = int(self.y)
                     self.x = int(self.x)
                     self.Main_hump.setGeometry(QtCore.QRect(self.x, self.y, 41, 31))
@@ -1794,13 +1808,15 @@ class Ui_mainMenu(object):
             elif self.current_month in self.summer:
                 if self.current_month == "06":
                     distance_y = distance_y / 2
-                    self.y = self.y + distance_y
+                    # moves half way from summer migration point to winter along a diagonal
+                    self.y = self.y + distance_y  # moves further down
                     distance_x = distance_x / 2
-                    self.x = self.x - distance_x
+                    self.x = self.x - distance_x  # moves further east
                     self.y = int(self.y)
                     self.x = int(self.x)
                     self.Main_hump.setGeometry(QtCore.QRect(self.x, self.y, 41, 31))
                 elif self.current_month == "07" or self.current_month == "08":
+                    # moves total distance of migration over six months which goes up and further east
                     self.y = self.y + distance_y
                     self.x = self.x - distance_x
                     self.y = int(self.y)
@@ -1821,21 +1837,24 @@ class Ui_mainMenu(object):
             elif self.current_month in self.winter:
                 if self.current_month == "12":
                     distance_y = distance_y / 2
+                    # like in June moves half way from winter migration point to summer along a diagonal
                     distance_y = int(distance_y)
-                    self.y = self.y - distance_y
+                    self.y = self.y - distance_y  # moves up
                     distance_x = distance_x / 2
-                    self.x = self.x + distance_x
+                    self.x = self.x + distance_x  # moves further east
                     self.y = int(self.y)
                     self.x = int(self.x)
                     self.Main_hump.setGeometry(QtCore.QRect(self.x, self.y, 41, 31))
 
                 elif self.current_month == "01" or self.current_month == "02":
-                    self.y = self.y - distance_y
+                    self.y = self.y - distance_y  # moves total distance from winter to summer over six months
                     self.x = self.x + distance_x
+                    # y coordinate is lowered so moves up and x coordinate is added so moves east
                     self.y = int(self.y)
                     self.x = int(self.x)
                     self.Main_hump.setGeometry(QtCore.QRect(self.x, self.y, 41, 31))
                     if self.x < 950 or self.x <= 1050:
+                        # checks if icon is on land or too far from coast and sets it close to coastline
                         self.x = 960
                         self.Main_hump.setGeometry(QtCore.QRect(self.x, self.y, 41, 31))
                     else:
@@ -1852,7 +1871,7 @@ class Ui_mainMenu(object):
                     self.x = 600
                     self.y = 480
 
-    def retranslateUi(self, mainMenu):
+    def retranslateUi(self, mainMenu):  # setting  text on the buttons and labels
         _translate = QtCore.QCoreApplication.translate
         mainMenu.setWindowTitle(_translate("mainMenu", "MainWindow"))
         self.heading.setText(_translate("mainMenu", "Where are the Whales?"))
@@ -1863,7 +1882,7 @@ class Ui_mainMenu(object):
         self.bw.setText(_translate("mainMenu", "Blue Whale"))
         self.hb.setText(_translate("mainMenu", "Humpback whale"))
         self.close.setText(_translate("mainMenu", "Close"))
-        self.key.setText(_translate("mainMenu",  "             : Current selected month"))
+        self.key.setText(_translate("mainMenu", "             : Current selected month"))
         self.zoom.setText(_translate("mainMenu", "Zoom in"))
         self.northA.setText(_translate("mainMenu", "North America"))
         self.southA.setText(_translate("mainMenu", "South America"))
@@ -1871,7 +1890,7 @@ class Ui_mainMenu(object):
         self.australia.setText(_translate("mainMenu", "Australia"))
         self.africa.setText(_translate("mainMenu", "Africa"))
         self.world.setText(_translate("mainMenu", "Zoom Out"))
-        self.instructions.setText(_translate("mainMenu", "select predict to see future movement in six months from the current month selected"))
+        self.instructions.setText(_translate("mainMenu","select predict to see future movement in six months from the current month selected"))
         self.predict.setText(_translate("mainMenu", "Predict"))
         self.predict.setText(_translate("mainMenu", "predict"))
         self.month.setText(_translate("mainMenu", "current month"))
@@ -1891,6 +1910,7 @@ class Ui_mainMenu(object):
 
 if __name__ == "__main__":
     import sys
+
     app = QtWidgets.QApplication(sys.argv)
     mainMenu = QtWidgets.QMainWindow()
     ui = Ui_mainMenu()
